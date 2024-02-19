@@ -9,14 +9,14 @@ We also use it for tracking issues and initiatives related to the community's gr
 - [Gradle Community Resources](https://gradle.org/resources/) -
 Official listing on the website
 - [Contributing to Gradle Build Tool](https://github.com/gradle/gradle/blob/master/CONTRIBUTING.md) -
-  kernel parts, core plugins, and documentation
+  Kernel parts, core plugins, and documentation
 - [Security Vulnerability Reporting Policy](https://github.com/gradle/gradle/security/policy)
 - [Code of Conduct](https://gradle.org/conduct/)
 
 ## Community Channels
 
 - [`gradle-community` Slack workspace](https://gradle.com/slack-invite)
-  ([Slack history Archive](https://www.linen.dev/s/gradle-community))
+  ([Slack History Archive](https://www.linen.dev/s/gradle-community))
 - [Gradle Forums](https://discuss.gradle.org/) (Discourse)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/gradle) (`#gradle` tag)
 - [GitHub](https://github.com/gradle/gradle) (`@gradle`) -
