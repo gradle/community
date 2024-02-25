@@ -140,33 +140,36 @@ plugins:
   - mkdocs-pdf
   # OpenGraphs
   - social
-  - multirepo:
-      cleanup: false
-      keep_docs_dir: true
-      nav_repos:
-      - name: dotgithub
-        import_url: 'https://github.com/gradle/.github?branch=master&edit_uri=/blob/master/'
-      - name: gradle
-        import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
-        imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md" ]
-      - name: gradle-profiler
-        import_url: 'https://github.com/gradle/gradle-profiler?branch=master&edit_uri=/blob/master/'
-        imports: [ "README.md" ]
-      - name: github-actions
-        import_url: 'https://github.com/gradle/github-actions?branch=main&edit_uri=/blob/main/'
-        imports: [ "README.md", "doc/*" ]
-      - name: gradlex
-        import_url: 'https://github.com/gradlex-org/gradlex-org.github.io?branch=main&edit_uri=/blob/main/'
-        imports: [ "index.md", "favicon.png" ]
-      - name: gradle-doctor
-        import_url: 'https://github.com/runningcode/gradle-doctor?branch=master&edit_uri=/blob/master/'
-        imports: [ "docs/*" ]
-      - name: build-server-for-gradle
-        import_url: 'https://github.com/microsoft/build-server-for-gradle?branch=develop&edit_uri=/blob/develop/'
-        imports: [ "*.md", "images/*" ]
-      - name: vscode-gradle
-        import_url: 'https://github.com/microsoft/vscode-gradle?branch=develop&edit_uri=/blob/develop/'
-        imports: [ "*.md", "images/*" ]
+  - group:
+      enabled: true
+      plugins:  
+      - multirepo:
+          cleanup: false
+          keep_docs_dir: true
+          nav_repos:
+          - name: dotgithub
+            import_url: 'https://github.com/gradle/.github?branch=master&edit_uri=/blob/master/'
+          - name: gradle
+            import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
+            imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md" ]
+          - name: gradle-profiler
+            import_url: 'https://github.com/gradle/gradle-profiler?branch=master&edit_uri=/blob/master/'
+            imports: [ "README.md" ]
+          - name: github-actions
+            import_url: 'https://github.com/gradle/github-actions?branch=main&edit_uri=/blob/main/'
+            imports: [ "README.md", "doc/*" ]
+          - name: gradlex
+            import_url: 'https://github.com/gradlex-org/gradlex-org.github.io?branch=main&edit_uri=/blob/main/'
+            imports: [ "index.md", "favicon.png" ]
+          - name: gradle-doctor
+            import_url: 'https://github.com/runningcode/gradle-doctor?branch=master&edit_uri=/blob/master/'
+            imports: [ "docs/*" ]
+          - name: build-server-for-gradle
+            import_url: 'https://github.com/microsoft/build-server-for-gradle?branch=develop&edit_uri=/blob/develop/'
+            imports: [ "*.md", "images/*" ]
+          - name: vscode-gradle
+            import_url: 'https://github.com/microsoft/vscode-gradle?branch=develop&edit_uri=/blob/develop/'
+            imports: [ "*.md", "images/*" ]
   - redirects:
      redirect_maps:
         
