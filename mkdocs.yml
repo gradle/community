@@ -1,0 +1,154 @@
+site_name: Gradle Community Site
+site_description: >-
+  This is an open-source site for all Gradle community matters,
+  including governance, artwork, events, and public infrastructure.
+copyright: Copyright &copy; 2024 - Gradle Inc., and all contributors
+docs_dir: docs
+repo_url: https://github.com/gradle/community
+repo_name: Gradle Community repo
+edit_uri: edit/main/
+site_url: https://gradle.github.io/community
+
+# Build
+site_dir: _site
+
+# Theme
+theme:
+  name: material
+  highlightjs: true
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    # NOT compatible qith toc.integrate
+    # - navigation.indexes
+    - navigation.path
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.expand
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette: 
+    
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: custom
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Lato Lite
+    code: Roboto Mono
+  favicon: images/logos/gradle.svg
+  logo: images/logos/gradle.svg
+  icon:
+    repo: fontawesome/brands/github
+
+
+extra_css:
+  - assets/css/gradle.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/slack
+      link: https://gradle.org/slack-invite
+      name: Slack 
+    - icon: fontawesome/brands/github
+      link: https://github.com/gradle
+      name: GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/gradle
+      name: Twitter/X
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/gradle
+      name: LinkedIn
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@Gradle
+      name: Mastodon
+#  analytics:
+#    provider: google
+#    property: TODO
+  
+nav:
+  - Home: README.md
+  - Participate:
+    - Community Slack: https://gradle.org/slack-invite
+    - Forum: https://discuss.gradle.org
+    - Contributor Guide: https://github.com/gradle/gradle/blob/master/CONTRIBUTING.md
+    - Code of Conduct: https://gradle.org/conduct/
+  - Resources:
+    - Gradle Docs: https://docs.gradle.org/
+    - Blog: https://blog.gradle.org/
+    - Newsletter: https://newsletter.gradle.org/
+    - Releases: https://gradle.org/releases
+    - Plugin Portal: https://plugins.gradle.org/
+    - Slack Archive: https://www.linen.dev/s/gradle-community
+    - Stack Overflow: https://stackoverflow.com/questions/tagged/gradle
+  - Commercial:
+    - Develocity: https://gradle.com/develocity
+    - Service Providers: https://gradle.org/services/
+    - Training: https://gradle.org/courses
+    
+plugins:
+  - search
+  - autorefs
+  - macros
+  - mkdocs-pdf
+  # OpenGraphs
+#  - social:
+      # custom_layouts_dir is commercial feature
+#  - multirepo:
+      # TODO: Change to True once works
+#      cleanup: false
+#      keep_docs_dir: true
+#      nav_repos:
+#  - multirepo:
+    # TODO: Change to True once works
+#      cleanup: false
+#      keep_docs_dir: true
+#      nav_repos:
+#      - name: faascinator
+#        import_url: 'https://github.com/oleg-nenashev/faascinator?branch=main&edit_uri=/blob/main/'
+#        imports: [ README.md, docs/* ]   
+  - redirects:
+     redirect_maps:
+        
+# Markdown
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: '#'
+  - attr_list
