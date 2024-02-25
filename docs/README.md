@@ -1,8 +1,14 @@
 # Gradle Community
 
-This is an open-source repository for all Gradle community
+This is an open-source site for all Gradle community
 matters, including governance, artwork, events, and public infrastructure.
-We also use it for tracking issues and initiatives related to the community's growth and ecosystem.
+Anyone is welcome to participate and to extend the website and
+the underlying [gradle/community](https://github.com/gradle/community) repository,
+which is also used for tracking of community initiatives.
+
+> **DICLAIMER:** This website is experimental, and under active development.
+> Please report any issues to [gradle/community/issues](https://github.com/gradle/community/issues),
+> all pull requests will be appreciated too!
 
 ## Resources
 
