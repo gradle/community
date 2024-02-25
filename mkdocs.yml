@@ -98,7 +98,7 @@ extra:
 nav:
   - Home: README.md
   - Participate:
-    - Contributing: contributing/README.md
+    - Getting Started: contributing/README.md
     - Contribute to Gradle Build Tool: gradle/CONTRIBUTING.md 
     - Contributing to GBT Docs: gradle/platforms/documentation/docs/README.md
     - Reporting Vulnerabilities: dotgithub/SECURITY.md
