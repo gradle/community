@@ -62,7 +62,8 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    text: Lato Lite
+    # TODO: use the site's scheme
+    # text: Lato Lite
     code: Roboto Mono
   favicon: images/logos/gradle.svg
   logo: images/logos/gradle.svg
@@ -120,8 +121,7 @@ plugins:
   - macros
   - mkdocs-pdf
   # OpenGraphs
-#  - social:
-      # custom_layouts_dir is commercial feature
+  - social
 #  - multirepo:
       # TODO: Change to True once works
 #      cleanup: false
