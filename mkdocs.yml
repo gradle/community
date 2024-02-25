@@ -117,6 +117,9 @@ nav:
     - Developer Tools:
       - Gradle Profiler: gradle-profiler/README.md
       - Gradle Doctor: gradle-doctor/docs/index.md
+  - Events:
+      - Events Overview: events/README.md
+      - Google Summer of Code: events/gsoc/README.md
   - Resources:
     - Resources: resources/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
