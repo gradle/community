@@ -19,8 +19,7 @@ Official listing on the website
   ([Slack History Archive](https://www.linen.dev/s/gradle-community))
 - [Gradle Forums](https://discuss.gradle.org/) (Discourse)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/gradle) (`#gradle` tag)
-- [GitHub](https://github.com/gradle/gradle) (`@gradle`) -
-  we do not have GitHub discussions, but there are issues where a discussion may happen
+- [GitHub](https://github.com/gradle/gradle) (`@gradle`)
 
 Social media:
 
@@ -32,7 +31,8 @@ Social media:
 
 ## Contributing
 
-See the [Community Resources](https://gradle.org/resources/) for the links to the contributing guidelines.
 All contributions are welcome!
-If you want to contribute anything to this repository,
+See the [Contributing Guidelines](./contributing/README.md) for the links to specific resources and guidelines.
+
+If you want to contribute anything to this `gradle/community` repository,
 just submit a pull request.
