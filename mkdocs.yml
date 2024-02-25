@@ -109,6 +109,7 @@ nav:
     - Declarative Gradle: projects/declarative-gradle/README.md
     - Gradle Profiler: gradle-profiler/README.md
     - GitHub Actions: github-actions/README.md
+    - GradleX: gradlex/index.md
   - Resources:
     - Resources: resources/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
@@ -142,12 +143,15 @@ plugins:
       - name: gradle
         import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
         imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md" ]
-      - name: github-profiler
+      - name: gradle-profiler
         import_url: 'https://github.com/gradle/gradle-profiler?branch=master&edit_uri=/blob/master/'
         imports: [ "README.md" ]
       - name: github-actions
         import_url: 'https://github.com/gradle/github-actions?branch=main&edit_uri=/blob/main/'
         imports: [ "README.md", "doc/*" ]
+      - name: gradlex
+        import_url: 'https://github.com/gradlex-org/gradlex-org.github.io?branch=main&edit_uri=/blob/main/'
+        imports: [ "index.md", "favicon.png" ]
   - redirects:
      redirect_maps:
         
