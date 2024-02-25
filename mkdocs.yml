@@ -105,11 +105,17 @@ nav:
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
   - Key Projects:
     - Key Projects: projects/README.md
-    - Gradle Build Tool: gradle/README.md
-    - Declarative Gradle: projects/declarative-gradle/README.md
-    - Gradle Profiler: gradle-profiler/README.md
-    - GitHub Actions: github-actions/README.md
-    - GradleX: gradlex/index.md
+    - Core:
+      - Gradle Build Tool: gradle/README.md
+      - Declarative Gradle: projects/declarative-gradle/README.md
+      - Gradle X: gradlex/index.md
+      - Gradle Build Tool: build-server-for-gradle/README.md
+    - Integrations:
+      - GitHub Actions: github-actions/README.md
+      - VS Code: vscode-gradle/README.md
+    - Developer Tools:
+      - Gradle Profiler: gradle-profiler/README.md
+      - Gradle Doctor: gradle-doctor/docs/index.md
   - Resources:
     - Resources: resources/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
@@ -152,6 +158,15 @@ plugins:
       - name: gradlex
         import_url: 'https://github.com/gradlex-org/gradlex-org.github.io?branch=main&edit_uri=/blob/main/'
         imports: [ "index.md", "favicon.png" ]
+      - name: gradle-doctor
+        import_url: 'https://github.com/runningcode/gradle-doctor?branch=master&edit_uri=/blob/master/'
+        imports: [ "docs/*" ]
+      - name: build-server-for-gradle
+        import_url: 'https://github.com/microsoft/build-server-for-gradle?branch=develop&edit_uri=/blob/develop/'
+        imports: [ "*.md", "images/*" ]
+      - name: vscode-gradle
+        import_url: 'https://github.com/microsoft/vscode-gradle?branch=develop&edit_uri=/blob/develop/'
+        imports: [ "*.md", "images/*" ]
   - redirects:
      redirect_maps:
         
