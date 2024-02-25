@@ -21,14 +21,15 @@
 /*
 .md-nav__item--section>.md-nav__link[for] {
     color: var(--gradle-blue-lite);
-}
-
-.md-nav__item--active > nav > ul > li > a > span {
-    color: var(--gradle-blue);
 }*/
 
+.md-nav__link--active > span {
+    color: var(--gradle-blue);
+    font-weight: bold;
+}
+
 .md-typeset h1 {
-    color: var(--gradle-blue); 
+    color: var(--gradle-blue);
 }
 
 h2 {
