@@ -41,4 +41,4 @@ All contributions are welcome!
 See the [Contributing Guidelines](./contributing/README.md) for the links to specific resources and guidelines.
 
 If you want to contribute anything to this `gradle/community` repository,
-just submit a pull request.
+see [this page](./CONTRIBUTING.md).

@@ -101,6 +101,7 @@ nav:
     - Getting Started: contributing/README.md
     - Contribute to Gradle Build Tool: gradle/CONTRIBUTING.md 
     - Contributing to GBT Docs: gradle/platforms/documentation/docs/README.md
+    - Contributing to the Community Site: CONTRIBUTING.md
     - Reporting Vulnerabilities: dotgithub/SECURITY.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
   - Key Projects:
@@ -141,7 +142,7 @@ plugins:
   # OpenGraphs
   - social
   - group:
-      enabled: true
+      enabled: !ENV [FULL_BUILD, true]
       plugins:  
       - multirepo:
           cleanup: false
