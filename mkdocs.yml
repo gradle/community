@@ -105,11 +105,12 @@ nav:
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
   - Key Projects:
     - Key Projects: projects/README.md
-    - Gradle Build Tool: dotgithub/CODE_OF_CONDUCT.md
+    - Gradle Build Tool: gradle/README.md
     - Declarative Gradle: projects/declarative-gradle/README.md
     - Gradle Profiler: gradle-profiler/README.md
     - GitHub Actions: github-actions/README.md
   - Resources:
+    - Resources: resources/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
 #  - Resources:
 #    - Gradle Docs: https://docs.gradle.org/
