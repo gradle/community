@@ -1,4 +1,15 @@
-# Gradle in Google Summer of Code (GSoC)
+---
+title: "Gradle in Google Summer of Code"
+description: >
+  Gradle has participated in Google Summer of Code since 2023.
+  We invite 
+---
+
+[Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/) is a global,
+online program focused on bringing new contributors into open source software development.
+GSoC Contributors work with an open source organization on a 12+ week programming project
+under the guidance of mentors.
+Gradle has participated in GSoC since 2023.
 
 ## GSoC 2024
 
@@ -23,6 +34,30 @@ So far we have submitted the relevant project ideas as a part of two foundations
 - [Eclipse and Gradle Build Server](https://gitlab.eclipse.org/eclipsefdn/emo-team/gsoc-at-the-ef/-/issues/5) -
   Eclipse Foundation, Medium or Hard difficulty, 175 hrs or 350 hrs
 
+### For Contributors/Mentees
+
+See the project descriptions for references to particular newcomer-friendly issues or
+learning scenarios.
+If nothing is available there, it is recommended to start learning Gradle basics, if you aren't already familiar with them.
+Then, we recommend looking into some of the newcomer-friendly issues in the target project or in Gradle as whole.
+Prior track of contributions during the application phase is important during the project proposal reviews,
+because it helps us to build impression about the candidate.
+
+To get started:
+
+1. Join the `#gsoc` channel on the Gradle community Slack.
+  If there're such channels in the foundations, please join them too
+2. Explore the [Getting Started with Gradle](https://docs.gradle.org/current/userguide/getting_started_eng.html) with Gradle and the relevant [topic-specific Gradle Guides](https://gradle.org/guides/)
+3. Check out the [contributing guidelines](../../contributing/README.md), try addressing some of the newcomer friendly issues
+4. Discuss the project ideas with your mentors on the public channels
+
+References:
+
+- [Official GSoC website](https://summerofcode.withgoogle.com/) -
+  all official guidelines are here. Please refer there about eligibility, stipend, and other similar matters managed by Google during the GSoC program
+- [Best practices for GSoC contributors](https://www.jenkins.io/projects/gsoc/students/),
+  by the Jenkins community - we will be using a similar framework
+
 ### For Mentors
 
 We invite Gradle community members, if they are interested in mentoring, to submit their project ideas.
@@ -34,7 +69,8 @@ but remains interesting to you and valuable to the Gradle community.
 
 References:
 
-- [Jenkins mentor guide](https://www.jenkins.io/projects/gsoc/mentors/)-
+- [GSoC website](https://summerofcode.withgoogle.com/)
+- [Jenkins mentor guide](https://www.jenkins.io/projects/gsoc/mentors/) -
   Realistic expectations from mentors which we maintain in the Jenkins project
 - [Mentorship Programs. Growing new community leaders](https://speakerdeck.com/onenashev/mentorship-programs-growing-new-team-and-community-leaders) -
   a presentation by Oleg Nenashev on mentorship programs
