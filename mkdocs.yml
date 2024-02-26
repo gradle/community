@@ -100,8 +100,10 @@ nav:
   - Participate:
     - Getting Started: contributing/README.md
     - Contribute to Gradle Build Tool: gradle/CONTRIBUTING.md 
-    - Contributing to GBT Docs: gradle/platforms/documentation/docs/README.md
-    - Contributing to the Community Site: CONTRIBUTING.md
+    - Contributing to Documentation:
+      - Overview: contributing/documentation/README.md
+      - Gradle Build Tool Docs: gradle/platforms/documentation/docs/README.md
+      - Community Site docs: CONTRIBUTING.md
     - Reporting Vulnerabilities: dotgithub/SECURITY.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
   - Key Projects:
