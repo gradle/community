@@ -6,7 +6,7 @@ copyright: Copyright &copy; 2024 - Gradle Inc., and all contributors
 docs_dir: docs
 repo_url: https://github.com/gradle/community
 repo_name: Gradle Community repo
-edit_uri: edit/main/
+edit_uri: edit/main/docs/
 site_url: https://gradle.github.io/community
 
 # Build
