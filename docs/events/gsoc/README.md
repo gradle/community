@@ -45,7 +45,7 @@ because it helps us to build impression about the candidate.
 
 To get started:
 
-1. Join the `#gsoc` channel on the Gradle community Slack.
+1. Join the `#gsoc` channel on the [Gradle community Slack](https://gradle.org/slack-invite).
   If there're such channels in the foundations, please join them too
 2. Explore the [Getting Started with Gradle](https://docs.gradle.org/current/userguide/getting_started_eng.html) with Gradle and the relevant [topic-specific Gradle Guides](https://gradle.org/guides/)
 3. Check out the [contributing guidelines](../../contributing/README.md), try addressing some of the newcomer friendly issues
