@@ -6,7 +6,7 @@ Anyone is welcome to participate and to extend the website and
 the underlying [gradle/community](https://github.com/gradle/community) repository,
 which is also used for tracking of community initiatives.
 
-> **DICLAIMER:** This website is experimental, and under active development.
+> **DISCLAIMER:** This website is experimental, and under active development.
 > Please report any issues to [gradle/community/issues](https://github.com/gradle/community/issues),
 > all pull requests will be appreciated too!
 
