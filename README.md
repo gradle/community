@@ -36,3 +36,10 @@ See the [Community Resources](https://gradle.org/resources/) for the links to th
 All contributions are welcome!
 If you want to contribute anything to this repository,
 just submit a pull request.
+
+## Credits
+
+- [SHIMADA Kento](https://github.com/hitsumabushi845) -
+ for the DevContainers template:
+ [MkDocs-with-Remote-Containers](https://github.com/hitsumabushi845/MkDocs-with-Remote-Containers),
+ distributed under the [MIT License](.devcontainer/LICENSE.txt)

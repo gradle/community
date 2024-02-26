@@ -16,19 +16,27 @@ and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material).
 So, it uses the Python technology stack instead of Gradle,
 but on the other hand we're leveraging one of the most powerful documentation engines.
 
+## Preparing the environment
+
+It is possible to deploy the site instance locally or inside a Dev Container.
+
+### Dev Container
+
+This repository includes the Dev Container definition that you can use in Visual Studio Code or in IntelliJ Platform
+to spin up the local development environment.
+
+###  Running locally
+
 Requirements:
 
 - Python3 and PiP (Python's package manager), recent versions
 - Linux, MacOS or Windows WSL-2 environment.
   Windows native may work but it is not tested.
 
-## Preparing the environment
-
-Soon we plan to provide a DevContainer to speedup the process.
 For now, you need to install the dependencies:
 
 ```shell
-pip install -r requirements.txt
+pip install -r .devcontainer/requirements.txt
 mkdocs build
 ```
 
