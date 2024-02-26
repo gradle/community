@@ -1,4 +1,10 @@
-# Gradle Community Site
+---
+title: "Gradle Community Site"
+docs-wide: true
+description: >
+  This is an open-source site for all Gradle community matters
+  including governance, artwork, events, and public infrastructure.
+---
 
 This is an open-source site for all Gradle community
 matters, including governance, artwork, events, and public infrastructure.
