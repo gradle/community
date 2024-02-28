@@ -2,7 +2,14 @@ site_name: Gradle Community Site
 site_description: >-
   This is an open-source site for all Gradle community matters,
   including governance, artwork, events, and public infrastructure.
-copyright: Copyright &copy; 2024 - Gradle Inc., and all contributors
+copyright: >
+  For content - Copyright &copy; 2024 - All contributors to the repository and included components. 
+  The original content licenses and copyrights from the included repositories are preserved,
+  you can find them in the linked repositories.
+
+  The GRADLE trademark is the property of Gradle, Inc.
+  Use of the term GRADLE on this website and any content and/or materials available through this website is
+  for identification purposes only and does not imply sponsorship or endorsement by Gradle, Inc.
 docs_dir: docs
 repo_url: https://github.com/gradle/community
 repo_name: Gradle Community repo
