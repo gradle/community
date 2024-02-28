@@ -106,6 +106,7 @@ nav:
   - Home: README.md
   - Participate:
     - Getting Started: contributing/README.md
+    - Community Slack: contributing/community-slack.md
     - Contribute to Gradle Build Tool: gradle/CONTRIBUTING.md 
     - Contributing to Documentation:
       - Overview: contributing/documentation/README.md

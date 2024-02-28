@@ -30,9 +30,9 @@ This is a main channel for Q&A and quick discussions.
 - [Join the Community Slack](https://gradle.org/slack-invite)
 - Use the `#contributing` channel if you need any help with contributing
   changes to gradle and getting them over the line.
+- We have a searchable Slack archive [here](https://www.linen.dev/s/gradle-community).
 
-We use a free account, so the Slack history is limited to 3 months.
-We keep the searchable Slack archive [here](https://www.linen.dev/s/gradle-community).
+Learn more about Slack and the communication best practices on [this page](./community-slack.md).
 
 ### Gradle Forums
 
