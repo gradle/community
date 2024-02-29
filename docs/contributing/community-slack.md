@@ -39,14 +39,30 @@ For other cases, other channels might be preferable:
    it is better to make proposals on Gradle Forums on Discourse: [discuss.gradle.org](https://discuss.gradle.org).
    You can still use Slack to facilitate the discussion
 
+### Avoid direct messages for Q&A
+
+We operate in a public community and encourage sharing of information and feedback,
+so that everyone can benefit from the question and answer.
+We do not normally provide individual and private support in the community channels.
+If you need that, consider contacting one of the [professional services providers](https://gradle.org/services/).
+
+Please abstain from sending direct messages (DMs) unless you have a confidential issue,
+for example, if you suspect a security vulnerability,
+or want to discuss something personal.
+DMing someone with a generic question is not considered appropriate in the community,
+and regular misuse of DMs may be a subject for a [Code of Conduct](https://gradle.org/conduct/) review.
+
+The same recommendation goes for pending pull requests.
+It is better to send reminders in public group channels
+unless there is a specific reviewer or maintainer who took an action item.
+
 ### Asking questions on Slack
 
-We use the Slack workspace for community support,
-and most of the support requests are handled by volunteers.
+Most of the support requests are handled by volunteers.
 Hence, let's help them to navigate and respond to questions.
 And, as everywhere, please be kind and patient!
 
-- Use threads for discussions and responding to questions
+- Use threads for discussions and responding to questions.
 - Avoid posting the same question on multiple channels.
   One channel is enough, and if needed to repost to another channel, post the link to avoid duplication.
 - Avoid sending welcome/hi messages without a question.
@@ -57,6 +73,9 @@ And, as everywhere, please be kind and patient!
 - For short messages, use emojis when convenient: `:+1:`, `:-1:`, `:ok:`, etc.
 - Do not hesitate to edit an opening message or the context messages based on the discoveries
   It is better than reposting the whole message.
+- Do **NOT** ping to get an answer faster and avoid individual mentions,
+  unless it is a very special topic that really needs an answer from specifically that person.
+  It may easily take 1-2 days to get a response for a substantial problem.
 
 Slack moderators may warn you and ask to amend the messages,
 and, in some cases, they may also edit or delete the messages as a last resort,
