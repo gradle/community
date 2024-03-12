@@ -1,0 +1,203 @@
+site_name: Gradle Community Sub-site
+site_description: >-
+  This is an open-source site for all Gradle community matters,
+  including governance, artwork, events, and public infrastructure.
+copyright: >
+  For content - Copyright &copy; 2024 - All contributors to the repository and included components. 
+  The original content licenses and copyrights from the included repositories are preserved,
+  you can find them in the linked repositories.
+
+  The GRADLE trademark is the property of Gradle, Inc.
+  Use of the term GRADLE on this website and any content and/or materials available through this website is
+  for identification purposes only and does not imply sponsorship or endorsement by Gradle, Inc.
+docs_dir: docs
+repo_url: https://github.com/gradle/community
+repo_name: Gradle Community repo
+edit_uri: edit/main/docs/
+site_url: https://gradle.org/community
+
+# Build
+site_dir: _site
+
+# Theme
+theme:
+  name: material
+  highlightjs: true
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.footer
+    # NOT compatible qith toc.integrate
+    # - navigation.indexes
+    - navigation.path
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.expand
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette: 
+    
+    - scheme: default
+      media: "(prefers-color-scheme: light)"
+      primary: custom
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    - scheme: slate
+      media: "(prefers-color-scheme: dark)"
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    # TODO: use the site's scheme
+    # text: Lato Lite
+    code: Roboto Mono
+  favicon: images/logos/gradle.svg
+  logo: images/logos/gradle.svg
+  icon:
+    repo: fontawesome/brands/github
+
+
+extra_css:
+  - assets/css/gradle.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/slack
+      link: https://gradle.org/slack-invite
+      name: Slack 
+    - icon: fontawesome/brands/github
+      link: https://github.com/gradle
+      name: GitHub
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/gradle
+      name: Twitter/X
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/gradle
+      name: LinkedIn
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@Gradle
+      name: Mastodon
+#  analytics:
+#    provider: google
+#    property: TODO
+  
+nav:
+  - Home: README.md
+  - Participate:
+    - Getting Started: contributing/README.md
+    - Community Slack: contributing/community-slack.md
+    - Contribute to Gradle Build Tool: gradle/CONTRIBUTING.md 
+    - Contributing to Documentation:
+      - Overview: contributing/documentation/README.md
+      - Gradle Build Tool Docs: gradle/platforms/documentation/docs/README.md
+      - Community Site docs: CONTRIBUTING.md
+    - Reporting Vulnerabilities: dotgithub/SECURITY.md
+    - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
+  - Key Projects:
+    - Key Projects: projects/README.md
+    - Core:
+      - Gradle Build Tool: gradle/README.md
+      - Declarative Gradle: projects/declarative-gradle/README.md
+      - Gradle X: gradlex/index.md
+      - Gradle Build Tool: build-server-for-gradle/README.md
+    - Integrations:
+      - GitHub Actions: github-actions/README.md
+      - VS Code: vscode-gradle/README.md
+    - Developer Tools:
+      - Gradle Profiler: gradle-profiler/README.md
+      - Gradle Doctor: gradle-doctor/docs/index.md
+  - Events:
+      - Events Overview: events/README.md
+      - Google Summer of Code: events/gsoc/README.md
+  - Resources:
+    - Resources: resources/README.md
+    - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
+#  - Resources:
+#    - Gradle Docs: https://docs.gradle.org/
+#    - Blog: https://blog.gradle.org/
+#    - Newsletter: https://newsletter.gradle.org/
+#    - Releases: https://gradle.org/releases
+#    - Plugin Portal: https://plugins.gradle.org/
+#    - Slack Archive: https://www.linen.dev/s/gradle-community
+#    - Stack Overflow: https://stackoverflow.com/questions/tagged/gradle
+#  - Commercial:
+#    - Develocity: https://gradle.com/develocity
+#    - Service Providers: https://gradle.org/services/
+#    - Training: https://gradle.org/courses
+    
+plugins:
+  - search
+  - autorefs
+# FIXME: Collision on GitHub Actions, to be fixed later
+#  - macros
+  - mkdocs-pdf
+  # OpenGraphs
+  - social
+  - group:
+      enabled: !ENV [FULL_BUILD, true]
+      plugins:  
+      - multirepo:
+          cleanup: false
+          keep_docs_dir: true
+          nav_repos:
+          - name: dotgithub
+            import_url: 'https://github.com/gradle/.github?branch=master&edit_uri=/blob/master/'
+          - name: gradle
+            import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
+            imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md" ]
+          - name: gradle-profiler
+            import_url: 'https://github.com/gradle/gradle-profiler?branch=master&edit_uri=/blob/master/'
+            imports: [ "README.md" ]
+          - name: github-actions
+            import_url: 'https://github.com/gradle/actions?branch=main&edit_uri=/blob/main/'
+            imports: [ "README.md", "*" ]
+          - name: gradlex
+            import_url: 'https://github.com/gradlex-org/gradlex-org.github.io?branch=main&edit_uri=/blob/main/'
+            imports: [ "index.md", "favicon.png" ]
+          - name: gradle-doctor
+            import_url: 'https://github.com/runningcode/gradle-doctor?branch=master&edit_uri=/blob/master/'
+            imports: [ "docs/*" ]
+          - name: build-server-for-gradle
+            import_url: 'https://github.com/microsoft/build-server-for-gradle?branch=develop&edit_uri=/blob/develop/'
+            imports: [ "*.md", "images/*" ]
+          - name: vscode-gradle
+            import_url: 'https://github.com/microsoft/vscode-gradle?branch=develop&edit_uri=/blob/develop/'
+            imports: [ "*.md", "images/*" ]
+  - redirects:
+     redirect_maps:
+        
+# Markdown
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: '#'
+  - attr_list
