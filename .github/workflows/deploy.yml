@@ -52,7 +52,7 @@ jobs:
           path: "_site/"
 
       - name: Build the docs site for gradle.org
-        run: mkdocs build -f mkdics-dotorg.yml
+        run: mkdocs build -f mkdocs-dotorg.yml
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
