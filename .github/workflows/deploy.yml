@@ -58,7 +58,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           name: dotorg-site
-          path: "_dotorg-site/"
+          path: "_dotorg_site/"
 
   # Deployment job
   deploy:
