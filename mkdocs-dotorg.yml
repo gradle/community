@@ -118,7 +118,7 @@ nav:
     - Key Projects: projects/README.md
     - Core:
       - Gradle Build Tool: gradle/README.md
-      - Declarative Gradle: projects/declarative-gradle/README.md
+      - Declarative Gradle: declarative-gradle/README.md
       - Gradle X: gradlex/index.md
       - Gradle Build Tool: build-server-for-gradle/README.md
     - Integrations:
@@ -172,6 +172,9 @@ plugins:
           - name: github-actions
             import_url: 'https://github.com/gradle/actions?branch=main&edit_uri=/blob/main/'
             imports: [ "README.md", "*" ]
+          - name: declarative-gradle
+            import_url: 'https://github.com/gradle/declarative-gradle?branch=main&edit_uri=/blob/main/'
+            imports: [ "README.md", "**/README.md" ]
           - name: gradlex
             import_url: 'https://github.com/gradlex-org/gradlex-org.github.io?branch=main&edit_uri=/blob/main/'
             imports: [ "index.md", "favicon.png" ]
