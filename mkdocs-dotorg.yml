@@ -17,7 +17,7 @@ edit_uri: edit/main/docs/
 site_url: https://gradle.org/community
 
 # Build
-site_dir: _site
+site_dir: _dotorg_site
 
 # Theme
 theme:

@@ -46,8 +46,19 @@ jobs:
         run: mkdocs build
 
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v1
+        with:
+          name: github-pages
+          path: "_site/"
+
+      - name: Build the docs site for gradle.org
+        run: mkdocs build -f mkdics-dotorg.yml
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          name: dotorg-site
+          path: "_dotorg-site/"
 
   # Deployment job
   deploy:
