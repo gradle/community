@@ -71,7 +71,7 @@ theme:
   font:
     # TODO: use the site's scheme
     # text: Lato Lite
-    code: Roboto
+    code: Roboto Mono
   favicon: images/logos/gradle.svg
   logo: images/logos/gradle.svg
   icon:
