@@ -113,6 +113,7 @@ nav:
       - Gradle Build Tool Docs: gradle/platforms/documentation/docs/README.md
       - Community Site docs: CONTRIBUTING.md
     - Reporting Vulnerabilities: dotgithub/SECURITY.md
+    - Public Roadmap: roadmap/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
   - Key Projects:
     - Key Projects: projects/README.md
@@ -132,6 +133,7 @@ nav:
       - Google Summer of Code: events/gsoc/README.md
   - Resources:
     - Resources: resources/README.md
+    - Public Roadmap: roadmap/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
 #  - Resources:
 #    - Gradle Docs: https://docs.gradle.org/
@@ -166,6 +168,9 @@ plugins:
           - name: gradle
             import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
             imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md" ]
+          - name: roadmap
+            import_url: 'https://github.com/gradle/build-tool-roadmap?branch=main&edit_uri=/blob/main/'
+            imports: [ "README.md" ]
           - name: gradle-profiler
             import_url: 'https://github.com/gradle/gradle-profiler?branch=master&edit_uri=/blob/master/'
             imports: [ "README.md" ]
