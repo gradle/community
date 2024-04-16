@@ -33,7 +33,7 @@ We recommend using Slack as a channel for real-time communications that are rela
 and can be safely archived after 1-2 months.
 For other cases, other channels might be preferable:
 
-1. If you suspect a security issue in Gradle Buiuld Tool, plugins, its infrastructure, or other components,
+1. If you suspect a security issue in Gradle Build Tool, plugins, its infrastructure, or other components,
    please avoid discussing it in public.
    Follow the [Gradle Vulnerability Disclosure Policy](../dotgithub/SECURITY/README.md) so that we can triage the issue and protect other Gradle users.
 3. If you want to report a confirmed and reproducible issue with Gradle Build Tool or other component,
