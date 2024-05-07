@@ -1,44 +1,53 @@
 
 # GSoC 2024. Gradle Build Server - DevX and Language Support in Buildship
 
-- **Project GitLab** - https://gitlab.eclipse.org/eclipsefdn/emo-team/gsoc-at-the-ef/-/issues/5
-- **Proposal** - https://docs.google.com/document/d/1ptbZvt8_dW0bgUAZfh7m-Oo3RtC4XTiY9frIrf2_OBQ/edit?usp=sharing 
+## Goal/Objective
+- Implement a fully powered version of Gradle BSP for Eclipse Buildship to support DevX & Language Support in Buildship.
+- We will add more functionalities to the existing BSP Implementation for providing the required support in Eclipse Buildship.
 
-With the introduction of Build Server for Gradle in VS Code as a combined initiative between Microsoft & Gradle in 2023 which focused mainly on providing correct classpath for Java Projects, the following issues were addressed : 
+## Status
+Selected
 
-* Compiled files are output to the ‘bin’ directory, which differs from Gradle project’s default output location.
-* Support for code generation, such as Annotation Processing, is suboptimal.
-
-However, there’s a lot of potential in extending this build server. This project aims to extend this implementation to provide comprehensive support for Gradle features using the Build Server approach. The additional IDE agnostic build server capabilities proposed in this project will provide the following support :
-
-* Describe the Gradle Build structure, allowing easy integration to project imports
-* Execute tasks with cancellation support
-* Execute tests
-* Support additional languages
-
-We will also implement the new fully-powered Gradle BSP for Eclipse Buildship
-
-
-## Authors
-
+## Team
+#### Authors
 - [@Sidhaarthsr](https://github.com/Sidhaarthsr)
 
-## Mentors
-
+#### Mentors
 - [@oleg-nenashev](https://github.com/oleg-nenashev)
 - [@donat](https://github.com/donat)
 - [@reinsch82](https://github.com/reinsch82)
 - [@hegyibalint](https://github.com/hegyibalint)
 - [@jdneo](https://github.com/jdneo)
 
-## Repositories
+## Rationale
+The Eclipse buildship currently orchestrates the Gradle Build Tasks directly without using the BSP Interface. The Build Server Protocol promises excellent, pluggable, IDE agnostic tooling for build systems. Recently, a new Build Server for Gradle (Gradle BSP) has been published. Its current functionality, however, is focused only on the Visual Studio Code integration to provide correct classpath for Java projects and optimal support for Code Generation, such as Annotation Processing. However, There’s a lot of potential in extending this build server. 
 
-- [@build-server-for-gradle](https://github.com/microsoft/build-server-for-gradle)
-- [@Eclipse_Buildship](https://github.com/eclipse/buildship)
+**A more complete implementation should be able to**:
+- Describe the Gradle build structure, allowing easy integration to project import
+- Execute tasks with cancellation support
+- Execute tests
+- Support additional languages
 
+## Implementation
 
-## Architecture - BSP Gradle
+**Eclipse Buildship** - In the updated implementation, the Eclipse Buildship plugin will use the fully-powered BSP Gradle interface to orchestrate all the Gradle Build tasks. In order to leverage Gradle BSP interface, the Eclipse Buildship plugin will use the requests defined in the BSP interface to orchestrate build tasks in Gradle and will process notifications returned by the Build Server for those BSP requests accordingly.
 
-![Architecture Image](https://raw.githubusercontent.com/Sidhaarthsr/gradle-bsp-resources/main/img/BSP_Gradle_Architecture.jpg)
+**Extending Gradle Build Server Capabilities** - We will extend the capabilities of the Gradle BSP Server by implementing the requests that are unsupported in the current BSP Implementation for VS Code.
 
-**NOTE :** The items in blue indicate the newer components indicate the component built as part of this initiative.
+## Deliverables
+
+The Eclipse Buildship plugin with updated code that uses the requests implemented in the BSP Interface to orchestrate the Build Tasks in Gradle projects. We'll reuse the existing BSP requests and implement the newer BSP requests in microsoft's build-server-for-gradle repository.
+
+**The following BSP requests implemented in microsoft's build-server-for-gradle repository:** 
+- buildTarget/run
+- buildTarget/test
+- buildTarget/inverseSources
+- debugSession/start
+
+The Eclipse buildship client will be equipped with capabilities to process all possible BSP notifications returned by the Build Server to facilitate support for the targeted requirements.
+
+## Links
+- [Contributor Proposal](https://docs.google.com/document/d/1ptbZvt8_dW0bgUAZfh7m-Oo3RtC4XTiY9frIrf2_OBQ/edit?usp=sharing)
+- [Project Proposal](https://gitlab.eclipse.org/eclipsefdn/emo-team/gsoc-at-the-ef/-/issues/5)
+- [Eclipse Buildship](Placeholder)
+- [Gradle BSP Enhancements](Placeholder)
