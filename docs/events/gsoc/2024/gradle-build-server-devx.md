@@ -34,6 +34,10 @@ The Eclipse buildship currently orchestrates the Gradle Build Tasks directly wit
 
 **Extending Gradle Build Server Capabilities** - We will extend the capabilities of the Gradle BSP Server by implementing the requests that are unsupported in the current BSP Implementation for VS Code.
 
+## Target Repositories
+- [Eclipse Buildship](https://github.com/eclipse/buildship)
+- [Microsoft Build Server For Gradle](https://github.com/microsoft/build-server-for-gradle)
+
 ## Deliverables
 
 The Eclipse Buildship plugin with updated code that uses the requests implemented in the BSP Interface to orchestrate the Build Tasks in Gradle projects. We'll reuse the existing BSP requests and implement the newer BSP requests in microsoft's build-server-for-gradle repository.
