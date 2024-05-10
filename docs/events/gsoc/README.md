@@ -23,8 +23,20 @@ We have 3 projects this year:
 
 ## Communication channels
 
+Project channels:
+
+- `#gradle-build-server` on the [Gradle Community Slack](https://gradle.org/slack-invite)
+- `#checkstyle-plugin` on the [Gradle Community Slack](https://gradle.org/slack-invite)
+
+Coordination:
+
 - `#gsoc` on the [Gradle Community Slack](https://gradle.org/slack-invite)
 - `#gsoc` on the [Kotlin Foundation Slack](https://kotlinlang.org/community/)
+- The Eclipse Foundation uses Matrix for instant messaging. The service is available at [chat.eclipse.org](https://chat.eclipse.org/).
+
+## Resources
+
+- [Coordination Meeting Notes and Recordings](https://drive.google.com/drive/folders/19PAIb36Bm_9Y300oJ_2JBMFU6kjOwNvX?usp=drive_link)
 
 ### For Contributors/Mentees
 
