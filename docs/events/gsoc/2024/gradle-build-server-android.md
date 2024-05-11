@@ -1,4 +1,4 @@
-# Gradle Build Server – support for Android projects
+# GSoC 2024. Gradle Build Server – support for Android projects
 
 This project aims to enhance [Build Server for Gradle](https://github.com/microsoft/build-server-for-gradle) from Microsoft by integrating powerful Android Studio features. Bridging the gap between Android Studio and [Build Server for Gradle](https://github.com/microsoft/build-server-for-gradle), will significantly improve the development experience for many Android developers using IDEs based on [Build Server Protocol (BSP)](https://build-server-protocol.github.io).
 
@@ -19,9 +19,11 @@ Accepted
 
 ### Mentors
 
-- [@oleg-nenashev](https://github.com/oleg-nenashev)
 - [@donat](https://github.com/donat)
 - [@hegyibalint](https://github.com/hegyibalint)
+- [@jdneo](https://github.com/jdneo)
+- [@reinsch82](https://github.com/reinsch82)
+- [@oleg-nenashev](https://github.com/oleg-nenashev) as community advisor
 
 ## Rationale
 
