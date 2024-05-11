@@ -6,18 +6,19 @@
 - We will add more functionalities to the existing BSP Implementation for providing the required support in Eclipse Buildship.
 
 ## Status
-Selected
+Active (community bonding)
 
 ## Team
 #### Authors
 - [@Sidhaarthsr](https://github.com/Sidhaarthsr)
 
 #### Mentors
-- [@oleg-nenashev](https://github.com/oleg-nenashev)
+
 - [@donat](https://github.com/donat)
-- [@reinsch82](https://github.com/reinsch82)
-- [@hegyibalint](https://github.com/hegyibalint)
 - [@jdneo](https://github.com/jdneo)
+- [@hegyibalint](https://github.com/hegyibalint)
+- [@reinsch82](https://github.com/reinsch82)
+- [@oleg-nenashev](https://github.com/oleg-nenashev) (as community advisor)
 
 ## Rationale
 The Eclipse buildship currently orchestrates the Gradle Build Tasks directly without using the BSP Interface. The Build Server Protocol promises excellent, pluggable, IDE agnostic tooling for build systems. Recently, a new Build Server for Gradle (Gradle BSP) has been published. Its current functionality, however, is focused only on the Visual Studio Code integration to provide correct classpath for Java projects and optimal support for Code Generation, such as Annotation Processing. However, There’s a lot of potential in extending this build server. 
