@@ -13,6 +13,7 @@ Selected
 
 #### Mentors
 - [@oleg-nenashev](https://github.com/oleg-nenashev)
+- Looking for more mentors! Let us know on Slack
 
 ## Background
 - Checkstyle is a powerful tool, but currently, the Checkstyle plugin in Gradle may not support all of Checkstyle's features.
@@ -29,7 +30,7 @@ Selected
 
 ## Deliverables
 
-- Create a new branch in the project repository specifically for developing the Checkstyle plugin functionality, which will contain the code necessary for implementing and testing the Checkstyle plugin.
+- Create a new branch in the project repository, or a new fork, specifically for developing the Checkstyle plugin functionality, which will contain the code necessary for implementing and testing the Checkstyle plugin.
 
 -  Provide an enhanced version of the Gradle Checkstyle plugin. It will support additional Checkstyle features, such as code complexity, duplication, and dependency checks.
 
