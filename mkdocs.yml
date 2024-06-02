@@ -115,19 +115,19 @@ nav:
     - Reporting Vulnerabilities: dotgithub/SECURITY.md
     - Public Roadmap: roadmap/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
-  - Key Projects:
-    - Key Projects: projects/README.md
-    - Core:
-      - Gradle Build Tool: gradle/README.md
-      - Declarative Gradle: declarative-gradle/README.md
-      - Gradle X: gradlex/index.md
-      - Gradle Build Tool: build-server-for-gradle/README.md
-    - Integrations:
-      - GitHub Actions: github-actions/README.md
-      - VS Code: vscode-gradle/README.md
-    - Developer Tools:
-      - Gradle Profiler: gradle-profiler/README.md
-      - Gradle Doctor: gradle-doctor/docs/index.md
+#  - Key Projects:
+#    - Key Projects: projects/README.md
+#    - Core:
+#      - Gradle Build Tool: gradle/README.md
+#      - Declarative Gradle: declarative-gradle/README.md
+#      - Gradle X: gradlex/index.md
+#      - Gradle Build Tool: build-server-for-gradle/README.md
+#    - Integrations:
+#      - GitHub Actions: github-actions/README.md
+#      - VS Code: vscode-gradle/README.md
+#    - Developer Tools:
+#      - Gradle Profiler: gradle-profiler/README.md
+#      - Gradle Doctor: gradle-doctor/docs/index.md
   - Events:
       - Events Overview: events/README.md
       - Google Summer of Code: events/gsoc/README.md
