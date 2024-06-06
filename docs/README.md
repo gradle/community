@@ -21,6 +21,7 @@ which is also used for tracking of community initiatives.
 - [Key Projects](./projects/README.md)
 - [Events and Mentorship programs](./events/README.md)
 - [Code of Conduct](dotgithub/CODE_OF_CONDUCT.md)
+- [Gradle Cookbook](dotgithub/CODE_OF_CONDUCT.md)
 
 ## Community Channels
 
