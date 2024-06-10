@@ -104,6 +104,13 @@ extra:
   
 nav:
   - Home: README.md
+  - Cookbook:
+    - Gradle Architecture: gradle-architecture/architecture/README.md
+    - Gradle on CI:
+      - Jenkins: cookbook/ci/jenkins.md
+      - TeamCity: cookbook/ci/teamcity.md
+      - Github Actions: cookbook/ci/github-actions.md
+      - Travis CI: cookbook/ci/travis-ci.md
   - Participate:
     - Getting Started: contributing/README.md
     - Community Slack: contributing/community-slack.md
@@ -169,6 +176,9 @@ plugins:
           - name: gradle
             import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
             imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md" ]
+          - name: gradle-architecture
+            import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
+            imports: [ "architecture/*", "architecture/standards/*" ]
           - name: roadmap
             import_url: 'https://github.com/gradle/build-tool-roadmap?branch=main&edit_uri=/blob/main/'
             imports: [ "README.md" ]
