@@ -30,14 +30,7 @@ which is also used for tracking of community initiatives.
 - [Gradle Forums](https://discuss.gradle.org/) (Discourse)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/gradle) (`#gradle` tag)
 - [GitHub](https://github.com/gradle/gradle) (`@gradle`)
-
-Social media:
-
-- [LinkedIn](https://www.linkedin.com/company/gradle) company page
-- [X/Twitter](https://twitter.com/gradle) (`@gradle`)
-- [YouTube](https://www.youtube.com/channel/) (`@GradleInc`)
-- [Mastodon](https://mastodon.social/@Gradle) (`@gradle`)
-- [Facebook](https://www.facebook.com/gradleinc) (`@gradleinc`)
+- Social media: see the list [here](./contributing/spread-the-word.md)
 
 ## Resources
 
