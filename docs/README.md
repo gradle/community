@@ -17,11 +17,11 @@ which is also used for tracking of community initiatives.
 
 ## Key sections
 
+- [Gradle Cookbook](./cookbook/README.md)
 - [Participate and Contribute](./contributing/README.md) - Kernel parts, core plugins, and documentation
 - [Key Projects](./projects/README.md)
 - [Events and Mentorship programs](./events/README.md)
 - [Code of Conduct](dotgithub/CODE_OF_CONDUCT.md)
-- [Gradle Cookbook](dotgithub/CODE_OF_CONDUCT.md)
 
 ## Community Channels
 
