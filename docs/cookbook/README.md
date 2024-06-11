@@ -5,19 +5,20 @@ description: >
 ---
 
 Gradle Cookbook is an open-source collection of recipes, guides and examples for the Gradle Build Tool.
-The goal of this portal is to offer solution-based documentation for end users,
-including but not limited to key use cases like
-publishing to Maven Central,
-CI/CD tool and IDE integrations,
+This is a complementary resource to the official [Gradle User Manual](https://docs.gradle.org/current/userguide/userguide.html),
+which covers core capabilities maintained by the Gradle team.
+
+The goal of this portal is to offer solution-based documentation for end users about external integrations,
+including but not limited to 
+CI/CD tools, IDEs,
 support for languages and frameworks,
-troubleshooting Gradle Build Tool,
-etc.
+and various peripheral tools.
 
 In this document, _Gradle Build Tool_ is abbreviated _Gradle_.
 
 !!! note
     The Gradle Cookbook is under active development.
-    Its structure and links may change, and we're working on adding more content.
+    Its structure, scope and links may change, and we're working on adding more content.
     Any contributions are welcome, see the [Contributor Guide](./CONTRIBUTING.md)!
 
 ## Why and How?
