@@ -53,13 +53,12 @@ theme:
     - search.suggest
     - toc.follow
     - toc.integrate
-  palette: 
-    
+  palette:
     - scheme: default
       media: "(prefers-color-scheme: light)"
       primary: custom
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
 
     - scheme: slate
@@ -98,19 +97,20 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://mastodon.social/@Gradle
       name: Mastodon
+  analytics:
+    provider: google
+    property: G-7W7NC6YNPT
 
-analytics:
-  provider: google
-  property: G-7W7NC6YNPT
-  
 nav:
   - Home: README.md
   - Cookbook:
+    - Overview: cookbook/README.md
     - Gradle on CI:
       - Jenkins: cookbook/ci/jenkins.md
       - TeamCity: cookbook/ci/teamcity.md
       - GitHub Actions: cookbook/ci/github-actions.md
       - Travis CI: cookbook/ci/travis-ci.md
+    - Contributing: cookbook/CONTRIBUTING.md
   - Participate:
     - Getting Started: contributing/README.md
     - Community Slack: contributing/community-slack.md
@@ -144,7 +144,7 @@ nav:
 #    - Develocity: https://gradle.com/develocity
 #    - Service Providers: https://gradle.org/services/
 #    - Training: https://gradle.org/courses
-    
+
 plugins:
   - search
   - autorefs
@@ -155,7 +155,7 @@ plugins:
   - social
   - group:
       enabled: !ENV [FULL_BUILD, true]
-      plugins:  
+      plugins:
       - multirepo:
           cleanup: false
           keep_docs_dir: true
@@ -179,14 +179,15 @@ plugins:
             imports: [ "README.md", "*" ]
 
   - redirects:
-     redirect_maps:
-        
+      redirect_maps:
+
 # Markdown
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
       pygments_lang_class: true
+  - pymdownx.details
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
@@ -194,4 +195,5 @@ markdown_extensions:
       alternate_style: true
   - toc:
       permalink: '#'
+  - admonition
   - attr_list
