@@ -1,4 +1,8 @@
-# The Gradle Cookbook
+---
+title: "The Gradle Cookbook"
+description: >
+  Gradle Cookbook is an open-source collection of recipes, guides and examples for the Gradle Build Tool.
+---
 
 Gradle Cookbook is an open-source collection of recipes, guides and examples for the Gradle Build Tool.
 The goal of this portal is to offer solution-based documentation for end users,
