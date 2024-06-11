@@ -7,23 +7,33 @@ All contributions are welcome!
 
 - Join the community Slack workspace
 - Use the `#docs` channel to discuss any documentation matters
-- If your pull request gets stuck, do not hesitate to ask in `#docs` or in `#contributing` channels
+- If your pull request gets stuck, do not hesitate to ask in the `#docs` or `#contributing` channels
 
 ## Locations
 
-- [Contributing to the Gradle Build Tool documentation](../../gradle/CONTRIBUTING/#contributing-to-documentation) -
-  - This repository includes Gradle documentation sources, including but not limited to: User Manual, DSL Reference, documentation for core plugins and Javadoc
-  - Implementation: Asciidoc + custom documentation engine
+- [Gradle Build Tool - User Manual on docs.gradle.org/](https://docs.gradle.org/)
+    - This site includes main Gradle documentation sources, including but not limited to: User Manual, DSL Reference, documentation for core plugins and Javadoc
+    - Implementation: Asciidoc + custom documentation engine
+    - [Contributor Guide](../../gradle/CONTRIBUTING/#contributing-to-documentation)
+- [Gradle Cookbook](../../cookbook/README.md) - a collection of recipes, guides and examples for the Gradle Build Tool.
+    - This is an additional solution-based documentation
+    - Implementation: MkDocs + Material for MkDocs
+    - [Contributor Guide](../../cookbook/CONTRIBUTING.md)
 - Plugin documentation - Documentation for the key plugins is provided by the Gradle Build Tool repo.
   For other plugins, see their repositories for the docs and contributing guidelines.
-  - Implementation: most plugins use simple documentation pages in GitHub-flavored Markdown (`README.md`).
-- [Contributing to the Community site](../../CONTRIBUTING.md) -
-  Community resources on this website
-  - Implementation - Markdown + MkDocs
+    - Implementation: most plugins use simple documentation pages in GitHub-flavored Markdown (`README.md`).
+- [Gradle Community Site](https://community.gradle.org/) -
+  Community resources, including [Gradle Cookbook](../../cookbook/README.md) and top-level [Gradle Contributor Guide](../README.md)
+    - Implementation - Markdown + MkDocs
+    - [Contributor Guide](../../CONTRIBUTING.md)
 
 ## Tools
 
 In Gradle we use a diverse set of tooling for documentation development.
+We use both Markdown and Asciidoc for writing,
+with MkDocs, Jekyll and Gradle Asciidoc Plugin being our main tools for documentation.
+We also use other tools like Dokka, Javadoc, OpenAPI specifications, etc.
+
 Many small patches can be just submitted from the GitHub web editor.
 For bigger patches and local development, see the referenced contributing guidelines.
 
