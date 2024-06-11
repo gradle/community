@@ -17,7 +17,7 @@ and various peripheral tools.
 In this document, _Gradle Build Tool_ is abbreviated _Gradle_.
 
 !!! note
-    The Gradle Cookbook is under active development.
+    The Gradle Cookbook is under active development (see the roadmap item [here](https://github.com/gradle/community/issues/42)).
     Its structure, scope and links may change, and we're working on adding more content.
     Any contributions are welcome, see the [Contributor Guide](./CONTRIBUTING.md)!
 
