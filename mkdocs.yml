@@ -105,7 +105,6 @@ extra:
 nav:
   - Home: README.md
   - Cookbook:
-    - Gradle Architecture: gradle-architecture/architecture/README.md
     - Gradle on CI:
       - Jenkins: cookbook/ci/jenkins.md
       - TeamCity: cookbook/ci/teamcity.md
@@ -115,11 +114,13 @@ nav:
     - Getting Started: contributing/README.md
     - Community Slack: contributing/community-slack.md
     - Spread the Word: contributing/spread-the-word.md
-    - Contribute to Gradle Build Tool: gradle/CONTRIBUTING.md
+    - Contributing to Gradle Build Tool:
+      - Overview: gradle/CONTRIBUTING.md
+      - Gradle Build Tool Architecture: gradle/architecture/README.md
     - Contributing to Documentation:
       - Overview: contributing/documentation/README.md
       - Gradle Build Tool Docs: gradle/platforms/documentation/docs/README.md
-      - Community Site docs: CONTRIBUTING.md
+      - Community Site Docs: CONTRIBUTING.md
     - Reporting Vulnerabilities: dotgithub/SECURITY.md
     - Public Roadmap: roadmap/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
@@ -175,10 +176,7 @@ plugins:
             import_url: 'https://github.com/gradle/.github?branch=master&edit_uri=/blob/master/'
           - name: gradle
             import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
-            imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md" ]
-          - name: gradle-architecture
-            import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
-            imports: [ "architecture/*", "architecture/standards/*" ]
+            imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md", "architecture/*", "architecture/standards/*" ]
           - name: roadmap
             import_url: 'https://github.com/gradle/build-tool-roadmap?branch=main&edit_uri=/blob/main/'
             imports: [ "README.md" ]
