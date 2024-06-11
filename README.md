@@ -32,6 +32,9 @@ just submit a pull request.
 
 ## Credits
 
+- All Gradle contributors and community members
+- All [MkDocs](https://www.mkdocs.org/) and [Material for MkDocs](https://squidfunk.github.io/mkdocs-material) maintainers and contributors
+- Joseph Doiron and all [MkDocs Multirepo Plugin](https://github.com/jdoiro3/mkdocs-multirepo-plugin/tree/main) contributors
 - [SHIMADA Kento](https://github.com/hitsumabushi845) -
  for the DevContainers template:
  [MkDocs-with-Remote-Containers](https://github.com/hitsumabushi845/MkDocs-with-Remote-Containers),
