@@ -17,17 +17,17 @@ Any contributions are welcome!
 
 A few tips:
 
-- All the pages on this site are just Markdown
+- All the pages on this site are written in Markdown.
 - If needed, we can a lot of machineryy reserved, e.g. for including code templates, macros, etc.
   And we can add more MkDocs plugins if needed.
 - The Table of Contents is currently located in [mkdocs.yml](../mkdocs.yml).
-  When adding new pages, please update the ToC so that it is discoverable.
+When adding new pages, please update the ToC to ensure they are discoverable.
 
 ### Adding New Categories
 
-At the moment, we just add categories as convenient based opn the consensus.
-If you add a new major category, better to discuss it in advance.
+At the moment, we add categories based on consensus.
+If you plan to add a new major category, it's better to discuss it in advance.
 
 ## References
 
-- [Main community.gradle.org contributor guide](../CONTRIBUTING.md) - describes how to contribute in general, and how to set up the local environment if needed
+- [Main community.gradle.org contributor guide](../CONTRIBUTING.md) - describes how to contribute and how to set up the local environment if needed

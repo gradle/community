@@ -31,8 +31,8 @@ All contributions are welcome!
 
 In Gradle we use a diverse set of tooling for documentation development.
 We use both Markdown and Asciidoc for writing,
-with MkDocs, Jekyll and Gradle Asciidoc Plugin being our main tools for documentation.
-We also use other tools like Dokka, Javadoc, OpenAPI specifications, etc.
+with MkDocs, Jekyll, and the Gradle Asciidoc Plugin as our main tools for documentation.
+Additionally, we utilize other tools such as Dokka, Javadoc, and OpenAPI specifications.
 
 Many small patches can be just submitted from the GitHub web editor.
 For bigger patches and local development, see the referenced contributing guidelines.

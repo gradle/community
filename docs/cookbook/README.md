@@ -26,14 +26,14 @@ The Gradle Build Tool ecosystem is huge, it includes many plugins, integrations,
 Not all of them can be covered in the [Gradle User Manual](https://docs.gradle.org/current/userguide/userguide.html)
 which represents core documentation maintained for each Gradle release.
 Moreover, being tied to the Gradle release contribution process and the release cycle makes it more difficult to contribute there.
-Even for us, it has been difficult to maintain documentation in such a way,
-and many pages have been quite outdated.
+Maintaining documentation has been challenging for us as well,
+leading to many outdated pages.
 
 So, we decided to build a second resource as an extension to the Gradle User Manual,
 with the following in mind:
 
 - Gradle Cookbook remains an official resource under `community.gradle.org`.
-  It is not a second-class citizen, just another structure not tied to the Gradle release cycle
+  It is not a second-class citizen, just another structure that is not tied to the Gradle release cycle
 - Pages should be focused on offering solutions to end users for particular use cases,
   hence the _Cookbook_
 - We follow the Wiki-alike collaboration style,
