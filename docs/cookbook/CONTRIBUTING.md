@@ -18,8 +18,7 @@ Any contributions are welcome!
 A few tips:
 
 - All the pages on this site are written in Markdown.
-- If needed, we can a lot of machineryy reserved, e.g. for including code templates, macros, etc.
-  And we can add more MkDocs plugins if needed.
+- If needed, we have various tools available, such as code templates and macros, and we can add more MkDocs plugins if necessary.
 - The Table of Contents is currently located in [mkdocs.yml](../mkdocs.yml).
 When adding new pages, please update the ToC to ensure they are discoverable.
 
