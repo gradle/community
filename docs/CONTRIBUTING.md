@@ -25,7 +25,7 @@ It is possible to deploy the site instance locally or inside a Dev Container.
 This repository includes the Dev Container definition that you can use in Visual Studio Code or in IntelliJ Platform
 to spin up the local development environment.
 
-###  Running locally
+### Running locally
 
 Requirements:
 
