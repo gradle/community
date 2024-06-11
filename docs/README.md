@@ -17,6 +17,7 @@ which is also used for tracking of community initiatives.
 
 ## Key sections
 
+- [Gradle Cookbook](./cookbook/README.md)
 - [Participate and Contribute](./contributing/README.md) - Kernel parts, core plugins, and documentation
 - [Key Projects](./projects/README.md)
 - [Events and Mentorship programs](./events/README.md)
