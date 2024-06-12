@@ -106,9 +106,11 @@ nav:
   - Cookbook:
     - Overview: cookbook/README.md
     - Gradle on CI:
+      - Summary: cookbook/ci/README.md
       - Jenkins: cookbook/ci/jenkins.md
       - TeamCity: cookbook/ci/teamcity.md
       - GitHub Actions: cookbook/ci/github-actions.md
+      - GitLab CI: cookbook/ci/gitlab-ci.md
       - Travis CI: cookbook/ci/travis-ci.md
     - Contributing: cookbook/CONTRIBUTING.md
   - Participate:
