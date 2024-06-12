@@ -14,7 +14,7 @@ CI/CD tools, IDEs,
 support for languages and frameworks,
 and various peripheral tools.
 
-In this document, _Gradle Build Tool_ is abbreviated _Gradle_.
+In the Gradle Cookbook, _Gradle Build Tool_ is abbreviated _Gradle_.
 
 !!! note
     The Gradle Cookbook is under active development (see the roadmap item [here](https://github.com/gradle/community/issues/42)).
@@ -54,6 +54,15 @@ Contributions are welcome!
 You can extend the Cookbook by adding new recipes, updating the existing ones,
 or even creating whole new sections.
 Check out the [Contributor Guide](./CONTRIBUTING.md) for more information.
+
+## Trademark Notice
+
+Gradle and the Gradlephant logo (the "Gradle Marks") are registered trademarks of Gradle, Inc. and/or its subsidiaries.
+Use of the Gradle Marks the Gradle Cookbook pages is for identification purposes only and does not imply sponsorship or endorsement by Gradle, Inc.
+In the Gradle Cookbook, "Gradle" typically means "Gradle Build Tool" and does not reference Gradle Inc. and/or its subsidiaries.
+
+See the [Gradle Branding Guidelines](https://gradle.com/brand/) for more information about
+trademark usage and the approval process.
 
 ## References
 
