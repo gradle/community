@@ -6,3 +6,5 @@ temp_dir
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/vcs.xml
+
+.DS_Store

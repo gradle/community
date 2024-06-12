@@ -85,7 +85,7 @@ extra:
   social:
     - icon: fontawesome/brands/slack
       link: https://gradle.org/slack-invite
-      name: Slack 
+      name: Slack
     - icon: fontawesome/brands/github
       link: https://github.com/gradle
       name: GitHub
@@ -181,43 +181,23 @@ plugins:
             import_url: 'https://github.com/gradle/actions?branch=main&edit_uri=/blob/main/'
             imports: [ "README.md", "*" ]
 
-  - group:
-      enabled: !ENV [PDF_BOOK, true]
-      plugins:
-      - with-pdf:
-          author: Gradle Contributors
-          cover: true
-          cover_title: The Gradle Cookbook
-          cover_subtitle: Open Source Recipes for Gradle Build Tool
-          cover_logo: https://gradle.com/wp-content/themes/fuel/assets/img/branding/gradle-elephant-icon-gradient.svg
-          back_cover: true
-          toc_title: Table of Contents
-          heading_shift: false
-          toc_level: 3
-          ordered_chapter_level: 2
-          show_anchors: true
-          exclude_pages:
-              - 'README'
-              - 'CONTRIBUTING'
-              - 'events/'
-              - 'contributing/'
-              - 'projects/'
-          # custom_template_path: TEMPLATES PATH
-          #convert_iframe:
-          #    - src: IFRAME SRC
-          #      img: POSTER IMAGE URL
-          #      text: ALTERNATE TEXT
-          #    - src: ...
-          #two_columns_level: 3
-          #
-          #render_js: true
-          #headless_chrome_path: headless-chromium
-          #
-          #output_path: any-place/document.pdf
-          #enabled_if_env: ENABLE_PDF_EXPORT
-          #
-          #debug_html: true
-          #verbose: true
+  - with-pdf:
+      enabled_if_env: BUILD_PDF
+      author: Gradle Contributors
+      cover: true
+      cover_title: The Gradle Cookbook
+      cover_subtitle: Open Source Recipes for Gradle Build Tool
+      cover_logo: https://gradle.com/wp-content/themes/fuel/assets/img/branding/gradle-elephant-icon-gradient.svg
+      back_cover: true
+      toc_title: Table of Contents
+      toc_level: 3
+      show_anchors: true
+      exclude_pages:
+          - ^$
+          - 'CONTRIBUTING'
+          - 'events/'
+          - 'contributing/'
+          - 'projects/'
 
   - redirects:
       redirect_maps:
