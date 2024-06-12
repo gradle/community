@@ -1,6 +1,7 @@
 # Executing Gradle builds on GitLab CI
 
-TIP: Top engineering teams using GitHub Actions have been able to reduce CI build time by up to 90% by using the Gradle Build Cache. https://gradle.org/training/#build-cache-deep-dive[Register here] for our Build Cache training session to learn how your team can achieve similar results.
+!!! tip
+    Top engineering teams using GitLab CI have been able to reduce CI build time by up to 90% by using the Gradle Build Cache. https://gradle.org/training/#build-cache-deep-dive[Register here] for our Build Cache training session to learn how your team can achieve similar results.
 
 Building Gradle projects doesn't stop with the developer's machine.
 https://en.wikipedia.org/wiki/Continuous_integration[Continuous Integration] (CI) has been a long-established practice for running a build for every single change committed to version control to tighten the feedback loop.
@@ -22,7 +23,7 @@ GitLab CI is a cloud-based CI solution provider built directly into GitLab, maki
 
 ## Setup a Gradle project on GitLab
 
-If you have a Gradle project hosted on GitLab, you can skip this step and move directly to <<#sec:configure_gitlab,Configure GitLab CI>>.
+If you have a Gradle project hosted on GitLab, you can skip this step and move directly to [Configure GitLab CI](.#configure-gitlab-ci)
 
 If not, follow these steps to initialize a new Gradle project on GitLab.
 
@@ -57,7 +58,7 @@ $ git push
 
 ### Enable Build Scan™ publishing
 
-https://scans.gradle.com[Gradle Build Scans] are a great way to view your build results and provide valuable insights into your build.
+[Gradle Build Scans](https://scans.gradle.com) are a great way to view your build results and provide valuable insights into your build.
 To publish Build Scans from GitLab CI, you'll need to pre-approve the Terms & Conditions.
 
 To do so, add the following content to the top of your `settings.gradle[.kts]` file. GitLab CI sets the "CI" environment variable:
@@ -80,7 +81,7 @@ gradleEnterprise {
 
 ### Test building the project
 
-The project uses the <<gradle_wrapper.adoc#gradle_wrapper_reference,Gradle Wrapper>> for building the project.
+The project uses the Gradle Wrapper for building the project.
 It is a recommended practice for any Gradle project as it enables your project to build on CI without installing the Gradle runtime.
 
 Before asking GitLab CI to build your project, it's useful to ensure that it builds locally.
@@ -147,7 +148,7 @@ Any subsequent push to the repository will trigger the pipeline to run.
 
 By default, no files are persisted between CI runs, so each job must download all dependencies again. We can configure GitLab to cache some files between jobs. This is especially efficient when running your own GitLab CI runner, as the cache is stored locally on the runner.
 
-CAUTION: The publicly available shared runners store their cache in a remote location. As the cache grows, downloading the cache archive, extracting it, and uploading it again at the end of the job may take more time than not using any cache. For this reason, we recommend only caching the Gradle Wrapper. For caching everything else, see configuring a link:https://docs.gradle.org/current/userguide/build_cache.html[Gradle Remote Build Cache].
+CAUTION: The publicly available shared runners store their cache in a remote location. As the cache grows, downloading the cache archive, extracting it, and uploading it again at the end of the job may take more time than not using any cache. For this reason, we recommend only caching the Gradle Wrapper. For caching everything else, see configuring a [Gradle Remote Build Cache](https://docs.gradle.org/current/userguide/build_cache.html).
 
 To reuse some files between jobs, add the following configuration to your existing jobs:
 
