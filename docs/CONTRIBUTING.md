@@ -89,7 +89,7 @@ FULL_BUILD=false mkdocs serve
 
 ### Building the Cookbook PDF
 
-Run ` BUILD_PDF=1 mkdocs build` to generate the PDF file in [_site/pdf/document.pdf](./../_site/pdf/document.pdf).
+Run `BUILD_PDF=1 mkdocs build` to generate the PDF file in [_site/pdf/cookbook.pdf](./../_site/pdf/cookbook.pdf).
 
 ## CI/CD
 

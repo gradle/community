@@ -183,6 +183,7 @@ plugins:
 
   - with-pdf:
       enabled_if_env: BUILD_PDF
+      output_path: pdf/cookbook.pdf
       author: Gradle Contributors
       cover: true
       cover_title: The Gradle Cookbook
