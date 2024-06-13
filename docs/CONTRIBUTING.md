@@ -87,6 +87,10 @@ you can run the `build` and the `serve` commands with the `FULL_BUILD=false` var
 FULL_BUILD=false mkdocs serve
 ```
 
+### Building the Cookbook PDF
+
+Run `BUILD_PDF=1 mkdocs build` to generate the PDF file in [_site/pdf/cookbook.pdf](./../_site/pdf/cookbook.pdf).
+
 ## CI/CD
 
 This site is built and deployed by GitHub Actions.

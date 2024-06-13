@@ -1,15 +1,16 @@
 site_name: Gradle Community Site
+site_author: Gradle Contributors
 site_description: >-
   This is an open-source site for all Gradle community matters,
   including governance, artwork, events, and public infrastructure.
 copyright: >
-  For content - Copyright &copy; 2024 - All contributors to the repository and included components. 
+  Copyright &copy; 2024 - All contributors to the repository and included components.
   The original content licenses and copyrights from the included repositories are preserved,
   you can find them in the linked repositories.
 
-  The GRADLE trademark is the property of Gradle, Inc.
-  Use of the term GRADLE on this website and any content and/or materials available through this website is
-  for identification purposes only and does not imply sponsorship or endorsement by Gradle, Inc.
+  Gradle and the Gradlephant logo (the "Gradle Marks") are registered trademarks of Gradle, Inc. and/or its subsidiaries.
+  Use of the Gradle Marks the Gradle Cookbook pages is for identification purposes only and does not imply sponsorship or endorsement by Gradle, Inc.
+  In the Gradle Cookbook, "Gradle" typically means "Gradle Build Tool" and does not reference Gradle Inc. and/or its subsidiaries.
 docs_dir: docs
 repo_url: https://github.com/gradle/community
 repo_name: Gradle Community repo
@@ -84,7 +85,7 @@ extra:
   social:
     - icon: fontawesome/brands/slack
       link: https://gradle.org/slack-invite
-      name: Slack 
+      name: Slack
     - icon: fontawesome/brands/github
       link: https://github.com/gradle
       name: GitHub
@@ -179,6 +180,28 @@ plugins:
           - name: github-actions
             import_url: 'https://github.com/gradle/actions?branch=main&edit_uri=/blob/main/'
             imports: [ "README.md", "*" ]
+
+  - with-pdf:
+      enabled_if_env: BUILD_PDF
+      output_path: pdf/cookbook.pdf
+      author: Gradle Contributors
+      # FIXME: Needs rendering style to include the trademark notice & Co into the header
+      copyright: >
+        Copyright &copy; 2024 - All contributors to the repository and included components.
+      cover: true
+      cover_title: The Gradle Cookbook
+      cover_subtitle: Open Source Recipes for Gradle Build Tool
+      cover_logo: https://gradle.com/wp-content/themes/fuel/assets/img/branding/gradle-elephant-icon-gradient.svg
+      back_cover: true
+      toc_title: Table of Contents
+      toc_level: 3
+      show_anchors: true
+      exclude_pages:
+          - ^$
+          - 'CONTRIBUTING'
+          - 'events/'
+          - 'contributing/'
+          - 'projects/'
 
   - redirects:
       redirect_maps:
