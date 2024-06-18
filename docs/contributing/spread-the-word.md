@@ -36,7 +36,7 @@ whether it is a new presentation, blog, or a plugin release!
 
 Gradle Build Tool has a [Monthly Newsletter](https://newsletter.gradle.org/) that is maintained by the team.
 This newsletter is formed based on the news we discover in the community channels.
-Every month, we also start a public Call for Proposals as a GiutHub issue in [gradle/community](https://github.com/gradle/community/issues).
+Every month, we also start a public Call for Proposals as a GitHub issue in [gradle/community](https://github.com/gradle/community/issues).
 
 ## Gradle Fellowship
 
