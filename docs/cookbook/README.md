@@ -46,7 +46,7 @@ with the following in mind:
 
 ## Table of Contents
 
-- [Gradle Built Tool on CI](/cookbook/ci/)
+- [Gradle Build Tool on CI](/cookbook/ci/)
 
 ## Contributing
 
