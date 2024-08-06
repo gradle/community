@@ -3,7 +3,7 @@
 This project aims to enhance [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) project from Microsoft by integrating powerful Android Studio features. Bridging the build process gap between [Android Studio](https://developer.android.com/studio) and [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle), will significantly improve the development experience for many Android developers using Text Editors/IDEs which utilize the [Build Server Protocol (BSP)](https://build-server-protocol.github.io).
 
 ## Status
-Passed mid-term evaluation
+Passed mid-term evaluation with successful completion of composite build support, Java Home handling under review and android support in progress.
 
 ## Goal
 
@@ -91,7 +91,36 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ### Mid-Term progress
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UN0AFCLASZA?si=8qeakyCY-zEHnAbL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div class="responsive-iframe">
+  <div class="flex-container">
+    <iframe src="https://www.youtube.com/embed/UN0AFCLASZA?si=9aG5tDzj6nL1_IKT&amp;start=371" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
+<style>
+
+.responsive-iframe {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.flex-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-width: 900px;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
 
 ## Collaboration and Learning
 
@@ -101,6 +130,6 @@ My work on this project, significantly expanded my skill set, encompassing JSON-
 
 ## Links
 
-- [GSoC Project](https://summerofcode.withgoogle.com/programs/2024/projects/Guphkt1v)
+- [Project page on the GSoC site](https://summerofcode.withgoogle.com/programs/2024/projects/Guphkt1v)
 - [Contributor Proposal](https://summerofcode.withgoogle.com/media/user/26d3ca3d8061/proposal/gAAAAABmsQWz_dGzhC0daKp4GFsORe9U10ZgqSOGgQGSaw30QKtvHfJLzNJaCwX1V636VneDqtGGEHM-hvYcOU0V5sOwwvvE6p7wXyrj7fX7bSUkIH-DRKI=.pdf)
-- [Mid-Term Project Demo](https://youtu.be/UN0AFCLASZA)
+- [Mid-Term Project Demo](https://youtu.be/UN0AFCLASZA?si=9aG5tDzj6nL1_IKT&t=371)
