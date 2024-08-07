@@ -6,7 +6,8 @@
 - We will add more functionalities to the existing BSP Implementation for providing the required support in Eclipse Buildship.
 
 ## Status
-Active (community bonding)
+
+Stopped (after mid-term evaluation)
 
 ## Team
 #### Authors
