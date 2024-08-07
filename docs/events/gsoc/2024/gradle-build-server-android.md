@@ -1,15 +1,15 @@
 # GSoC 2024. Gradle Build Server – support for Android projects
 
-This project aims to enhance [Build Server for Gradle](https://github.com/microsoft/build-server-for-gradle) from Microsoft by integrating powerful Android Studio features. Bridging the gap between Android Studio and [Build Server for Gradle](https://github.com/microsoft/build-server-for-gradle), will significantly improve the development experience for many Android developers using IDEs based on [Build Server Protocol (BSP)](https://build-server-protocol.github.io).
+This project aims to enhance [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) project from Microsoft by integrating powerful Android Studio features. Bridging the build process gap between [Android Studio](https://developer.android.com/studio) and [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle), will significantly improve the development experience for many Android developers using Text Editors/IDEs which utilize the [Build Server Protocol (BSP)](https://build-server-protocol.github.io).
 
 ## Status
-Accepted
+Passed mid-term evaluation with successful completion of composite build support, Java Home handling under review and android support in progress.
 
 ## Goal
 
-1. Implement auto-discovery and task cancelation ([issue #58](https://github.com/microsoft/build-server-for-gradle/issues/58))
-2. Retry when user-specified Gradle Java Home is incompatible ([issue #75](https://github.com/microsoft/build-server-for-gradle/issues/75))
-3. Show error messages on client when incompatiblity occur ([issue #76](https://github.com/microsoft/build-server-for-gradle/issues/76))
+1. Add support for composite builds. ([vscode-gradle issue #1435](https://github.com/microsoft/vscode-gradle/issues/1435))
+2. Java Home detection and sending notification on incompatibility. ([issue #75](https://github.com/microsoft/build-server-for-gradle/issues/75) & [issue #76](https://github.com/microsoft/build-server-for-gradle/issues/76))
+3. Add Android support with correct classpath resolution and test execution.
 
 ## Team
 
@@ -31,38 +31,105 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ## Deliverables
 
-### Auto-discovery
+### Composite-Build Support ([vscode-gradle issue #1435](https://github.com/microsoft/vscode-gradle/issues/1435))
 
-- Implement logic within the Gradle Build Server to automatically identify incoming build requests originating from Android projects.
-- Utilize the Build Server Protocol (BSP) messages exchanged between the server and the build tool (Gradle) to analyze project information (e.g., directory structures, file names, build configurations).
+**Status:** Complete (Merged)
 
-### Task Cancellation ([issue #58](https://github.com/microsoft/build-server-for-gradle/issues/58)):
+**Pull Requests:** [#154](https://github.com/microsoft/build-server-for-gradle/pull/154), [#160](https://github.com/microsoft/build-server-for-gradle/pull/160)
 
-- Design and implement functionalities for cancelling tasks specifically associated with Android builds.
-- Develop mechanisms to identify these tasks (e.g., analyzing task names, dependencies, or flags within BSP messages).
-- Establish communication channels with Gradle to transmit cancellation requests (potentially extending BSP or implementing custom mechanisms).
+**Objectives:**
+- Add support for building projects with [composite builds](https://docs.gradle.org/current/userguide/composite_builds.html).
 
-### Improved Gradle Java Home Handling ([issue #75](https://github.com/microsoft/build-server-for-gradle/issues/75) and [issue #76](https://github.com/microsoft/build-server-for-gradle/issues/76)):
+**Implemented Features:**
+- Took over some work already done by [@Arthurm1](https://github.com/Arthurm1) in [PR#122](https://github.com/microsoft/build-server-for-gradle/pull/122), into [PR#154](https://github.com/microsoft/build-server-for-gradle/pull/154).
+- Utilized build actions to retrieve source sets from composite build projects which allowed for dependency susbtitution.
+- Fix the language extension downcast issue in [PR#160](https://github.com/microsoft/build-server-for-gradle/pull/160) which was breaking composite builds.
 
-- Implement logic to handle scenarios where the user-specified Gradle Java Home is incompatible with the server's environment.
-- Develop mechanisms to detect incompatibility (e.g., checking version conflicts, missing libraries, unsupported configurations).
-- Implement retry logic (e.g., using a default Gradle Java Home or prompting the user for a compatible version).
-- Enhance error messages. Provide clear and informative messages displayed on the client-side to guide users towards resolving incompatibility issues (e.g., suggesting compatible Gradle versions or setting environment variables).
+### Improved Gradle Java Home Handling ([issue #75](https://github.com/microsoft/build-server-for-gradle/issues/75) and [issue #76](https://github.com/microsoft/build-server-for-gradle/issues/76))
 
-### Documentation:
+**Status:** Ongoing (Under Review)
 
-- Create detailed user guides and developer documentation for the implemented functionalities (auto-discovery, task cancellation, improved Gradle Java Home incompatibility handling).
-- Ensure the documentation covers usage instructions and troubleshooting steps for the added functionalities.
+**Pull Request:** [#165](https://github.com/microsoft/build-server-for-gradle/pull/165)
+
+**Objectives:**
+- Build the project with default configurations, if Java Home is incompatible try and find a suitable Java Home.
+- If incompatible Java Home is detected notify client of the incompatibility. 
+
+**Implemented Features:**
+
+- Probe build the project to find if default java home configuration is compatible.
+- In case of incompatibility try to find a compatible java home in the given order:
+    1. GradleJavaHome (Gradle Properties)
+    2. UserJavaHome (Retrieved from preferences)
+- Notify client if project's default java home was incompatible and we switched to a different JavaHome for compatibility.
+- Notify client if the fallback logic couldn't find a compatible java home.
+
+### Android Support
+
+**Status:** Ongoing (Under Development)
+
+**Pull Request:** [#173](https://github.com/microsoft/build-server-for-gradle/pull/173)
+
+**Objectives:**
+- Correct classpath resolution.
+- Test execution. 
+
+## Documentation:
+
+- Detailed developer documentation for the implemented functionalities (composite builds, Java Home detection and sending notification on incompatibility, android support).
+- Documentation covering usage instructions and troubleshooting steps for the added functionalities.
 - Using clear examples and diagrams to enhance understanding.
 
-### Unit and Integration Testing:
+## Unit and Integration Testing:
 
 - Implement unit tests to ensure the accuracy and reliability of the implemented functionalities.
-- Unit tests should thoroughly cover specific components like auto-discovery logic, task identification mechanisms, and Gradle Java Home handling logic.
-- Conduct integration tests to verify seamless functionality within the Gradle Build Server environment.
-- Integration tests should simulate real-world build scenarios and interactions between different server components.
+- Unit tests thoroughly cover specific components like composite builds logic, language extension downcasting, Gradle Java Home handling logic, and build target generation logic for android projects.
+- Implement integration tests to verify seamless functionality within the Gradle Build Server environment.
+- Integration tests simulate real-world build scenarios and interactions between different server components.
+
+## Demos
+
+### Mid-Term progress
+
+<div class="responsive-iframe">
+  <div class="flex-container">
+    <iframe src="https://www.youtube.com/embed/UN0AFCLASZA?si=9aG5tDzj6nL1_IKT&amp;start=371" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
+<style>
+
+.responsive-iframe {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.flex-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
+  max-width: 900px;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+
+## Collaboration and Learning
+
+Throughout the program I have collaborated with all of my mentors and gained invaluable insights into open source development - best practices, project management and contributions. They also helped me learn how to explore large project repositories for research.
+
+My work on this project, significantly expanded my skill set, encompassing JSON-RPC, Language Server Protocol, Build Server Protocol, Gradle API, Gradle Tooling API, testing methodologies and merging techniques with git. I successfully applied these learnings to produce the mentioned outcomes.
 
 ## Links
 
-- [Project Proposal](https://kotlinlang.org/docs/gsoc-2024.html#gradle-build-server-support-for-android-projects-medium-or-hard-175-hrs-or-350-hrs)
-- [Contributor Proposal](https://gradle-community.slack.com/files/U06R0NWDM4J/F06S9HX9VMZ/gsoc_proposal.pdf)
+- [Project page on the GSoC site](https://summerofcode.withgoogle.com/programs/2024/projects/Guphkt1v)
+- [Contributor Proposal](https://summerofcode.withgoogle.com/media/user/26d3ca3d8061/proposal/gAAAAABmsQWz_dGzhC0daKp4GFsORe9U10ZgqSOGgQGSaw30QKtvHfJLzNJaCwX1V636VneDqtGGEHM-hvYcOU0V5sOwwvvE6p7wXyrj7fX7bSUkIH-DRKI=.pdf)
+- [Mid-Term Project Demo](https://youtu.be/UN0AFCLASZA?si=9aG5tDzj6nL1_IKT&t=371)
