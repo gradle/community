@@ -38,9 +38,11 @@ As the popularity of Android development grows, the need for efficient build aut
 **Pull Requests:** [#154](https://github.com/microsoft/build-server-for-gradle/pull/154), [#160](https://github.com/microsoft/build-server-for-gradle/pull/160)
 
 **Objectives:**
+
 - Add support for building projects with [composite builds](https://docs.gradle.org/current/userguide/composite_builds.html).
 
 **Implemented Features:**
+
 - Took over some work already done by [@Arthurm1](https://github.com/Arthurm1) in [PR#122](https://github.com/microsoft/build-server-for-gradle/pull/122), into [PR#154](https://github.com/microsoft/build-server-for-gradle/pull/154).
 - Utilized build actions to retrieve source sets from composite build projects which allowed for dependency susbtitution.
 - Fix the language extension downcast issue in [PR#160](https://github.com/microsoft/build-server-for-gradle/pull/160) which was breaking composite builds.
@@ -52,6 +54,7 @@ As the popularity of Android development grows, the need for efficient build aut
 **Pull Request:** [#165](https://github.com/microsoft/build-server-for-gradle/pull/165)
 
 **Objectives:**
+
 - Build the project with default configurations, if Java Home is incompatible try and find a suitable Java Home.
 - If incompatible Java Home is detected notify client of the incompatibility. 
 
@@ -71,6 +74,7 @@ As the popularity of Android development grows, the need for efficient build aut
 **Pull Request:** [#173](https://github.com/microsoft/build-server-for-gradle/pull/173)
 
 **Objectives:**
+
 - Correct classpath resolution.
 - Test execution.
 
