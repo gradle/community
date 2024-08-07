@@ -72,7 +72,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 **Objectives:**
 - Correct classpath resolution.
-- Test execution. 
+- Test execution.
 
 ## Documentation:
 
@@ -91,36 +91,11 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ### Mid-Term progress
 
-<div class="responsive-iframe">
-  <div class="flex-container">
+<div class="youtube-video">
+  <div>
     <iframe src="https://www.youtube.com/embed/UN0AFCLASZA?si=9aG5tDzj6nL1_IKT&amp;start=371" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </div>
-
-<style>
-
-.responsive-iframe {
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-.flex-container {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  aspect-ratio: 16/9;
-  max-width: 900px;
-}
-
-.responsive-iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-</style>
 
 ## Collaboration and Learning
 

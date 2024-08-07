@@ -5,7 +5,8 @@
 - **Better Declarativity**: improve the declarative nature of Kotlin DSL when integrating plugins.
 
 ## Status
-Selected
+
+Stopped (after mid-term evaluation)
 
 ## Team
 #### Authors
@@ -35,7 +36,17 @@ Selected
 
 -  Provide an improved Kotlin DSL, particularly enhancing its declarativity when integrating plugins.
 
+
+## Mid-Term Project Demo
+
+<div class="youtube-video">
+  <div>
+    <iframe src="https://www.youtube.com/embed/UN0AFCLASZA?si=9aG5tDzj6nL1_IKT&amp;start=888" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
 ## Links
+
 - [Contributor Proposal](https://docs.google.com/document/d/1q0NFuoR1F9wcQxyFEC0m1qOspBSyq9TbyuOZhldHybk/edit?usp=sharing)
 - [Project Proposal](https://kotlinlang.org/docs/gsoc-2024.html#kotlin-dsl-improvements-for-declarative-gradle-medium-175-hrs)
 - [Declarative Gradle](https://blog.gradle.org/declarative-gradle)
