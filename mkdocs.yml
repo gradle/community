@@ -130,6 +130,7 @@ nav:
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
   - Events:
       - Events Overview: events/README.md
+      - Hacktoberfest: events/hacktoberfest/README.md
       - Google Summer of Code: events/gsoc/README.md
   - Resources:
     - Resources: resources/README.md
@@ -205,6 +206,7 @@ plugins:
 
   - redirects:
       redirect_maps:
+        'events/hacktoberfest/README.md' : 'events/hacktoberfest/2024/README.md'
 
 # Markdown
 markdown_extensions:
