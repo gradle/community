@@ -59,7 +59,7 @@ In 2024, we plan to participate as an organization,
 and to offer nice special-edition swag to the key contributors.
 
 
-## Be Informed
+## Stay Informed
 
 Subscribe to the [newsletter](https://newsletter.gradle.org/) for updates
 about the upcoming community events and mentorship programs.

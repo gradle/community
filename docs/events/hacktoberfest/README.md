@@ -1,12 +1,12 @@
 # Gradle in Hacktoberfest
 
-[Hacktoberfest](https://hacktoberfest.com/) is a month-long celebration of open-source projects, their maintainers, and the entire community of contributors.
-Many component maintainers from the Gradle ecosystem, e.g. the
+[Hacktoberfest](https://hacktoberfest.com/) is a month-long celebration of open-source projects, their maintainers, and the global community of contributors.
+Many maintainers within the Gradle ecosystem, such as those behind the
 [Gradle plugin for Jenkins](https://plugins.jenkins.io/gradle),
 already include their projects in Hacktoberfest.
 
-In 2024, we plan to participate as an organization,
-and to offer nice special-edition swag to the key contributors.
+In 2024, we’re excited to join as an organization```
+and will be offering special-edition swag to key contributors.
 
 ## Years
 
