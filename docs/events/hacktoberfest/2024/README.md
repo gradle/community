@@ -50,7 +50,7 @@ Gradle Build Tool and its ecosystem.
 
 ## Stay Informed
 
-Join the `#hacktoberfest` channel on the [Gradle Communbity Slack](../../../contributing/community-slack.md)
+Join the `#hacktoberfest` channel on the [Gradle Community Slack](../../../contributing/community-slack.md)
 where we will be posting key updates and answering questions.
 Subscribe to the [newsletter](https://newsletter.gradle.org/) for updates
 about upcoming community events and mentorship programs.
