@@ -66,3 +66,35 @@ h4 {
     height: 100%;
   }
 }
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+    vertical-align: middle;
+
+    .card {
+        display: block;
+        border: .2rem solid;
+        border-radius: 1rem;
+        padding: 1rem;
+        align-items: center;
+        width: 48%;
+        min-width: 320px;
+
+        h3 {
+            font-size: x-large;
+            font-weight: bolder;
+            span {
+                margin-right: 0.5rem;
+            }
+        }
+
+        items {
+            font-size: larger;
+            font-weight: bold;
+        }
+    }
+}
