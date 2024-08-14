@@ -23,6 +23,7 @@ site_dir: _site
 # Theme
 theme:
   name: material
+  custom_dir: overrides/
   highlightjs: true
   features:
     - announce.dismiss

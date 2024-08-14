@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+<div class="grid-container">
+  {% for resource in page.meta.resources %}
+    <div class="card">
+      <div class="header">
+        <h3>
+          <span class="text-with-icon__icon text-with-icon__icon--20x20" aria-hidden="true">
+            <img src="{{ resource.icon }}"/>
+          </span>
+          <span>{{ resource.section }}</span>
+        </h2>
+      </div>
+      <div class="items">
+        <ul>
+          {% for link in resource.links %}
+          <li>{{ link }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+{% endblock %}
