@@ -114,6 +114,8 @@ nav:
       - GitHub Actions: cookbook/ci/github-actions.md
       - GitLab CI: cookbook/ci/gitlab-ci.md
       - Travis CI: cookbook/ci/travis-ci.md
+    - Gradle for Kotlin: cookbook/kotlin/README.md
+    - Gradle for Android: cookbook/android/README.md
     - Contributing: cookbook/CONTRIBUTING.md
   - Participate:
     - Getting Started: contributing/README.md

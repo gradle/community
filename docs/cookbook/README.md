@@ -44,14 +44,19 @@ with the following in mind:
 - Minimizing duplication.
   We can include documentation from other sources under the [Gradle GitHub organization](https://github.com/gradle/)
 
-## Table of Contents
+## Chapters
 
-- [Gradle Build Tool on CI](/cookbook/ci/)
+- [Gradle for Kotlin development](./kotlin/README.md)
+- [Gradle for Android development](./android/README.md)
+- [Gradle on Continuous Integration](./ci/README.md)
+
+More chapters will be added soon, based on contributions.
 
 ## Contributing
 
 Contributions are welcome!
-You can extend the Cookbook by adding new recipes, updating the existing ones,
+You can extend the Cookbook by adding new recipes (e.g. by porting your blogpost),
+updating the existing ones,
 or even creating whole new sections.
 Check out the [Contributor Guide](./CONTRIBUTING.md) for more information.
 
