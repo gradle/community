@@ -98,3 +98,50 @@ h4 {
         }
     }
 }
+
+.button {
+    display: inline-block;
+    min-width: 180px;
+    padding: 10px 20px;
+    font-size: 17px;
+    line-height: 1.4;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 8px;
+    transition: background-color .3s ease, border .3s ease;
+}
+
+.button--blue,
+.button--blue-lite {
+    color: white;
+    border-color: transparent;
+    &:hover {
+        color: white;
+    }
+}
+
+
+.button--blue {
+    border-color: var(--gradle-blue-lite);
+    background: var(--gradle-blue);
+    background: linear-gradient(var(--button-gradient-angle), var(--gradle-blue) 0%, var(--gradle-blue-lite) 100%);
+    transition: none;
+    &:hover {
+        background-color: var(--gradle-blue-lite);
+        color: white;
+    }
+}
+
+
+.button--blue-lite {
+    background-color: var(--gradle-bg-gray);
+    &:hover {
+        background-color: var(--gradle-blue-lite);
+        color: white;
+    }
+}
