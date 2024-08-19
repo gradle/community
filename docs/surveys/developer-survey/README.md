@@ -1,7 +1,7 @@
 ---
 title: "Gradle Build Tool - 2024 Software Developer Survey"
 description: >
-  We're doing a developer survey to prioritize our developer experience work.
+  We've created a survey to help us better understand developers' experiences using Gradle Build Tool.
   To say thank you to developers who complete the survey, we'll be handing out gift cards and special swag!
 ---
 
@@ -20,8 +20,6 @@ Your feedback is crucial in helping us prioritize our efforts!
 
 ![Test](./images/hero.png)
 
-The 2024 survey focuses on Gradle Build Tool developer experience.  We're aiming to discover common pain points and understand what use cases are particularly frustrating.
-This is why the form is quite long, and we will appreciate your patience.
 The survey will be open for responses until the end of the year,
 and we intend to make it a recurrent event.
 
