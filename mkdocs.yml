@@ -133,6 +133,7 @@ nav:
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
   - Events:
       - Events Overview: events/README.md
+      - 2024 Developer Survey: surveys/developer-survey/README.md
       - Hacktoberfest: events/hacktoberfest/README.md
       - Google Summer of Code: events/gsoc/README.md
   - Resources:
