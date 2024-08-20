@@ -160,7 +160,10 @@ plugins:
 #  - macros
   - mkdocs-pdf
   # OpenGraphs
-  - social
+  - social:
+      cards_layout_options:
+        background_color: "#010002"
+        font_family: Lato
   - group:
       enabled: !ENV [FULL_BUILD, true]
       plugins:
