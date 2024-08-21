@@ -8,6 +8,11 @@ already include their projects in Hacktoberfest.
 In 2024, we’re excited to join as an organization```
 and will be offering special-edition swag to key contributors.
 
+<a class="button button--blue"
+   href="https://forms.gle/avUcGctpzW3t8MPJ7"
+   target="_blank">Sign Up for Updates
+</a>
+
 ## Years
 
 - [2024](./2024/README.md)
