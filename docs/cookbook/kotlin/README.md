@@ -1,7 +1,7 @@
 # Gradle for Kotlin
 
 Gradle is one of the most popular build tools in the Kotlin space,
-including classic applications, Kotlin Multiplatform, or [Android](../android/README.md).
+including classic applications, Kotlin Multiplatform, and [Android](../android/README.md).
 
 ## Official Documentation
 

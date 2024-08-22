@@ -41,6 +41,6 @@ Every month, we also start a public Call for Proposals as a GitHub issue in [gra
 ## Gradle Fellowship
 
 The Gradle Fellowship are distinguished engineers from the Gradle community who, through collaboration and advocacy, encourage build tooling best practices.
-In addition to large scale community support, Fellows donate their time and talent to help the next generation of Gradle Fellowship members through direct one-on-one mentoring..
+In addition to large scale community support, Fellows donate their time and talent to help the next generation of Gradle Fellowship members through direct one-on-one mentoring.
 
 See the list of people on the [Gradle Fellows Page](https://gradle.org/fellowship/).
