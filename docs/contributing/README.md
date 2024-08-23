@@ -1,7 +1,7 @@
 # Contributing to Gradle
 
 As in any open-source project, contributions to Gradle are welcome!
-Gradle Build Too itself, its documentation, many plugins and tools within Gradle's ecosystem are open-source,
+Gradle Build Tool itself, its documentation, many plugins and tools within Gradle's ecosystem are open-source,
 and you can contribute anywhere.
 See the links on the left for particular contributing guidelines.
 
@@ -17,7 +17,7 @@ and it may take a while till your changes are merged and released.
 
 If you are just starting your journey in open source and
 do not aim fixing a specific issue impacting you,
-iut is highly recommended to start from plugins and smaller repositories
+it is highly recommended to start from plugins and smaller repositories
 where the entry bar is much lower.
 
 ## Key Channels
@@ -50,7 +50,7 @@ we use issues in the main [gradle/gradle](https://github.com/gradle/gradle/issue
 Quick links:
 
 - [Good First Issues](https://github.com/search?q=org%3Agradle+is%3Aissue+label%3A%22good+first+issue%22+is%3Aopen&type=issues) -
-  Issues for newcomers who just start contributing to Gradle
+  Issues for newcomers who want to start contributing to Gradle
 - [Help Wanted](https://github.com/search?q=org%3Agradle+is%3Aissue+label%3A%22help+wanted%22+is%3Aopen&type=issues) -
   Issues for more experienced contributors that are open for grabs
 

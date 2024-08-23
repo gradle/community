@@ -2,7 +2,7 @@
 
 Gradle is one of the most popular build tools in the Android space.
 It is used for [Kotlin and Kotlin Multiplatform](../kotlin/README.md),
-Flutter, React Native, and other toolchains
+Flutter, React Native, and other toolchains.
 
 ## Official Documentation
 

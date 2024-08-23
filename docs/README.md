@@ -13,7 +13,7 @@ which is also used for tracking of community initiatives.
 
 > **DISCLAIMER:** This website is experimental, and under active development.
 > Please report any issues to [gradle/community/issues](https://github.com/gradle/community/issues),
-> all pull requests will be appreciated too!
+> any pull requests will be appreciated too!
 
 ## Key sections
 
