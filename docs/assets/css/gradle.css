@@ -67,6 +67,10 @@ h4 {
   }
 }
 
+.img_container {
+  max-width: 900px;
+}
+
 .grid-container {
     display: flex;
     flex-wrap: wrap;
