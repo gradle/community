@@ -3,13 +3,13 @@
 This project aims to enhance [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) project from Microsoft by integrating powerful Android Studio features. Bridging the build process gap between [Android Studio](https://developer.android.com/studio) and [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle), will significantly improve the development experience for many Android developers using Text Editors/IDEs which utilize the [Build Server Protocol (BSP)](https://build-server-protocol.github.io).
 
 ## Status
-Passed mid-term evaluation with successful completion of composite build support, Java Home handling under review and android support in progress.
+Passed mid-term evaluation with successful completion of composite build support, `JAVA_HOME` handling under review and Android support in review.
 
 ## Goal
 
 1. Add support for composite builds. ([vscode-gradle issue #1435](https://github.com/microsoft/vscode-gradle/issues/1435))
 2. Java Home detection and sending notification on incompatibility. ([issue #75](https://github.com/microsoft/build-server-for-gradle/issues/75) & [issue #76](https://github.com/microsoft/build-server-for-gradle/issues/76))
-3. Add Android support with correct classpath resolution and test execution.
+3. Add Android support with resolution of Android Java projects.
 
 ## Team
 
@@ -41,15 +41,24 @@ As the popularity of Android development grows, the need for efficient build aut
 
 - Add support for building projects with [composite builds](https://docs.gradle.org/current/userguide/composite_builds.html).
 
+**Pre-requisites:**
+
+- Understanding Gradle API and Gradle Tooling API
+
 **Implemented Features:**
 
 - Took over some work already done by [@Arthurm1](https://github.com/Arthurm1) in [PR#122](https://github.com/microsoft/build-server-for-gradle/pull/122), into [PR#154](https://github.com/microsoft/build-server-for-gradle/pull/154).
 - Utilized build actions to retrieve source sets from composite build projects which allowed for dependency susbtitution.
-- Fix the language extension downcast issue in [PR#160](https://github.com/microsoft/build-server-for-gradle/pull/160) which was breaking composite builds.
+- Fixed language extension downcast issue in [PR#160](https://github.com/microsoft/build-server-for-gradle/pull/160) which was breaking composite builds.
+
+**Supporting Diagrams:**
+
+![Without composite build support](./images/WithoutCompositeBuildSupport.png)
+![With composite build support](./images/WithCompositeBuildSupport.png)
 
 ### Improved Gradle Java Home Handling ([issue #75](https://github.com/microsoft/build-server-for-gradle/issues/75) and [issue #76](https://github.com/microsoft/build-server-for-gradle/issues/76))
 
-**Status:** Ongoing (Under Review)
+**Status:** Complete (Merged)
 
 **Pull Request:** [#165](https://github.com/microsoft/build-server-for-gradle/pull/165)
 
@@ -60,23 +69,48 @@ As the popularity of Android development grows, the need for efficient build aut
 
 **Implemented Features:**
 
-- Probe build the project to find if default java home configuration is compatible.
-- In case of incompatibility try to find a compatible java home in the given order:
+- Probe build the project to find if default Java Home configuration is compatible.
+- In case of incompatibility try to find a compatible Java Home in the given order:
     1. GradleJavaHome (Gradle Properties)
     2. UserJavaHome (Retrieved from preferences)
-- Notify client if project's default java home was incompatible and we switched to a different JavaHome for compatibility.
-- Notify client if the fallback logic couldn't find a compatible java home.
+- Notify client if project's default Java Home was incompatible and we switched to a different Java Home for compatibility.
+- Notify client if the fallback logic couldn't find a compatible Java Home.
 
-### Android Support
+**Supporting Diagrams:**
 
-**Status:** Ongoing (Under Development)
+![Java Home Handling](./images/JavaHomeHandling.png)
+
+### Android Java Project Support
+
+**Status:** Complete (Under Review)
 
 **Pull Request:** [#173](https://github.com/microsoft/build-server-for-gradle/pull/173)
 
 **Objectives:**
 
-- Correct classpath resolution.
-- Test execution.
+- Providing build targets for Android Java projects to the client
+
+**Pre-requisites:**
+
+- Understanding the entire Android build process and changes to the Android Gradle Plugin.
+
+**Implemented Features:**
+
+- Extracting Build Variants and their properties from Android projects via reflection.
+- Populating a GradleSourceSet (build target model) with build variants properties.
+- Providing Android SDK components and R file via dependency modules of the build target.
+
+**Limitations:**
+
+- Android generates a lot of intermediate sources such as AIDL, Render script, C/CPP, etc. Unfortunately AGP doesn't provide any APIs to retrieve these files. R.jar is one of these intermediate sources which is crucial for Android development so as a workaround I have retrieved the file using the process task for the build variant however, in some cases the task may not be registered during the sync in which case the dependency for R.jar is not provided. ([Issue #181](https://github.com/microsoft/build-server-for-gradle/issues/181))
+- There various kinds of projects that come under Android development such as Application, Library, Instant App, Dynamic Modules, Android Test, etc. I have added support for the most commonly used projects - Application and Library but the current implementation may require further enhancements to support other kinds of projects. ([Issue #182](https://github.com/microsoft/build-server-for-gradle/issues/182))
+- My implementation takes into account any user defined build variants and the default build variants - debug and release except the default test variants - test and androidTest. ([Issue #183](https://github.com/microsoft/build-server-for-gradle/issues/183))
+- Android Components to be used by an Android project is configured via ANDROID_HOME environment variable. If the property doesn't exist then we are not providing the dependency. This implementation can be improved via fallback logic similar to what we did for JAVA_HOME in [PR #165](https://github.com/microsoft/build-server-for-gradle/pull/165). ([Issue #184](https://github.com/microsoft/build-server-for-gradle/issues/184))
+
+**Supporting Diagrams:**
+
+![Android Build Process](./images/AndroidImplementedBuildProcess.png)
+![Android SourceSet Building](./images/SourceSetBuildingAndroid.png)
 
 ## Documentation:
 
@@ -87,7 +121,7 @@ As the popularity of Android development grows, the need for efficient build aut
 ## Unit and Integration Testing:
 
 - Implement unit tests to ensure the accuracy and reliability of the implemented functionalities.
-- Unit tests thoroughly cover specific components like composite builds logic, language extension downcasting, Gradle Java Home handling logic, and build target generation logic for android projects.
+- Unit tests thoroughly cover specific components like composite builds logic, language extension downcasting, Gradle Java Home handling logic, and build target verification logic for android projects.
 - Implement integration tests to verify seamless functionality within the Gradle Build Server environment.
 - Integration tests simulate real-world build scenarios and interactions between different server components.
 
@@ -107,8 +141,18 @@ Throughout the program I have collaborated with all of my mentors and gained inv
 
 My work on this project, significantly expanded my skill set, encompassing JSON-RPC, Language Server Protocol, Build Server Protocol, Gradle API, Gradle Tooling API, testing methodologies and merging techniques with git. I successfully applied these learnings to produce the mentioned outcomes.
 
+If anyone is interested to continue the work and bring further support for Android projects in [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) then you can get started with the following issues mentioned in [this comment](https://github.com/microsoft/build-server-for-gradle/pull/173#issuecomment-2308392453):
+
+- [Improve support for Android intermediate generated sources #181](https://github.com/microsoft/build-server-for-gradle/issues/181)
+- [Support for different types of Android projects #182](https://github.com/microsoft/build-server-for-gradle/issues/182)
+- [Test variants discovery for Android projects #183](https://github.com/microsoft/build-server-for-gradle/issues/183)
+- [ANDROID_HOME fallback logic #184](https://github.com/microsoft/build-server-for-gradle/issues/184)
+
+You can view all Android support related issues [here](https://github.com/microsoft/build-server-for-gradle/labels/android).
+
 ## Links
 
 - [Project page on the GSoC site](https://summerofcode.withgoogle.com/programs/2024/projects/Guphkt1v)
 - [Contributor Proposal](https://summerofcode.withgoogle.com/media/user/26d3ca3d8061/proposal/gAAAAABmsQWz_dGzhC0daKp4GFsORe9U10ZgqSOGgQGSaw30QKtvHfJLzNJaCwX1V636VneDqtGGEHM-hvYcOU0V5sOwwvvE6p7wXyrj7fX7bSUkIH-DRKI=.pdf)
+- [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle)
 - [Mid-Term Project Demo](https://youtu.be/UN0AFCLASZA?si=9aG5tDzj6nL1_IKT&t=371)
