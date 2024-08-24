@@ -141,7 +141,7 @@ Throughout the program I have collaborated with all of my mentors and gained inv
 
 My work on this project, significantly expanded my skill set, encompassing JSON-RPC, Language Server Protocol, Build Server Protocol, Gradle API, Gradle Tooling API, testing methodologies and merging techniques with git. I successfully applied these learnings to produce the mentioned outcomes.
 
-If anyone is interested to continue the work and bring further support for Android projects in [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) then you can get started with the following issues:
+If anyone is interested to continue the work and bring further support for Android projects in [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) then you can get started with the following issues mentioned in [this comment](https://github.com/microsoft/build-server-for-gradle/pull/173#issuecomment-2308392453):
 
 - [Improve support for Android intermediate generated sources #181](https://github.com/microsoft/build-server-for-gradle/issues/181)
 - [Support for different types of Android projects #182](https://github.com/microsoft/build-server-for-gradle/issues/182)
