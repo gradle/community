@@ -8,7 +8,7 @@ description: >
 # Gradle Build Tool - Software Developer Survey
 
 The Gradle team is committed to enhancing developer experience,
-as one of the top priorities on the [Gradle Roadmap](../..roadmap/README.md/).
+as one of the top priorities on the [Gradle Roadmap](../../roadmap/README.md/).
 Your feedback is crucial in helping us prioritize our efforts!
 The survey will be open for responses until the end of the year,
 and we intend to make it a recurrent event.
