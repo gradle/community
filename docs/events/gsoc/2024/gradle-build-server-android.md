@@ -124,11 +124,11 @@ As the popularity of Android development grows, the need for efficient build aut
 
 </details>
 
-## Documentation:
+## Developer Documentation:
 
-[Developer documentation](TODO) in the Gradle Build Server contains:
+[Developer documentation](https://github.com/microsoft/build-server-for-gradle/issues/185) in the Gradle Build Server contains:
 
-- Documentatin for implemented functionalities (composite-build support, Java Home handling, Android Java project support).
+- Documentation for implemented functionalities (composite-build support, Java Home handling, Android Java project support).
 - Usage instructions and troubleshooting steps for the added functionalities.
 - Clear examples and diagrams to enhance understanding.
 
