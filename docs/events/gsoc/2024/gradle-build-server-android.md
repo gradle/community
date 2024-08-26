@@ -33,7 +33,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ### Composite-Build Support ([vscode-gradle issue #1435](https://github.com/microsoft/vscode-gradle/issues/1435))
 
-**Status:** Complete (Merged) :green_circle:
+**Status:** Complete (Merged) 🟢
 
 **Pull Requests:** [#154](https://github.com/microsoft/build-server-for-gradle/pull/154), [#160](https://github.com/microsoft/build-server-for-gradle/pull/160)
 
@@ -55,14 +55,14 @@ As the popularity of Android development grows, the need for efficient build aut
 
 <summary><b>Supporting Diagrams:</b></summary>
 
-![Without composite build support](./images/WithoutCompositeBuildSupport.png)
-![With composite build support](./images/WithCompositeBuildSupport.png)
+<img src="./images/WithoutCompositeBuildSupport.png" alt="Without composite build support">
+<img src="./images/WithCompositeBuildSupport.png" alt="With composite build support">
 
 </details>
 
 ### Improved Gradle Java Home Handling ([issue #75](https://github.com/microsoft/build-server-for-gradle/issues/75) and [issue #76](https://github.com/microsoft/build-server-for-gradle/issues/76))
 
-**Status:** Complete (Merged) :green_circle:
+**Status:** Complete (Merged) 🟢
 
 **Pull Request:** [#165](https://github.com/microsoft/build-server-for-gradle/pull/165)
 
@@ -84,13 +84,13 @@ As the popularity of Android development grows, the need for efficient build aut
 
 <summary><b>Supporting Diagrams:</b></summary>
 
-![Java Home Handling](./images/JavaHomeHandling.png)
+<img src="./images/JavaHomeHandling.png" alt="Java Home Handling">
 
 </details>
 
 ### Android Java Project Support
 
-**Status:** Complete (Under Review) :yellow_circle:
+**Status:** Complete (Under Review)🟡
 
 **Pull Request:** [#173](https://github.com/microsoft/build-server-for-gradle/pull/173)
 
@@ -119,14 +119,14 @@ As the popularity of Android development grows, the need for efficient build aut
 
 <summary><b>Supporting Diagrams:</b></summary>
 
-![Android Build Process](./images/AndroidImplementedBuildProcess.png)
-![Android SourceSet Building](./images/SourceSetBuildingAndroid.png)
+<img src="./images/AndroidImplementedBuildProcess.png" alt="Android Build Process">
+<img src="./images/SourceSetBuildingAndroid.png" alt="Android SourceSet Building">
 
 </details>
 
 ## Documentation:
 
-**Status**: Complete :green_circle:
+**Status**: Complete 🟢
 
 All my code is properly documented with JavaDocs and [developer documentation](https://github.com/microsoft/build-server-for-gradle/issues/185) is available in the Gradle Build Server with the following contents:
 
@@ -136,7 +136,7 @@ All my code is properly documented with JavaDocs and [developer documentation](h
 
 ## Unit and Integration Tests:
 
-**Status**: Complete :green_circle:
+**Status**: Complete 🟢
 
 Within the Gradle Build Server I have added unit tests and integration tests to ensure the accuracy and reliability of the implemented functionalities.
 
