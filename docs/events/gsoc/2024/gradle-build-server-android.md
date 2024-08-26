@@ -33,7 +33,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ### Composite-Build Support ([vscode-gradle issue #1435](https://github.com/microsoft/vscode-gradle/issues/1435))
 
-**Status:** Complete (Merged) 🟢
+**Status:** Complete (Merged) :green_circle:
 
 **Pull Requests:** [#154](https://github.com/microsoft/build-server-for-gradle/pull/154), [#160](https://github.com/microsoft/build-server-for-gradle/pull/160)
 
@@ -62,7 +62,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ### Improved Gradle Java Home Handling ([issue #75](https://github.com/microsoft/build-server-for-gradle/issues/75) and [issue #76](https://github.com/microsoft/build-server-for-gradle/issues/76))
 
-**Status:** Complete (Merged) 🟢
+**Status:** Complete (Merged) :green_circle:
 
 **Pull Request:** [#165](https://github.com/microsoft/build-server-for-gradle/pull/165)
 
@@ -90,7 +90,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ### Android Java Project Support
 
-**Status:** Complete (Under Review)🟡
+**Status:** Complete (Under Review) :yellow_circle:
 
 **Pull Request:** [#173](https://github.com/microsoft/build-server-for-gradle/pull/173)
 
@@ -126,7 +126,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ## Documentation:
 
-**Status**: Complete 🟢
+**Status**: Complete :green_circle:
 
 All my code is properly documented with JavaDocs and [developer documentation](https://github.com/microsoft/build-server-for-gradle/issues/185) is available in the Gradle Build Server with the following contents:
 
@@ -136,7 +136,7 @@ All my code is properly documented with JavaDocs and [developer documentation](h
 
 ## Unit and Integration Tests:
 
-**Status**: Complete 🟢
+**Status**: Complete :green_circle:
 
 Within the Gradle Build Server I have added unit tests and integration tests to ensure the accuracy and reliability of the implemented functionalities.
 
