@@ -33,7 +33,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ### Composite-Build Support ([vscode-gradle issue #1435](https://github.com/microsoft/vscode-gradle/issues/1435))
 
-**Status:** Complete (Merged)
+**Status:** Complete (Merged) :green_circle:
 
 **Pull Requests:** [#154](https://github.com/microsoft/build-server-for-gradle/pull/154), [#160](https://github.com/microsoft/build-server-for-gradle/pull/160)
 
@@ -47,18 +47,22 @@ As the popularity of Android development grows, the need for efficient build aut
 
 **Implemented Features:**
 
-- Took over some work already done by [@Arthurm1](https://github.com/Arthurm1) in [PR#122](https://github.com/microsoft/build-server-for-gradle/pull/122), into [PR#154](https://github.com/microsoft/build-server-for-gradle/pull/154).
-- Utilized build actions to retrieve source sets from composite build projects which allowed for dependency susbtitution.
-- Fixed language extension downcast issue in [PR#160](https://github.com/microsoft/build-server-for-gradle/pull/160) which was breaking composite builds.
+- [x] Took over some work already done by [@Arthurm1](https://github.com/Arthurm1) in [PR#122](https://github.com/microsoft/build-server-for-gradle/pull/122), into [PR#154](https://github.com/microsoft/build-server-for-gradle/pull/154).
+- [x] Utilized build actions to retrieve source sets from composite build projects which allowed for dependency susbtitution.
+- [x] Fixed language extension downcast issue in [PR#160](https://github.com/microsoft/build-server-for-gradle/pull/160) which was breaking composite builds.
 
-**Supporting Diagrams:**
+<details>
+
+<summary><b>Supporting Diagrams:</b></summary>
 
 ![Without composite build support](./images/WithoutCompositeBuildSupport.png)
 ![With composite build support](./images/WithCompositeBuildSupport.png)
 
+</details>
+
 ### Improved Gradle Java Home Handling ([issue #75](https://github.com/microsoft/build-server-for-gradle/issues/75) and [issue #76](https://github.com/microsoft/build-server-for-gradle/issues/76))
 
-**Status:** Complete (Merged)
+**Status:** Complete (Merged) :green_circle:
 
 **Pull Request:** [#165](https://github.com/microsoft/build-server-for-gradle/pull/165)
 
@@ -69,20 +73,24 @@ As the popularity of Android development grows, the need for efficient build aut
 
 **Implemented Features:**
 
-- Probe build the project to find if default Java Home configuration is compatible.
-- In case of incompatibility try to find a compatible Java Home in the given order:
+- [x] Probe build the project to find if default Java Home configuration is compatible.
+- [x] In case of incompatibility try to find a compatible Java Home in the given order:
     1. GradleJavaHome (Gradle Properties)
     2. UserJavaHome (Retrieved from preferences)
-- Notify client if project's default Java Home was incompatible and we switched to a different Java Home for compatibility.
-- Notify client if the fallback logic couldn't find a compatible Java Home.
+- [x] Notify client if project's default Java Home was incompatible and we switched to a different Java Home for compatibility.
+- [x] Notify client if the fallback logic couldn't find a compatible Java Home.
 
-**Supporting Diagrams:**
+<details>
+
+<summary><b>Supporting Diagrams:</b></summary>
 
 ![Java Home Handling](./images/JavaHomeHandling.png)
 
+</details>
+
 ### Android Java Project Support
 
-**Status:** Complete (Under Review)
+**Status:** Complete (Under Review) :yellow_circle:
 
 **Pull Request:** [#173](https://github.com/microsoft/build-server-for-gradle/pull/173)
 
@@ -96,9 +104,9 @@ As the popularity of Android development grows, the need for efficient build aut
 
 **Implemented Features:**
 
-- Extracting Build Variants and their properties from Android projects via reflection.
-- Populating a GradleSourceSet (build target model) with build variants properties.
-- Providing Android SDK components and R file via dependency modules of the build target.
+- [x] Extracted Build Variants and their properties from Android projects via reflection.
+- [x] Populated GradleSourceSet (build target model) with build variant properties.
+- [x] Provided Android SDK components and R file via dependency modules of the build target.
 
 **Limitations:**
 
@@ -107,23 +115,36 @@ As the popularity of Android development grows, the need for efficient build aut
 - My implementation takes into account any user defined build variants and the default build variants - debug and release except the default test variants - test and androidTest. ([Issue #183](https://github.com/microsoft/build-server-for-gradle/issues/183))
 - Android Components to be used by an Android project is configured via ANDROID_HOME environment variable. If the property doesn't exist then we are not providing the dependency. This implementation can be improved via fallback logic similar to what we did for JAVA_HOME in [PR #165](https://github.com/microsoft/build-server-for-gradle/pull/165). ([Issue #184](https://github.com/microsoft/build-server-for-gradle/issues/184))
 
-**Supporting Diagrams:**
+<details>
+
+<summary><b>Supporting Diagrams:</b></summary>
 
 ![Android Build Process](./images/AndroidImplementedBuildProcess.png)
 ![Android SourceSet Building](./images/SourceSetBuildingAndroid.png)
 
+</details>
+
 ## Documentation:
 
-- Detailed developer documentation for the implemented functionalities (composite builds, Java Home detection and sending notification on incompatibility, android support).
-- Documentation covering usage instructions and troubleshooting steps for the added functionalities.
-- Using clear examples and diagrams to enhance understanding.
+[Developer documentation](TODO) in the Gradle Build Server contains:
 
-## Unit and Integration Testing:
+- Documentatin for implemented functionalities (composite-build support, Java Home handling, Android Java project support).
+- Usage instructions and troubleshooting steps for the added functionalities.
+- Clear examples and diagrams to enhance understanding.
 
-- Implement unit tests to ensure the accuracy and reliability of the implemented functionalities.
-- Unit tests thoroughly cover specific components like composite builds logic, language extension downcasting, Gradle Java Home handling logic, and build target verification logic for android projects.
-- Implement integration tests to verify seamless functionality within the Gradle Build Server environment.
-- Integration tests simulate real-world build scenarios and interactions between different server components.
+## Unit and Integration Tests:
+
+Within the Gradle Build Server I have added unit tests and integration tests to ensure the accuracy and reliability of the implemented functionalities.
+
+- `testCompositeBuild1` and `testCompositeBuild2` unit tests ensure all the source sets from the composite build test projects are retrieved and the build target dependencies are mapped properly.
+- `testCompatibleDefaultJavaHomeProjectServer`, `testCompatibleUserJavaHomeProjectServer` and `testIncompatibleUserJavaHomeProjectServer` integration tests ensures the robustness of Gradle Java Home handling logic in different scenarios:
+  1. Default configuration is compatible
+  2. Compatible JDK available in User Preferences
+  3. No compatible JDK supplied by any mechanism
+- `testGetJavaVersionFromFile`, `testGetJavaVersionFromFile_SimulatedException` and `testGetJavaVersionFromFile_NonExistentExecutable` unit tests ensure the Java version is successfully extracted from the given JDK file while handling possible failure scenarios.
+- `testIsCompatible_Valid`, `testIsCompatible_OldestInvalid` and `testIsCompatible_LatestInvalid` unit tests ensures the reliability of the compatibility checks for different java versions.
+- `testAndroidSourceSets` unit test ensures all the source sets(converted from android build variants) are correctly retrieved from the model builder and all the module dependencies are present.
+- `testAndroidBuildTargets` integration test ensures the Android Components is added to the module dependency of the build targets.
 
 ## Demos
 
@@ -139,7 +160,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 Throughout the program I have collaborated with all of my mentors and gained invaluable insights into open source development - best practices, project management and contributions. They also helped me learn how to explore large project repositories for research.
 
-My work on this project, significantly expanded my skill set, encompassing JSON-RPC, Language Server Protocol, Build Server Protocol, Gradle API, Gradle Tooling API, testing methodologies and merging techniques with git. I successfully applied these learnings to produce the mentioned outcomes.
+My work on this project, significantly expanded my skill set, encompassing JSON-RPC, Language Server Protocol, Build Server Protocol, Gradle, Gradle API, Gradle Tooling API, AGP, testing methodologies and merging techniques with git. I successfully applied these learnings to produce the mentioned outcomes.
 
 If anyone is interested to continue the work and bring further support for Android projects in [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) then you can get started with the following issues mentioned in [this comment](https://github.com/microsoft/build-server-for-gradle/pull/173#issuecomment-2308392453):
 
