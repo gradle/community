@@ -3,7 +3,7 @@
 This project aims to enhance [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) project from Microsoft by integrating powerful Android Studio features. Bridging the build process gap between [Android Studio](https://developer.android.com/studio) and [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle), will significantly improve the development experience for many Android developers using Text Editors/IDEs which utilize the [Build Server Protocol (BSP)](https://build-server-protocol.github.io).
 
 ## Status
-Passed mid-term evaluation with successful completion of composite build support, `JAVA_HOME` handling under review and Android support in review.
+Passed mid-term evaluation with successful completion of composite build support, `JAVA_HOME` handling merged and Android support under review.
 
 ## Goal
 
@@ -124,15 +124,19 @@ As the popularity of Android development grows, the need for efficient build aut
 
 </details>
 
-## Developer Documentation:
+## Documentation:
 
-[Developer documentation](https://github.com/microsoft/build-server-for-gradle/issues/185) in the Gradle Build Server contains:
+**Status**: Complete :green_circle:
+
+All my code is properly documented with JavaDocs and [developer documentation](https://github.com/microsoft/build-server-for-gradle/issues/185) is available in the Gradle Build Server with the following contents:
 
 - Documentation for implemented functionalities (composite-build support, Java Home handling, Android Java project support).
 - Usage instructions and troubleshooting steps for the added functionalities.
 - Clear examples and diagrams to enhance understanding.
 
 ## Unit and Integration Tests:
+
+**Status**: Complete :green_circle:
 
 Within the Gradle Build Server I have added unit tests and integration tests to ensure the accuracy and reliability of the implemented functionalities.
 
