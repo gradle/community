@@ -135,7 +135,11 @@ nav:
       - Events Overview: events/README.md
       - 2024 Developer Survey: surveys/developer-survey/README.md
       - Hacktoberfest: events/hacktoberfest/README.md
-      - Google Summer of Code: events/gsoc/README.md
+      - Google Summer of Code:
+        - Overview: events/gsoc/README.md
+        - Gradle Build Server - Support for Android projects: events/gsoc/2024/gradle-build-server-android.md
+        - Gradle Build Server - DevX and Language Support in Buildship: events/gsoc/2024/gradle-build-server-devx.md
+        - Declarative Syntax and Enhancements for the Checkstyle Plugin: events/gsoc/2024/checkstyle-plugin.md
   - Resources:
     - Resources: resources/README.md
     - Public Roadmap: roadmap/README.md
