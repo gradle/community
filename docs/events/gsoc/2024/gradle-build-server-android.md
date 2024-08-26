@@ -55,8 +55,8 @@ As the popularity of Android development grows, the need for efficient build aut
 
 <summary><b>Supporting Diagrams:</b></summary>
 
-![Without composite build support](./images/WithoutCompositeBuildSupport.png)
-![With composite build support](./images/WithCompositeBuildSupport.png)
+<img src="./images/WithoutCompositeBuildSupport.png" alt="Without composite build support">
+<img src="./images/WithCompositeBuildSupport.png" alt="With composite build support">
 
 </details>
 
@@ -84,7 +84,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 <summary><b>Supporting Diagrams:</b></summary>
 
-![Java Home Handling](./images/JavaHomeHandling.png)
+<img src="./images/JavaHomeHandling.png" alt="Java Home Handling">
 
 </details>
 
@@ -119,8 +119,8 @@ As the popularity of Android development grows, the need for efficient build aut
 
 <summary><b>Supporting Diagrams:</b></summary>
 
-![Android Build Process](./images/AndroidImplementedBuildProcess.png)
-![Android SourceSet Building](./images/SourceSetBuildingAndroid.png)
+<img src="./images/AndroidImplementedBuildProcess.png" alt="Android Build Process">
+<img src="./images/SourceSetBuildingAndroid.png" alt="Android SourceSet Building">
 
 </details>
 
