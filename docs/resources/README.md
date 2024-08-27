@@ -47,6 +47,12 @@ resources:
     - <a href="https://developer.android.com/studio/build/index.html">Android Studio</a>
     - <a href="http://www.vogella.com/tutorials/EclipseGradle/article.html">Eclipse Buildship</a>
     - <a href="https://netbeans.apache.org/">Netbeans</a>
+-  section: Learn Gradle
+   icon: ../images/icons/learn.svg
+   links:
+    - <a href="https://cookbook.gradle.org">Gradle Cookbook</a>
+    - <a promo_location="Learning Resources" href="https://dpeuniversity.gradle.com/app">DPE University</a>
+    - <a href="https://gradle.com/training/">Gradle Events</a>
 ---
 
 Below you can see the list of the Gradle community resources

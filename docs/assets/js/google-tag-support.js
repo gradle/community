@@ -7,7 +7,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         link.setAttribute("promo", "yes")
         link.setAttribute("promo_offer", "DPEU")
         link.setAttribute("promo_type", link.getElementsByTagName("a") ? "link" : "image")
-        link.setAttribute("promo_location", "community-site")
+        if (!link.getAttribute("promo_location")) {
+          link.setAttribute("promo_location", "community-site")
+        }
       }
     }
   });
