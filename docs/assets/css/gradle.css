@@ -14,6 +14,16 @@
     --md-primary-fg-color--dark:  var(--gradle-bg-dark);
 }
 
+.md-banner {
+    div {
+        text-align: center;
+        a {
+            color: var(--gradle-blue);
+            font-weight: bold;
+        }
+    }
+}
+
 .md-content {
     --md-typeset-a-color: var(--gradle-blue-lite);
 }
