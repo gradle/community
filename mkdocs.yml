@@ -102,8 +102,7 @@ extra:
       link: https://mastodon.social/@Gradle
       name: Mastodon
   analytics:
-    provider: google
-    property: G-7W7NC6YNPT
+    provider: custom
 
 nav:
   - Home: README.md
