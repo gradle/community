@@ -178,6 +178,15 @@ If anyone is interested to continue the work and bring further support for Andro
 
 You can view all Android support related issues [here](https://github.com/microsoft/build-server-for-gradle/labels/android).
 
+## Post GSoC progress
+The following progress has been made after final evaluation for this GSoC project was complete.
+
+### 1. Updated Gradle for Java vscode extension
+With [#1594](https://github.com/microsoft/vscode-gradle/pull/1594) in [vscode-gradle](https://github.com/microsoft/vscode-gradle), it can now extract `classes.jar` file from the given android library (.aar) file.
+
+### 2. Android test variants recognition
+Recognizing default android test variants - `test` and `androidTest` with [#194](https://github.com/microsoft/build-server-for-gradle/pull/194).
+
 ## Links
 
 - [Project page on the GSoC site](https://summerofcode.withgoogle.com/programs/2024/projects/Guphkt1v)
