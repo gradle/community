@@ -19,7 +19,7 @@ tagging Gradle directly. Our accounts are:
 
 - [LinkedIn](https://www.linkedin.com/company/gradle) company page
 - [X/Twitter](https://twitter.com/gradle) (`@gradle`)
-- [YouTube](https://www.youtube.com/channel/) (`@GradleInc`)
+- [YouTube](https://www.youtube.com/@GradleInc) (`@GradleInc`)
 - [Mastodon](https://mastodon.social/@Gradle) (`@gradle`)
 - [Facebook](https://www.facebook.com/gradleinc) (`@gradleinc`)
 
