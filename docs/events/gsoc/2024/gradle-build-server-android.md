@@ -128,8 +128,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 **Status**: Complete :green_circle:
 
-[//]: # (TODO: Update link when #189 is merged in GradleBuildServer)
-All my code is properly documented with JavaDocs and [developer documentation](https://github.com/microsoft/build-server-for-gradle/issues/185) is available in the Gradle Build Server with the following contents:
+All my code is properly documented with JavaDocs and [developer documentation](https://github.com/microsoft/build-server-for-gradle/blob/develop/docs/developer.md) is available in the Gradle Build Server with the following contents:
 
 - Documentation for implemented functionalities (composite-build support, Java Home handling, Android Java project support).
 - Usage instructions and troubleshooting steps for the added functionalities.
