@@ -3,7 +3,7 @@
 This project aims to enhance [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) project from Microsoft by integrating powerful Android Studio features. Bridging the build process gap between [Android Studio](https://developer.android.com/studio) and [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle), will significantly improve the development experience for many Android developers using Text Editors/IDEs which utilize the [Build Server Protocol (BSP)](https://build-server-protocol.github.io).
 
 ## Status
-Passed mid-term evaluation with successful completion of composite build support, `JAVA_HOME` handling merged and Android support under review.
+Passed end-term evaluation with successful completion of composite build support, `JAVA_HOME` handling and Android support PRs all merged.
 
 ## Goal
 
@@ -90,7 +90,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 ### Android Java Project Support
 
-**Status:** Complete (Under Review) :yellow_circle:
+**Status:** Complete (Merged) :green_circle:
 
 **Pull Request:** [#173](https://github.com/microsoft/build-server-for-gradle/pull/173)
 
@@ -110,10 +110,10 @@ As the popularity of Android development grows, the need for efficient build aut
 
 **Limitations:**
 
-- Android generates a lot of intermediate sources such as AIDL, Render script, C/CPP, etc. Unfortunately AGP doesn't provide any APIs to retrieve these files. R.jar is one of these intermediate sources which is crucial for Android development so as a workaround I have retrieved the file using the process task for the build variant however, in some cases the task may not be registered during the sync in which case the dependency for R.jar is not provided. ([Issue #181](https://github.com/microsoft/build-server-for-gradle/issues/181))
+- Android generates a lot of intermediate sources such as AIDL, Render script, C/CPP, etc. Unfortunately AGP doesn't provide any APIs to retrieve these files. `R.jar` is one of these intermediate sources which is crucial for Android development so as a workaround I have retrieved the file using the process task for the build variant however, in some cases the task may not be registered during the sync in which case the dependency for `R.jar` is not provided. ([Issue #181](https://github.com/microsoft/build-server-for-gradle/issues/181))
 - There various kinds of projects that come under Android development such as Application, Library, Instant App, Dynamic Modules, Android Test, etc. I have added support for the most commonly used projects - Application and Library but the current implementation may require further enhancements to support other kinds of projects. ([Issue #182](https://github.com/microsoft/build-server-for-gradle/issues/182))
-- My implementation takes into account any user defined build variants and the default build variants - debug and release except the default test variants - test and androidTest. ([Issue #183](https://github.com/microsoft/build-server-for-gradle/issues/183))
-- Android Components to be used by an Android project is configured via ANDROID_HOME environment variable. If the property doesn't exist then we are not providing the dependency. This implementation can be improved via fallback logic similar to what we did for JAVA_HOME in [PR #165](https://github.com/microsoft/build-server-for-gradle/pull/165). ([Issue #184](https://github.com/microsoft/build-server-for-gradle/issues/184))
+- My implementation takes into account all configured build variants except the default test variants - `test` and `androidTest`. ([Issue #183](https://github.com/microsoft/build-server-for-gradle/issues/183))
+- Android Components to be used by an Android project is configured via `ANDROID_HOME` environment variable. If the property doesn't exist then we are not providing the dependency. This implementation can be improved via fallback logic similar to what we did for `JAVA_HOME` in [PR #165](https://github.com/microsoft/build-server-for-gradle/pull/165). ([Issue #184](https://github.com/microsoft/build-server-for-gradle/issues/184))
 
 <details>
 
@@ -128,7 +128,7 @@ As the popularity of Android development grows, the need for efficient build aut
 
 **Status**: Complete :green_circle:
 
-All my code is properly documented with JavaDocs and [developer documentation](https://github.com/microsoft/build-server-for-gradle/issues/185) is available in the Gradle Build Server with the following contents:
+All my code is properly documented with JavaDocs and [developer documentation](https://github.com/microsoft/build-server-for-gradle/blob/develop/docs/developer.md) is available in the Gradle Build Server with the following contents:
 
 - Documentation for implemented functionalities (composite-build support, Java Home handling, Android Java project support).
 - Usage instructions and troubleshooting steps for the added functionalities.
@@ -160,6 +160,8 @@ Within the Gradle Build Server I have added unit tests and integration tests to 
   </div>
 </div>
 
+[//]: # (TODO: Attach end term demo video once published)
+
 ## Collaboration and Learning
 
 Throughout the program I have collaborated with all of my mentors and gained invaluable insights into open source development - best practices, project management and contributions. They also helped me learn how to explore large project repositories for research.
@@ -174,6 +176,15 @@ If anyone is interested to continue the work and bring further support for Andro
 - [ANDROID_HOME fallback logic #184](https://github.com/microsoft/build-server-for-gradle/issues/184)
 
 You can view all Android support related issues [here](https://github.com/microsoft/build-server-for-gradle/labels/android).
+
+## Post GSoC progress
+The following progress has been made after final evaluation for this GSoC project was complete.
+
+### 1. Updated Gradle for Java vscode extension
+With [#1594](https://github.com/microsoft/vscode-gradle/pull/1594) in [vscode-gradle](https://github.com/microsoft/vscode-gradle), it can now extract `classes.jar` file from the given android library (.aar) file.
+
+### 2. Android test variants recognition
+Recognizing default android test variants - `test` and `androidTest` with [#194](https://github.com/microsoft/build-server-for-gradle/pull/194).
 
 ## Links
 
