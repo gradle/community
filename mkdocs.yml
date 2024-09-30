@@ -15,7 +15,7 @@ docs_dir: docs
 repo_url: https://github.com/gradle/community
 repo_name: Gradle Community repo
 edit_uri: edit/main/docs/
-site_url: https://gradle.github.io/community
+site_url: https://community.gradle.org
 
 # Build
 site_dir: _site
