@@ -14,8 +14,8 @@ Many component maintainers from the Gradle ecosystem, such as the
 already include their projects in Hacktoberfest.
 
 This year, Gradle is participating in Hacktoberfest!
-We are looking forward to featuring projects, hosting online events for new open-source contributors,
-and sending custom Gradle goodies for those who contribute to the projects.
+We are looking forward to collaborating with all contributors on the featured projects, hosting online events for new open-source contributors,
+and sending custom Gradle goodies for those who do substantial contributions to the Gradle ecosystem.
 
 ## Quick Start
 
