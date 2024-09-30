@@ -77,7 +77,7 @@ References:
 ### Configuration Cache Compatibility in Plugins
 
 In the upcoming Gradle 9.0, we plan to recommend enabling the [Gradle Configuration Cache](https://docs.gradle.org/current/userguide/configuration_cache.html) by default.
-It will greatly speed up all aspects of Gradle by caching the Gradle build graph created during the configuration phase.
+It will greatly speed up all aspects of Gradle by caching the Gradle work graph created during the configuration phase.
 There have been compatibility issues in plugins,
 and some are yet to be discovered and fixed.
 Hence, we invite contributors to work on updating the plugin ecosystem,
@@ -96,7 +96,7 @@ References:
 
 We are working on the [Gradle Cookbook](https://cookbook.gradle.org/) - a new community resource with recipes
 for cases that are not included in the main Gradle documentation,
-including tool integrations, solutions for specific languages and tech stacks
+including tool integrations, solutions for specific languages, and tech stacks
 (e.g. Android), tips on troubleshooting and plugin development.
 
 You are welcome to create new recipes, or to update the existing ones.
