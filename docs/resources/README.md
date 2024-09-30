@@ -7,8 +7,8 @@ resources:
   links:
     - <a href="https://newsletter.gradle.org/">Newsletter</a>
     - <a href="https://blog.gradle.org/">Blog</a>
-    - <a href="../contributing/spread-the-word/#social-media">Social Media</a>
-    - <a href="https://www.youtube.com/channel/">YouTube</a>
+    - <a href="../resources/social-media">Social Media</a>
+    - <a href="https://www.youtube.com/channel/@GradleInc">YouTube</a>
 - section: Documentation
   icon: ../images/icons/documentation.svg
   links:
@@ -21,7 +21,7 @@ resources:
   icon: ../images/icons/discuss.svg
   links:
     - <a href="/help/">Search Gradle &amp; Stack Overflow</a>
-    - <a href="https://gradle.com/slack-invite">Slack Channel</a> (<a href="https://www.linen.dev/s/gradle-community">Archive</a>)
+    - <a href="../contributing/community-slack">Slack Channel</a> (<a href="https://www.linen.dev/s/gradle-community">Archive</a>)
     - <a href="https://discuss.gradle.org">Gradle Forums</a>
     - <a href="https://stackoverflow.com/questions/tagged/gradle">Stack Overflow</a>
     - <a href="/services/">Professional Services</a>
@@ -42,17 +42,17 @@ resources:
 - section: IDEs
   icon: ../images/icons/ide.svg
   links:
-    - <a href="https://www.jetbrains.com/help/idea/gradle.html">IntelliJ IDEA</a>
+    - <a href="https://docs.gradle.org/current/userguide/gradle_ides.html#intellij_idea">IntelliJ IDEA</a>
     - <a href="https://docs.gradle.org/current/userguide/gradle_ides.html#visual_studio_code">Visual Studio Code</a>
-    - <a href="https://developer.android.com/studio/build/index.html">Android Studio</a>
-    - <a href="http://www.vogella.com/tutorials/EclipseGradle/article.html">Eclipse Buildship</a>
-    - <a href="https://netbeans.apache.org/">Netbeans</a>
+    - <a href="https://docs.gradle.org/current/userguide/gradle_ides.html#android_studio">Android Studio</a>
+    - <a href="https://docs.gradle.org/current/userguide/gradle_ides.html#eclipse">Eclipse Buildship</a>
+    - <a href="https://docs.gradle.org/current/userguide/gradle_ides.html#netbeans">Apache NetBeans</a>
 -  section: Learn Gradle
    icon: ../images/icons/learn.svg
    links:
     - <a href="https://cookbook.gradle.org">Gradle Cookbook</a>
     - <a promo_location="Learning Resources" href="https://dpeuniversity.gradle.com/app">DPE University</a>
-    - <a href="https://gradle.com/training/">Gradle Events</a>
+    - <a href="https://gradle.com/training/">Conferences and Webinars</a>
 ---
 
 Below you can see the list of the Gradle community resources

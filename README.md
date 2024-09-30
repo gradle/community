@@ -8,8 +8,8 @@ We also use it for tracking issues and initiatives related to the community's gr
 
 - [Gradle Community Resources](https://gradle.org/resources/) -
 Official listing on the website
-- [Contributing to Gradle Build Tool](https://github.com/gradle/gradle/blob/master/CONTRIBUTING.md) -
-  Kernel parts, core plugins, and documentation
+- [Contributing to Gradle Build Tool](./docs/contributing/README.md) -
+  Contriibutor Guide (code documentation, etc.)
 - [Security Vulnerability Reporting Policy](https://github.com/gradle/gradle/security/policy)
 - [Code of Conduct](https://gradle.org/conduct/)
 

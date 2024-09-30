@@ -142,9 +142,11 @@ nav:
         - Gradle Build Server - DevX and Language Support in Buildship: events/gsoc/2024/gradle-build-server-devx.md
         - Declarative Syntax and Enhancements for the Checkstyle Plugin: events/gsoc/2024/checkstyle-plugin.md
   - Resources:
-    - Resources: resources/README.md
+    - Key Resources: resources/README.md
     - Public Roadmap: roadmap/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
+    - Social Media: resources/social-media.md
+    - Trademark and Branding: https://gradle.com/brand/
 #  - Resources:
 #    - Gradle Docs: https://docs.gradle.org/
 #    - Blog: https://blog.gradle.org/
