@@ -29,12 +29,12 @@ and sending custom Gradle goodies for those who do substantial contributions to 
 ## Featured Projects
 
 During Hacktoberfest,
-you are welcome to work on any project marked with `hacktoberfest` topic on GitHub or Gitlab.
-Of course, invite you to work on the Gradle related projects:
+you are welcome to work on any project marked with the `hacktoberfest` topic on GitHub or Gitlab.
+Of course, we invite you to work on the following Gradle related projects:
 plugins, tools, documentation and examples.
 
-Below, there are a few projects we have in mind for the event,
-with the different levels of complexity:
+Below, there are a few project ideas we have in mind for the event,
+with different levels of complexity:
 
 - **Beginner:** [Learn Gradle](#learn) - Basics, Java, Kotlin
 - **Easy:** [Adopt Gradle Best Practices in your GitHub Actions](#github-actions) -
@@ -52,8 +52,7 @@ with the different levels of complexity:
 
 ### Adopt Gradle Best Practices in your GitHub Actions
 
-Use Gradle in **YOUR** GitHub repositories and use GitHub Actions to build projects?
-We invite everyone to adopt the [Gradle & GitHub Actions best practices](https://community.gradle.org/cookbook/ci/github-actions/) in them.
+We invite everyone to adopt [Gradle & GitHub Actions best practices](https://community.gradle.org/cookbook/ci/github-actions/).
 You can:
 
 * Make them safer by enabling the [Dependency Submission Action](https://github.com/gradle/actions/blob/main/dependency-submission/README.md) to [detect vulnerable dependencies with](https://community.gradle.org/cookbook/ci/github-actions/#detect-vulnerable-dependencies-with-a-dependency-submission-workflow) -
@@ -63,10 +62,10 @@ You can:
 * Update documentation for the Actions, based on your experiences
   ([GitHub Repo](https://github.com/gradle/actions), [Cookbook Pages](https://community.gradle.org/cookbook/ci/github-actions/))
 
-To note your patches within the Hacktoberfest,
+To tag your patches for Hacktoberfest,
 please reference [this ticket](https://github.com/gradle/actions/issues/406)
-in the pull requests toward your repository,
-which should also have the `hacktoberfest` topic.
+in the pull requests,
+and add the `hacktoberfest` topic.
 
 References:
 
@@ -77,7 +76,7 @@ References:
 
 ### Configuration Cache Compatibility in Plugins
 
-In the upcoming Gradle 9.0, we plan to recommend enabling [Gradle Configuration Cache](https://docs.gradle.org/current/userguide/configuration_cache.html) by default.
+In the upcoming Gradle 9.0, we plan to recommend enabling the [Gradle Configuration Cache](https://docs.gradle.org/current/userguide/configuration_cache.html) by default.
 It will greatly speed up all aspects of Gradle by caching the Gradle build graph created during the configuration phase.
 There have been compatibility issues in plugins,
 and some are yet to be discovered and fixed.
@@ -125,8 +124,8 @@ References:
 
 ### Learn Gradle
 
-If you are just starting with Gradle,
-maybe you could start from learning it and practicing with common
+If you are just starting out with Gradle,
+you can learn through common
 Java, Kotlin or Android projects.
 
 * Learn Gradle Build Tool with free courses on [DPE University](https://dpeuniversity.gradle.com/app/catalog). Learn Gradle features, create new repositories while learning, and make sure to mark them with `#hacktoberfest`!
@@ -136,14 +135,14 @@ Java, Kotlin or Android projects.
 More advanced users can also experiment with [Declarative Gradle](https://declarative.gradle.org/) and share their feedback.
 See the [Getting Started Guide](https://declarative.gradle.org/docs/getting-started/) for the pointers.
 
-To discuss your learning experiences, use the `#docs` channel on the Community Slack
+To discuss your learning experiences, use the `#docs` channel on the Community Slack.
 
 <a name="community-site"></a>
 
 ### Improve the Community Site
 
 We created this community site in early 2024, and there are many improvements to be done!
-Improving look&feel, creating new content, etc., etc.
+Improving the look & feel, creating new content, etc...
 All patches are welcome!
 
 References:
@@ -155,21 +154,21 @@ References:
 
 During the Hacktoberfest, maintainers are welcome to add their project if they provide contributor guidelines and issues that can be worked on by contributors.
 If you want to add your project, add a `hacktoberfest` topic to it and submit a pull request to this page.
-It count as contribution, too :wink:
+It counts as a contribution, too :wink:
 
 ## Swag
 
 In addition to our Hacktoberfest swag,
 we plan to send something nice to those who make substantial contributions to
 Gradle Build Tool and its ecosystem.
-For that, make sure to register in [Our Sign-Up Form](https://forms.gle/go2VESj7kDG1QUqV7) so that we can discover your contributions.
+Make sure to register in [Our Sign-Up Form](https://forms.gle/go2VESj7kDG1QUqV7) so that we can discover your contributions.
 
 ![Hacktoberfest Swag](./images/swag.jpg)
 
 ## Events
 
 We plan some online events during October, with a goal to help with contributions.
-Openings of those events will be recorded
+Those events will be recorded:
 
 - **October 02, 14:00 UTC** - Opening Office Hours and Q&A.
   The link will be shared soon.
