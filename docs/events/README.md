@@ -46,9 +46,7 @@ we might be able to host something in the community for a particular initiative.
 If you are a maintainer or an active contributor interested in doing mentorship,
 reach out to us on the `#contributing` channel.
 
-## Other Events
-
-### Hacktoberfest
+## Hacktoberfest
 
 [Hacktoberfest](https://hacktoberfest.com/) is a month-long celebration of open-source projects, their maintainers, and the entire community of contributors.
 Many component maintainers from the Gradle ecosystem, e.g. the
@@ -58,6 +56,12 @@ already include their projects in Hacktoberfest.
 In 2024, we plan to participate as an organization,
 and to offer nice special-edition swag to the key contributors.
 
+## Events Archive
+
+In the past we also hosted or participated in the following events:
+
+- [Major League Hacking Fellowship Program 2023](https://news.mlh.io/major-league-hacking-partners-with-gradle-to-empower-the-next-generation-of-open-source-leaders-09-28-2023)
+- [Gradle Configuration Cache Hackathon 2022](https://github.com/gradle/cc-hackathon-2022)
 
 ## Stay Informed
 

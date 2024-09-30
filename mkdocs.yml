@@ -118,6 +118,7 @@ nav:
     - Gradle for Kotlin: cookbook/kotlin/README.md
     - Gradle for Android: cookbook/android/README.md
     - Contributing: cookbook/CONTRIBUTING.md
+  - Hacktoberfest 2024: events/hacktoberfest/2024/README.md
   - Participate:
     - Getting Started: contributing/README.md
     - Community Slack: contributing/community-slack.md
