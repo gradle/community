@@ -1,21 +1,19 @@
-# Gradle community
+# Gradle Community Site
 
-This is an open-source repository for all Gradle community
+This is an open-source site and repository for all Gradle community
 matters, including governance, artwork, events, and public infrastructure.
-We also use it for tracking issues and initiatives related to the community's growth and ecosystem.
+We also use this repository to track issues and initiatives related to the community's growth and ecosystem.
 
 ## Resources
 
-- [Gradle Community Resources](https://gradle.org/resources/) -
+- [Gradle Community Resources](https://gradle.org/resources) -
 Official listing on the website
-- [Contributing to Gradle Build Tool](./docs/contributing/README.md) -
-  Contriibutor Guide (code documentation, etc.)
 - [Security Vulnerability Reporting Policy](https://github.com/gradle/gradle/security/policy)
 - [Code of Conduct](https://gradle.org/conduct/)
 
 ## Community Channels
 
-- [`gradle-community` Slack workspace](https://gradle.com/slack-invite)
+- [`#gradle-community` Slack workspace](https://gradle.com/slack-invite)
   ([Slack History Archive](https://www.linen.dev/s/gradle-community))
 - [Gradle Forums](https://discuss.gradle.org/) (Discourse)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/gradle) (`#gradle` tag)
@@ -25,7 +23,8 @@ Official listing on the website
 
 ## Contributing
 
-See the [Community Resources](https://gradle.org/resources/) for the links to the contributing guidelines.
+To contribute to this community repo, see [CONTRIBUTING.md](./docs/CONTRIBUTING.md).
+To contribute to the Gradle community as whole, we have the contributor guide [here](https://community.gradle.org/contributing/).
 All contributions are welcome!
 If you want to contribute anything to this repository,
 just submit a pull request.
