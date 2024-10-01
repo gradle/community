@@ -25,7 +25,7 @@
 }
 
 .md-content {
-    --md-typeset-a-color: var(--gradle-blue-lite);
+    --md-typeset-a-color: var(--gradle-blue);
 }
 
 /*
@@ -39,19 +39,19 @@
 }
 
 .md-typeset h1 {
-    color: var(--gradle-blue);
+    color: var(--gradle-dark);
 }
 
 h2 {
-    color: var(--gradle-blue);
+    color: var(--gradle-dark);
 }
 
 h3 {
-    color: var(--gradle-blue);
+    color: var(--gradle-dark);
 }
 
 h4 {
-    color: var(--gradle-blue);
+    color: var(--gradle-dark);
 }
 
 .youtube-video {
