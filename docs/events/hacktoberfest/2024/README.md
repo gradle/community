@@ -47,6 +47,8 @@ with different levels of complexity:
   Java, Kotlin, Android, Documentation
 - **Easy/Medium:** [Improve this Site!](#community-site) -
   MkDocs, Web Design, Documentation
+- **Medium:** [Stabilize support for ViteJS](#stabilize-support-for-vitejs) -
+  Kotlin, JavaScript ecosystem, Gradle
 
 <a name="github-actions"></a>
 
@@ -150,6 +152,17 @@ References:
 
 * [Contributing to the Community Site](./../../../CONTRIBUTING.md)
 * [Open Issues](https://github.com/gradle/community/labels/website)
+
+### Stabilize support for ViteJS
+
+[OpenSavvy](https://opensavvy.dev) is working on bringing the [ViteJS](https://vitejs.dev/) bundler to the Gradle Build Tool, in particular for the Kotlin Multiplatform stack. The initial version works on simple projects, but breaks when used with some configurations or libraries. We're searching for contributors who can help us understand what goes wrong so we can stabilize and release the project.
+
+References:
+
+* [Repository](https://gitlab.com/opensavvy/automation/kotlin-vite)
+* [Documentation](https://opensavvy.gitlab.io/automation/kotlin-vite/api-docs/)
+* [Suggested GitLab issues](https://gitlab.com/opensavvy/automation/kotlin-vite/-/issues/?sort=priority&state=opened&or%5Blabel_name%5D%5B%5D=contribution%3A%3Adifficult&or%5Blabel_name%5D%5B%5D=contribution%3A%3Aeasy&or%5Blabel_name%5D%5B%5D=contribution%3A%3Amedium)
+* Discuss: [`#opensavvy`](https://slack-chats.kotlinlang.org/c/opensavvy) in the Kotlin Slack, or by commenting on issues
 
 ## ¿More Featured Projects?
 
