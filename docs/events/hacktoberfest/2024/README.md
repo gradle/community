@@ -118,6 +118,7 @@ The team nominated a few projects for Hacktoberfest: Shadow Plugin, Static Analy
 References:
 
 - [Contributing to GradleUp](https://gradleup.com/docs/community/participate/)
+- [Suggested GitHub Issues](https://github.com/search?q=org%3AGradleUp+is%3Aissue+is%3Aopen+label%3A%22hacktoberfest%22%2C%22help+wanted%22%2C%22good+first+issue%22&type=issues)
 - Discuss: `#gradleup` channel on the Community Slack
 
 <a name="learn"></a>
