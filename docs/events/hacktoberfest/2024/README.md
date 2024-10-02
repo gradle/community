@@ -22,9 +22,12 @@ and sending custom Gradle goodies for those who do substantial contributions to 
 1. Sign-up for Hacktoberfest on [hacktoberfest.com](https://hacktoberfest.com/)
 2. Sign-up in [this form for Gradle](https://forms.gle/go2VESj7kDG1QUqV7) so that
   we can contact you and distribute swag
-3. Join the `#hacktoberfest` channel on the Gradle Community Slack [](../../../contributing/community-slack.md)
-4. Check out the Featured Projects below, and consider joining us for Hacktoberfest events!
-5. Enjoy!
+3. Join the `#hacktoberfest` channel on the [Gradle Community Slack](../../../contributing/community-slack.md)
+4. Check out the _Featured Projects_ below, or choose something on your own
+5. Enjoy, and send some pull requests! :rocket:
+
+Also, consider joining us for [Hacktoberfest events](#events)!
+There, we plan to provide some tips on contributing to various aspects of Gradle.
 
 ## Featured Projects
 
@@ -36,23 +39,40 @@ plugins, tools, documentation and examples.
 Below, there are a few project ideas we have in mind for the event,
 with different levels of complexity:
 
-- **Beginner:** [Learn Gradle](#learn) - Basics, Java, Kotlin
-- **Easy:** [Adopt Gradle Best Practices in your GitHub Actions](#github-actions) -
+- 🎓 **Beginner:** [Learn Gradle](#learn) - Gradle Basics, Java, Kotlin, Android
+- ✅ **Easy:** [Adopt Gradle Best Practices in your projects with GitHub Actions](#github-actions) -
   GitHub Actions, Scripting, Documentation
-- **Advanced:** [Configuration Cache Compatibility in Plugins](#configuration-cache) -
-  Java, Kotlin, Gradle
-- **Easy/Medium:** [Expand the Gradle Cookbook](#cookbook) -
+- 📖 **Easy/Medium:** [Expand the Gradle Cookbook](#cookbook) -
   Documentation, Markdown, tech of your choice
-- **Medium:** [Contribute to GradleUp Plugins](#gradleup) -
-  Java, Kotlin, Android, Documentation
-- **Easy/Medium:** [Improve this Site!](#community-site) -
+- 🌐 **Easy/Medium:** [Improve the Gradle Community Site (this one!)](#community-site) -
   MkDocs, Web Design, Documentation
-- **Medium:** [Stabilize support for ViteJS](#stabilize-support-for-vitejs) -
+- 🐘 **Medium:** [Contribute to GradleUp Plugins](#gradleup) -
+  Java, Kotlin, Android, Documentation
+- 😎 **Medium:** [Stabilize support for ViteJS](#stabilize-support-for-vitejs) -
   Kotlin, JavaScript ecosystem, Gradle
+- 🛠️ **Medium/Advanced:** [Configuration Cache Compatibility in Plugins](#configuration-cache) -
+  Java, Kotlin, Gradle
+
+<a name="learn"></a>
+
+### 🎓 Learn Gradle
+
+If you are just starting out with Gradle,
+you can learn through common
+Java, Kotlin or Android projects.
+
+* Learn Gradle Build Tool with free courses on [DPE University](https://dpeuniversity.gradle.com/app/catalog). Learn Gradle features, create new repositories while learning, and make sure to mark them with `#hacktoberfest`!
+* If you see any issues with the documentation or samples,
+  please submit issues or pull requests. They count towards Hacktoberfest.
+
+More advanced users can also experiment with [Declarative Gradle](https://declarative.gradle.org/) and share their feedback.
+See the [Getting Started Guide](https://declarative.gradle.org/docs/getting-started/) for the pointers.
+
+To discuss your learning experiences, use the `#docs` channel on the Community Slack.
 
 <a name="github-actions"></a>
 
-### Adopt Gradle Best Practices in your GitHub Actions
+### ✅ Adopt Gradle Best Practices in your GitHub Actions
 
 We invite everyone to adopt [Gradle & GitHub Actions best practices](https://community.gradle.org/cookbook/ci/github-actions/).
 You can:
@@ -76,9 +96,9 @@ References:
 
 <a name="configuration-cache"></a>
 
-### Configuration Cache Compatibility in Plugins
+### 🛠️ Configuration Cache Compatibility in Plugins
 
-In the upcoming Gradle 9.0, we plan to recommend enabling the [Gradle Configuration Cache](https://docs.gradle.org/current/userguide/configuration_cache.html) by default.
+In the upcoming Gradle 9.0 release, we plan to recommend enabling the [Gradle Configuration Cache](https://docs.gradle.org/current/userguide/configuration_cache.html) by default.
 It will greatly speed up all aspects of Gradle by caching the Gradle work graph created during the configuration phase.
 There have been compatibility issues in plugins,
 and some are yet to be discovered and fixed.
@@ -94,7 +114,7 @@ References:
 
 <a name="cookbook"></a>
 
-### Expand the Gradle Cookbook
+### 📖 Expand the Gradle Cookbook
 
 We are working on the [Gradle Cookbook](https://cookbook.gradle.org/) - a new community resource with recipes
 for cases that are not included in the main Gradle documentation,
@@ -112,7 +132,7 @@ References:
 
 <a name="gradleup"></a>
 
-### Contribute to GradleUp Plugins
+### 🐘 Contribute to GradleUp Plugins
 
 [GradleUp](https://gradleup.com/) is a new GitHub organization focusing on simplifying Java, Kotlin and Android development with Gradle.
 The team nominated a few projects for Hacktoberfest: Shadow Plugin, Static Analysis Plugin, Gratatouille, etc. Contributions to other projects are welcome, too!
@@ -123,26 +143,9 @@ References:
 - [Suggested GitHub Issues](https://github.com/search?q=org%3AGradleUp+is%3Aissue+is%3Aopen+label%3A%22hacktoberfest%22%2C%22help+wanted%22%2C%22good+first+issue%22&type=issues)
 - Discuss: `#gradleup` channel on the Community Slack
 
-<a name="learn"></a>
-
-### Learn Gradle
-
-If you are just starting out with Gradle,
-you can learn through common
-Java, Kotlin or Android projects.
-
-* Learn Gradle Build Tool with free courses on [DPE University](https://dpeuniversity.gradle.com/app/catalog). Learn Gradle features, create new repositories while learning, and make sure to mark them with `#hacktoberfest`!
-* If you see any issues with the documentation or learning materials,
-  please submit issues or pull requests.
-
-More advanced users can also experiment with [Declarative Gradle](https://declarative.gradle.org/) and share their feedback.
-See the [Getting Started Guide](https://declarative.gradle.org/docs/getting-started/) for the pointers.
-
-To discuss your learning experiences, use the `#docs` channel on the Community Slack.
-
 <a name="community-site"></a>
 
-### Improve the Community Site
+### 🌐 Improve the Community Site
 
 We created this community site in early 2024, and there are many improvements to be done!
 Improving the look & feel, creating new content, etc...
@@ -153,7 +156,7 @@ References:
 * [Contributing to the Community Site](./../../../CONTRIBUTING.md)
 * [Open Issues](https://github.com/gradle/community/labels/website)
 
-### Stabilize support for ViteJS
+### 😎 Stabilize support for ViteJS
 
 [OpenSavvy](https://opensavvy.dev) is working on bringing the [ViteJS](https://vitejs.dev/) bundler to the Gradle Build Tool, in particular for the Kotlin Multiplatform stack. The initial version works on simple projects, but breaks when used with some configurations or libraries. We're searching for contributors who can help us understand what goes wrong so we can stabilize and release the project.
 
