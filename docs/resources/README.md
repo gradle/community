@@ -9,6 +9,7 @@ resources:
     - <a href="https://blog.gradle.org/">Blog</a>
     - <a href="../resources/social-media">Social Media</a>
     - <a href="https://www.youtube.com/channel/@GradleInc">YouTube</a>
+    - <b>#community-news</b> on <a href="../contributing/community-slack">Slack</a> 
 - section: Documentation
   icon: ../images/icons/documentation.svg
   links:
@@ -24,7 +25,7 @@ resources:
     - <a href="../contributing/community-slack">Slack Channel</a> (<a href="https://www.linen.dev/s/gradle-community">Archive</a>)
     - <a href="https://discuss.gradle.org">Gradle Forums</a>
     - <a href="https://stackoverflow.com/questions/tagged/gradle">Stack Overflow</a>
-    - <a href="/services/">Professional Services</a>
+    - <a href="https://gradle.org/services/">Professional Services</a>
 - section: Plugins
   icon: ../images/icons/plugins.svg
   links:
