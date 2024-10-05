@@ -1,3 +1,10 @@
+---
+title: "Gradle in Google Summer of Code 2024"
+description: >
+  Gradle participated in GSoC 2024 under the umbrellas of
+  the Kotlin Foundation and the Eclipse Foundation.
+---
+
 # Gradle in Google Summer of Code 2024
 
 This is an active program.

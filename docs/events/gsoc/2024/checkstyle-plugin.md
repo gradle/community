@@ -1,3 +1,10 @@
+---
+title: "Declarative Syntax and enhancements for the Checkstyle plugin"
+description: >
+  A project by Hongjie (Jay) Wei for GSoC 2024 which aims to enhance
+  the declarative nature of Kotlin DSL and enhance the checkstyle plugin.
+---
+
 # GSoC 2024. Declarative Syntax and Enhancements for the Checkstyle Plugin
 
 ## Goal

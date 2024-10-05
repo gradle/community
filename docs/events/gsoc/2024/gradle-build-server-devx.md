@@ -1,3 +1,8 @@
+---
+title: "DevX and Language support in Buildship"
+description: >
+  A project by Sidhaarth Saraswathi Ramalingam for GSoC 2024 which aims to.
+---
 
 # GSoC 2024. Gradle Build Server - DevX and Language Support in Buildship
 

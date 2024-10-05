@@ -1,5 +1,5 @@
 ---
-title: Contributing to Gradle Documentation
+title: "Contributing to Gradle Documentation"
 description: >
     Documentation is essential part of developer experience for Gradle Build Tool users.
     All contributions are welcome!

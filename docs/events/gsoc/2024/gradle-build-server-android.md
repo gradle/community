@@ -1,3 +1,10 @@
+---
+title: "Gradle Build Server - support for Android projects"
+description: >
+  A project by Tanish Ranjan for GSoC 2024 which aims to bring support
+  for Android projects on the Gradle Build Server.
+---
+
 # GSoC 2024. Gradle Build Server – support for Android projects
 
 This project aims to enhance [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) project from Microsoft by integrating powerful Android Studio features. Bridging the build process gap between [Android Studio](https://developer.android.com/studio) and [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle), will significantly improve the development experience for many Android developers using Text Editors/IDEs which utilize the [Build Server Protocol (BSP)](https://build-server-protocol.github.io).
