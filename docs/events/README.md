@@ -4,8 +4,9 @@ In Gradle, we organize multiple online events,
 and also often attend Java and open source community conferences
 like Devoxx or FOSDEM.
 We are happy to meet at those events.
+You can learn about the key upcoming events in [our newsletter](https://newsletter.gradle.org/).
 
-![Gradle team at Jfokus 2024](./conferences/gallery/2024-jfokus.jpg)
+![Gradle Build Tool team at the DPE Summit 2024](./gallery/2024-DPE-Summit.png)
 
 ## Gradle Events Calendar
 
