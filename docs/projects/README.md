@@ -20,16 +20,17 @@ See the links on the left.
 > **NOTE:** There will be a quick-nav grid layout,
 > so we do not bother with a look&feel for now
 
-- Gradle Build Tool
-- Declarative Gradle
-- Gradle Profiler
-- GitHub Actions for Gradle
+- [Gradle Build Tool](https://gradle.org/)
+- [Declarative Gradle](https://declarative.gradle.org/)
+- [Gradle Profiler](https://github.com/gradle/gradle-profiler)
+- [GitHub Actions for Gradle](https://github.com/gradle/gradle-build-action)
 
 ## Independent Community Projects
 
 Here are some projects we would like to highlight
 
-- Gradle X - provides high quality extensions for Gradle Build Tool that make it more pleasant to use
+- [Gradle X](https://gradlex.org/) - provides high quality extensions for Gradle Build Tool that make it more pleasant to use
+- [Gradle Build Server](https://github.com/microsoft/build-server-for-gradle) - an implementation of [Build Server Protocol](https://build-server-protocol.github.io/docs/specification) (BSP) for Gradle
 
 ## Adding your projects
 
