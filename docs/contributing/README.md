@@ -1,3 +1,10 @@
+---
+title: "Contributing to Gradle"
+description: >
+  As in any open-source project, contributions to Gradle are welcome!
+  You can contribute to Gradle Build Tool itself, its documentation, plugins and tools within Gradle's ecosystem.
+---
+
 # Contributing to Gradle
 
 As in any open-source project, contributions to Gradle are welcome!

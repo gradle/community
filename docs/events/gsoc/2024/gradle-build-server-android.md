@@ -55,7 +55,7 @@ As the popularity of Android development grows, the need for efficient build aut
 **Implemented Features:**
 
 - [x] Took over some work already done by [@Arthurm1](https://github.com/Arthurm1) in [PR#122](https://github.com/microsoft/build-server-for-gradle/pull/122), into [PR#154](https://github.com/microsoft/build-server-for-gradle/pull/154).
-- [x] Utilized build actions to retrieve source sets from composite build projects which allowed for dependency susbtitution.
+- [x] Utilized build actions to retrieve source sets from composite build projects which allowed for dependency substitution.
 - [x] Fixed language extension downcast issue in [PR#160](https://github.com/microsoft/build-server-for-gradle/pull/160) which was breaking composite builds.
 
 <details>
@@ -84,8 +84,8 @@ As the popularity of Android development grows, the need for efficient build aut
 - [x] In case of incompatibility try to find a compatible Java Home in the given order:
     1. GradleJavaHome (Gradle Properties)
     2. UserJavaHome (Retrieved from preferences)
-- [x] Notify client if project's default Java Home was incompatible and we switched to a different Java Home for compatibility.
-- [x] Notify client if the fallback logic couldn't find a compatible Java Home.
+- [x] If project's default Java Home was incompatible, notify client we switched to a different Java Home for compatibility.
+- [x] Notify client, if the fallback logic couldn't find a compatible Java Home.
 
 <details>
 
