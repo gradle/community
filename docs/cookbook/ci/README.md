@@ -1,3 +1,10 @@
+---
+title: "Using Gradle with Continuous Integration Systems"
+description: >
+  References to CI integrations and best practices to to streamline development
+  workflow and ensure efficient builds and deployments with Gradle.
+---
+
 # Using Gradle with Continuous Integration Systems
 
 Gradle has many integrations with Continuous Integration (CI)

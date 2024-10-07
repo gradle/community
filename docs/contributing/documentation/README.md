@@ -50,7 +50,7 @@ It includes:
 - The main site (gradle.org)
 - The official blog (blog.gradle.org)
 - The newsletter archive (newsletter.gradle.org)
-- Gradle guides and most of training courses (gradle.org/guides/)
+- Gradle guides and most of the training courses (gradle.org/guides/)
 
 If you want to submit patches to any of those locations,
 please reach out to us on the `#docs` channel.

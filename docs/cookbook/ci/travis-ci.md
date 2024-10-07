@@ -1,3 +1,9 @@
+---
+title: "Executing Gradle builds on Travis CI"
+description: >
+    Guide to help you through the process of configuring Travis CI for continuous integration (Ci) with a typical Gradle project.
+---
+
 # Executing Gradle builds on Travis CI
 
 !!! tip
@@ -13,7 +19,7 @@ In this guide, we'll discuss how to configure [Travis CI](https://travis-ci.org/
 * A command prompt
 * The Java Development Kit (JDK), version 1.8 or higher
 
-## Setup a typical project
+## Set up a typical project
 
 As example, this guide is going to focus on a Java-based project. More specifically, a Gradle plugin written in Java and tested with [Spek](https://www.spekframework.org/). First, we'll get the project set up on your local machine before covering the same steps on CI.
 
@@ -38,7 +44,7 @@ BUILD SUCCESSFUL
 14 actionable tasks: 14 executed
 ```
 
-The project provides the [Gradle Wrapper](gradle_wrapper.adoc#gradle_wrapper_reference) as part of the repository. It is a recommended practice for any Gradle project as it enables your project to be built on CI without having to install the Gradle runtime.
+The project provides the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) as part of the repository. It is a recommended practice for any Gradle project as it enables your project to be built on CI without having to install the Gradle runtime.
 
 ### Build scan integration
 

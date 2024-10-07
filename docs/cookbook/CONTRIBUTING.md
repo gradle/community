@@ -1,3 +1,9 @@
+---
+title: "Contributing to the Gradle Cookbook"
+description: >
+    Instructions for contributing to the Gradle Cookbook. Any Contributions are welcome!
+---
+
 # Contributing to the Gradle Cookbook
 
 [![a](https://img.shields.io/badge/slack-%23docs-brightgreen?style=flat&logo=slack)](../contributing/community-slack.md)
@@ -11,7 +17,7 @@ Any contributions are welcome!
 - `#docs` on the [Gradle Community Slack](../contributing/community-slack.md)
 - [GitHub Issues](https://github.com/gradle/community/issues)
 
-## HOWTOs
+## HOW TOs
 
 ### Editing and Adding Pages
 

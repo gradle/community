@@ -3,12 +3,12 @@ title: "Spread the Word"
 description: >
   As any open source project, we rely on Gradle community members to share news and learnings
   on social media, blogs and other public channels.
-  All content contributons are welcome
+  All content contributions are welcome
 ---
 
 As any open source project, we rely on Gradle community members to share news and learnings
 on social media, blogs and other public channels.
-All content contributons are welcome!
+All content contributions are welcome!
 
 ## Channels
 
@@ -29,7 +29,7 @@ and we will do our best to promote quality content there.
 ### Community News on Slack
 
 On the [Gradle Community Slack](./community-slack.md), we have a `#community-news` channel.
-Everyone is invioted to share their highlights there,
+Everyone is invited to share their highlights there,
 whether it is a new presentation, blog, or a plugin release!
 
 ### Newsletter

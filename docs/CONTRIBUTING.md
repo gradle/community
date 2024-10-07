@@ -20,7 +20,7 @@ Detailed instructions are provided below.
 
 ## Contributing Content
 
-### Contributing to Gradle Cookbok
+### Contributing to Gradle Cookbook
 
 See the [Gradle Cookbook Contributor Guide](./cookbook/CONTRIBUTING.md).
 
@@ -57,7 +57,7 @@ The same Dev Container is used for CI/CD, and it is the recommended way for loca
 Requirements:
 
 - Python3 and PiP (Python's package manager), recent versions
-- Linux, MacOS or Windows WSL-2 environment.
+- Linux, macOS or Windows WSL-2 environment.
   Windows native may work but it is not tested.
 
 For now, you need to install the dependencies:
@@ -78,7 +78,7 @@ To do live development, use the following command to provision the site on `http
 mkdocs serve
 ```
 
-Note that the Mkdocs Multi-Repo plugin is quite slow,
+Note that the MkDocs Multi-Repo plugin is quite slow,
 and it may take up to 10 seconds to rebuild the website on configuration changes.
 If you develop the local part within this repository (design, content, etc.),
 you can run the `build` and the `serve` commands with the `FULL_BUILD=false` variable, e.g.:

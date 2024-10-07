@@ -1,9 +1,15 @@
+---
+title: "Key Gradle Projects"
+description: >
+    List of a few key projects within the Gradle Build Tool ecosystem.
+---
+
 # Key Gradle Projects
 
 On this site, we list a few key projects within the Gradle Build Tool ecosystem.
 See the links on the left.
 
-> **DICLAIMER:** The list below is an experimental one.
+> **DISCLAIMER:** The list below is an experimental one.
 > It does not represent an actual list of the project considered
 > key ones by Gradle Inc. or by the Gradle community.
 > No endorsement of one project over another is implied.
