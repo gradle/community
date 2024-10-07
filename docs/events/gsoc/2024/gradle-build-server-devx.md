@@ -1,3 +1,9 @@
+---
+title: "DevX and Language support in Buildship"
+description: >
+  A project by Sidhaarth Saraswathi Ramalingam for GSoC 2024 which aims to leverage the BSP
+  implementation by the Gradle Build Server in Eclipse IDE via the Eclipse Buildship plugin.
+---
 
 # GSoC 2024. Gradle Build Server - DevX and Language Support in Buildship
 
@@ -55,5 +61,4 @@ The Eclipse buildship client will be equipped with capabilities to process all p
 ## Links
 - [Contributor Proposal](https://docs.google.com/document/d/1ptbZvt8_dW0bgUAZfh7m-Oo3RtC4XTiY9frIrf2_OBQ/edit?usp=sharing)
 - [Project Proposal](https://gitlab.eclipse.org/eclipsefdn/emo-team/gsoc-at-the-ef/-/issues/5)
-- [Eclipse Buildship](Placeholder)
-- [Gradle BSP Enhancements](Placeholder)
+- [Eclipse Buildship](https://projects.eclipse.org/projects/tools.buildship)

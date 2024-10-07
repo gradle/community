@@ -1,6 +1,13 @@
+---
+title: "Gradle in Google Summer of Code 2023"
+description: >
+  Gradle participated in GSoC 2023 under the umbrella of
+  the Kotlin Foundation.
+---
+
 # Gradle in Google Summer of Code 2023
 
-In the summer of 2023, The Kotlin Foundation sponsored four projects for the Google Summer of Code 2023.
+In the summer of 2023, The [Kotlin Foundation](https://kotlinfoundation.org/) sponsored four projects for the Google Summer of Code 2023.
 The Gradle Kotlin Script Support for Eclipse and BuildShip project by [Nikolai Vladimirov](https://www.linkedin.com/in/vladimir0v/) was one of them!
 Gradle, a Kotlin Foundation member, and [Donát Csikós](https://github.com/donat) provided mentoring support for this project.
 

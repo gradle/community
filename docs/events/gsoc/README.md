@@ -1,7 +1,7 @@
 ---
 title: "Gradle in Google Summer of Code"
 description: >
-  Gradle participates in GSoC 2024 under the umbrellas of
+  Gradle participated in GSoC 2024 under the umbrellas of
   the Kotlin Foundation and the Eclipse Foundation.
 ---
 
@@ -13,11 +13,11 @@ Gradle has participated in GSoC since 2023.
 
 ## GSoC 2024
 
-Gradle participates in GSoC 2024 under the umbrellas of
-the Kotlin Foundation and the Eclipse Foundation.
-We started with 3 projects, but two of them didn't pass the mid-term evaluation.
+Gradle participated in GSoC 2024 under the umbrellas of
+the [Kotlin Foundation](https://kotlinfoundation.org/) and the [Eclipse Foundation](https://www.eclipse.org/).
+We started with 3 projects, but two of them didn't pass the midterm evaluation.
 
-Active projects:
+Completed projects:
 
 - [Gradle Build Server – support for Android projects](./2024/gradle-build-server-android.md) by Tanish Ranjan
 
@@ -63,8 +63,8 @@ because it helps us to build impression about the candidate.
 To get started:
 
 1. Join the `#gsoc` channel on the [Gradle community Slack](https://gradle.org/slack-invite).
-  If there're such channels in the foundations, please join them too
-2. Explore the [Getting Started with Gradle](https://docs.gradle.org/current/userguide/getting_started_eng.html) with Gradle and the relevant [topic-specific Gradle Guides](https://gradle.org/guides/)
+  If there are such channels in the foundations, please join them too
+2. Explore the [Getting Started with Gradle](https://docs.gradle.org/current/userguide/getting_started_eng.html) and the relevant [topic-specific Gradle Guides](https://gradle.org/guides/)
 3. Check out the [contributing guidelines](../../contributing/README.md), try addressing some of the newcomer friendly issues
 4. Discuss the project ideas with your mentors on the public channels
 
