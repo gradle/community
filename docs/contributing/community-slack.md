@@ -21,10 +21,77 @@ applies to **all** participants and conversations on this resource.
 
 To join the Slack, you can get a sign-up link [here](https://gradle.org/slack-invite).
 
-## Key Chats
+## Key Channels 
 
-> COMING SOON: Key channels overview
+Below you can find the list of the key channels, with the archive link for convenience
 
+* [#community-news](https://www.linen.dev/s/gradle-community/c/community-news)
+Stay up to date with general news and updates from the Gradle community, including announcements and events.
+* [#community-support](https://www.linen.dev/s/gradle-community)
+A general help channel where you can ask questions about Gradle, seek troubleshooting tips, and get advice from fellow community members.
+* [#general](https://www.linen.dev/s/gradle-community/c/general)
+A catch-all channel for general discussions that don’t fit into other specific topics.
+* [#contributing](https://www.linen.dev/s/gradle-community/c/contributing)
+For those interested in contributing to Gradle’s development. Share tips, ask questions, and discuss contribution best practices.
+* [#roadmap](https://www.linen.dev/s/gradle-community/c/roadmap)
+Follow and discuss Gradle’s future roadmap, including planned features and upcoming enhancements.
+* [#releases-discussion](https://www.linen.dev/s/gradle-community/c/releases-discussion)
+Discuss new Gradle releases, share feedback, and explore the latest features and improvements.
+* [#plugin-development](https://www.linen.dev/s/gradle-community/c/plugin-development)
+A space for developers working on Gradle plugins. Share knowledge, ask questions, and collaborate on plugin development.
+
+<details>
+  <summary>Other technology and feature specific channels</summary>
+
+[#github-integrations](https://www.linen.dev/s/gradle-community/c/github-integrations)
+Discuss how Gradle integrates with GitHub, from Actions to Issues, and share best practices for smooth workflows.
+
+[#kotlin-dsl](https://www.linen.dev/s/gradle-community/c/kotlin-dsl)
+For developers working with Gradle’s Kotlin DSL. Share tips, ask questions, and discuss migrating from Groovy to Kotlin.
+
+[#maven](https://www.linen.dev/s/gradle-community/c/maven)
+A place for discussing Maven’s integration with Gradle, dependency resolution, and migrating builds between the two tools.
+
+[#migrating-from-maven](https://www.linen.dev/s/gradle-community/c/migrating-from-maven)
+Help and discussions around migrating from Maven to Gradle, including configuration tips and resolving compatibility issues.
+
+[#native](https://www.linen.dev/s/gradle-community/c/native)
+A channel for discussions about using Gradle for native development (C/C++, Rust, etc.) including build setups and performance tips.
+ocus on integrating Gradle with Play Framework projects, including build configurations, performance, and troubleshooting.
+
+[#android](https://www.linen.dev/s/gradle-community/c/android)
+Dedicated to Android development using Gradle. Discuss build issues, configurations, and Gradle integration with Android projects.
+
+[#caching](https://www.linen.dev/s/gradle-community/c/caching)
+Focus on caching strategies in Gradle, including build cache optimization and troubleshooting.
+
+[#gradleup](https://www.linen.dev/s/gradle-community/c/gradleup)
+Discussions and updates about the GradleUp project, including user feedback, releases, and collaboration.
+
+[#gradlex](https://www.linen.dev/s/gradle-community/c/gradlex)
+Discuss the GradleX project, which provides additional Gradle tools and plugins to extend Gradle’s capabilities.
+
+</details>
+
+
+<!--
+[#gsoc](https://www.linen.dev/s/gradle-community/c/gsoc)
+A space for Google Summer of Code participants and mentors to collaborate on Gradle-related projects.
+[#dpe-summit](https://www.linen.dev/s/gradle-community/c/dpe-summit)
+A dedicated channel for discussions around the Developer Productivity Engineering Summit, including event details and networking.
+
+[#feed](https://www.linen.dev/s/gradle-community/c/feed)
+Automatic updates and notifications from various community sources, including GitHub, news, and blogs.
+
+[#fun](https://www.linen.dev/s/gradle-community/c/fun)
+A lighthearted channel for off-topic conversations, memes, and general fun within the Gradle community.
+
+[#jobs](https://www.linen.dev/s/gradle-community/c/jobs)
+Share and find job opportunities related to Gradle, build engineering, and software development.
+
+[#random](https://www.linen.dev/s/gradle-community/c/random)
+For completely off-topic conversations that don’t fit anywhere else. Relax and chat about anything.
+-->
 ## Best Practices
 
 ### Slack or other channels?
@@ -91,75 +158,6 @@ To mitigate that, we keep
 the searchable Slack archive [here](https://www.linen.dev/s/gradle-community).
 
 You can also search across Slack history and multiple other channels on [gradle.org/help](https://gradle.org/help/).
-
-## Suggested Channels 
-
-[#community-support](https://www.linen.dev/s/gradle-community)
-A general help channel where you can ask questions about Gradle, seek troubleshooting tips, and get advice from fellow community members.
-
-[#roadmap](https://www.linen.dev/s/gradle-community/c/roadmap)
-Follow and discuss Gradle’s future roadmap, including planned features and upcoming enhancements.
-
-[#general](https://www.linen.dev/s/gradle-community/c/general)
-A catch-all channel for general discussions that don’t fit into other specific topics.
-
-[#github-integrations](https://www.linen.dev/s/gradle-community/c/github-integrations)
-Discuss how Gradle integrates with GitHub, from Actions to Issues, and share best practices for smooth workflows.
-
-[#gsoc](https://www.linen.dev/s/gradle-community/c/gsoc)
-A space for Google Summer of Code participants and mentors to collaborate on Gradle-related projects.
-
-[#android](https://www.linen.dev/s/gradle-community/c/android)
-Dedicated to Android development using Gradle. Discuss build issues, configurations, and Gradle integration with Android projects.
-
-[#caching](https://www.linen.dev/s/gradle-community/c/caching)
-Focus on caching strategies in Gradle, including build cache optimization and troubleshooting.
-
-[#community-news](https://www.linen.dev/s/gradle-community/c/community-news)
-Stay up to date with general news and updates from the Gradle community, including announcements and events.
-
-[#contributing](https://www.linen.dev/s/gradle-community/c/contributing)
-For those interested in contributing to Gradle’s development. Share tips, ask questions, and discuss contribution best practices.
-
-[#dpe-summit](https://www.linen.dev/s/gradle-community/c/dpe-summit)
-A dedicated channel for discussions around the Developer Productivity Engineering Summit, including event details and networking.
-
-[#feed](https://www.linen.dev/s/gradle-community/c/feed)
-Automatic updates and notifications from various community sources, including GitHub, news, and blogs.
-
-[#fun](https://www.linen.dev/s/gradle-community/c/fun)
-A lighthearted channel for off-topic conversations, memes, and general fun within the Gradle community.
-
-[#gradleup](https://www.linen.dev/s/gradle-community/c/gradleup)
-Discussions and updates about the GradleUp project, including user feedback, releases, and collaboration.
-
-[#gradlex](https://www.linen.dev/s/gradle-community/c/gradlex)
-Discuss the GradleX project, which provides additional Gradle tools and plugins to extend Gradle’s capabilities.
-
-[#jobs](https://www.linen.dev/s/gradle-community/c/jobs)
-Share and find job opportunities related to Gradle, build engineering, and software development.
-
-[#kotlin-dsl](https://www.linen.dev/s/gradle-community/c/kotlin-dsl)
-For developers working with Gradle’s Kotlin DSL. Share tips, ask questions, and discuss migrating from Groovy to Kotlin.
-
-[#maven](https://www.linen.dev/s/gradle-community/c/maven)
-A place for discussing Maven’s integration with Gradle, dependency resolution, and migrating builds between the two tools.
-
-[#migrating-from-maven](https://www.linen.dev/s/gradle-community/c/migrating-from-maven)
-Help and discussions around migrating from Maven to Gradle, including configuration tips and resolving compatibility issues.
-
-[#native](https://www.linen.dev/s/gradle-community/c/native)
-A channel for discussions about using Gradle for native development (C/C++, Rust, etc.) including build setups and performance tips.
-ocus on integrating Gradle with Play Framework projects, including build configurations, performance, and troubleshooting.
-
-[#plugin-development](https://www.linen.dev/s/gradle-community/c/plugin-development)
-A space for developers working on Gradle plugins. Share knowledge, ask questions, and collaborate on plugin development.
-
-[#random](https://www.linen.dev/s/gradle-community/c/random)
-For completely off-topic conversations that don’t fit anywhere else. Relax and chat about anything.
-
-[#releases-discussion](https://www.linen.dev/s/gradle-community/c/releases-discussion)
-Discuss new Gradle releases, share feedback, and explore the latest features and improvements.
 
 ## Alternative Channels
 
