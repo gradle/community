@@ -102,10 +102,10 @@ For other cases, other channels might be preferable:
 
 1. If you suspect a security issue in Gradle Build Tool, plugins, its infrastructure, or other components,
    please avoid discussing it in public.
-   Follow the [Gradle Vulnerability Disclosure Policy](../dotgithub/SECURITY/README.md) so that we can triage the issue and protect other Gradle users.
-3. If you want to report a confirmed and reproducible issue with Gradle Build Tool or other component,
+   Follow the [Gradle Vulnerability Disclosure Policy](dotgithub/SECURITY/README.md) so that we can triage the issue and protect other Gradle users.
+2. If you want to report a confirmed and reproducible issue with Gradle Build Tool or other component,
    use GitHub Issues of the respective GitHub repository associated with the component.
-4. For getting feedback on large-size proposals that will take many months to implement,
+3. For getting feedback on large-size proposals that will take many months to implement,
    it is better to make proposals on Gradle Forums on Discourse: [discuss.gradle.org](https://discuss.gradle.org).
    You can still use Slack to facilitate the discussion
 
@@ -117,7 +117,7 @@ We do not normally provide individual and private support in the community chann
 If you need that, consider contacting one of the [professional services providers](https://gradle.org/services/).
 
 Please abstain from sending direct messages (DMs) unless you have a confidential issue,
-for example, if you suspect a Code of COnduct violation,
+for example, if you suspect a Code of Conduct violation,
 or want to discuss something personal.
 DMing someone with a generic question is not considered appropriate in the community,
 and regular misuse of DMs may be a subject for a [Code of Conduct](https://gradle.org/conduct/) review.

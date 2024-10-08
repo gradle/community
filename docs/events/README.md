@@ -1,3 +1,11 @@
+---
+title: "Gradle Community Events"
+description: >
+  In Gradle, we organize multiple online events,
+  and also often attend Java and open source community conferences
+  like Devoxx or FOSDEM.
+---
+
 # Gradle Community Events
 
 In Gradle, we organize multiple online events,

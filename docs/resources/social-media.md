@@ -1,3 +1,10 @@
+---
+title: "Gradle on Social Media"
+description: >
+  The open open source project and Gradle Inc. with combined channels is available on several social media platforms.
+  Follow to access plenty of Gradle Build Tool content!
+---
+
 # Gradle on Social Media
 
 ## Our channels

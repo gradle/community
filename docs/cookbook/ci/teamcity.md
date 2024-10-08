@@ -1,3 +1,9 @@
+---
+title: "Executing Gradle builds on TeamCity"
+description: >
+  Guide to help you through the process of configuring TeamCity for continuous integration (Ci) with a typical Gradle project.
+---
+
 # Executing Gradle builds on TeamCity
 
 !!! tip
@@ -13,7 +19,7 @@ In this guide, we'll discuss how to configure [TeamCity](https://www.jetbrains.c
 - The Java Development Kit (JDK), version 1.8 or higher
 - A TeamCity installation (setup steps explained in this guide)
 
-## Setup a typical project
+## Set up a typical project
 
 For demonstration purposes, this guide is going to focus on building a Java-based project; however, this setup will work with any Gradle-compatible project. More specifically, a Gradle plugin written in Java and tested with [Spek](https://www.spekframework.org/). First, we'll get the project set up on your local machine before covering the same steps on CI.
 
@@ -38,7 +44,7 @@ BUILD SUCCESSFUL
 14 actionable tasks: 14 executed
 ```
 
-The project provides the [Gradle Wrapper](gradle_wrapper.adoc#gradle_wrapper_reference) as part of the repository. It is a recommended practice for any Gradle project as it enables your project to be built on CI without having to install the Gradle runtime.
+The project provides the [Gradle Wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html) as part of the repository. It is a recommended practice for any Gradle project as it enables your project to be built on CI without having to install the Gradle runtime.
 
 ### Build scan integration
 
@@ -103,7 +109,7 @@ Click the _Run_ button in the top right corner:
 
 ![Run Build](images/teamcity-step-upd.png)
 
-TeamCity will start the build and you’ll be able to view the build progress by clicking _Build Configuration Home_. When the build is finished, you can review the build results by clicking the build number link:
+TeamCity will start the build, and you’ll be able to view the build progress by clicking _Build Configuration Home_. When the build is finished, you can review the build results by clicking the build number link:
 
 ![Build Results](images/teamcity-results.png)
 
