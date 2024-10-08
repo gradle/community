@@ -20,13 +20,7 @@ Detailed instructions are provided below.
 
 ## Contributing Content
 
-### Contributing to Gradle Cookbook
-
-See the [Gradle Cookbook Contributor Guide](./cookbook/CONTRIBUTING.md).
-
-### Other locations
-
-The Gradle website is in the early stages of development,
+The Gradle community website is in the early stages of development,
 and we do not have fixed processes and practices yet.
 Just submit a pull request with your change.
 If you have any concerns, let's discuss them on Slack or in a GitHub issue.
