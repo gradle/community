@@ -28,3 +28,14 @@ jobs:
     
       - name: Build the docs
         run: mkdocs build
+      
+      - name: Lint the static site
+        uses: anishathalye/proof-html@v2
+       # if: ${{ inputs.runLint }}
+        with:
+          directory: ./_site
+          enforce_https: false
+          tokens: |
+            {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
+          ignore_url: |
+             https://fonts.gstatic.com
