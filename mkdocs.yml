@@ -181,7 +181,7 @@ plugins:
   - redirects:
       redirect_maps:
         'events/hacktoberfest/README.md' : 'events/hacktoberfest/2024/README.md'
-        'cookbook' : https://cookbook.gradle.org/
+        'cookbook/README.md' : https://cookbook.gradle.org/
 
 # Markdown
 markdown_extensions:
