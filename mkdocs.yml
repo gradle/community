@@ -106,18 +106,7 @@ extra:
 
 nav:
   - Home: README.md
-  - Cookbook:
-    - Overview: cookbook/README.md
-    - Gradle on CI:
-      - Summary: cookbook/ci/README.md
-      - Jenkins: cookbook/ci/jenkins.md
-      - TeamCity: cookbook/ci/teamcity.md
-      - GitHub Actions: cookbook/ci/github-actions.md
-      - GitLab CI: cookbook/ci/gitlab-ci.md
-      - Travis CI: cookbook/ci/travis-ci.md
-    - Gradle for Kotlin: cookbook/kotlin/README.md
-    - Gradle for Android: cookbook/android/README.md
-    - Contributing: cookbook/CONTRIBUTING.md
+  - Cookbook: https://cookbook.gradle.org/
   - Hacktoberfest 2024: events/hacktoberfest/2024/README.md
   - Participate:
     - Getting Started: contributing/README.md
@@ -130,6 +119,7 @@ nav:
       - Overview: contributing/documentation/README.md
       - Gradle Build Tool Docs: gradle/platforms/documentation/docs/README.md
       - Community Site Docs: CONTRIBUTING.md
+      - Gradle Cookbook: cookbook/docs/CONTRIBUTING.md
     - Reporting Vulnerabilities: dotgithub/SECURITY.md
     - Public Roadmap: roadmap/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
@@ -148,18 +138,6 @@ nav:
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
     - Social Media: resources/social-media.md
     - Trademark and Branding: https://gradle.com/brand/
-#  - Resources:
-#    - Gradle Docs: https://docs.gradle.org/
-#    - Blog: https://blog.gradle.org/
-#    - Newsletter: https://newsletter.gradle.org/
-#    - Releases: https://gradle.org/releases
-#    - Plugin Portal: https://plugins.gradle.org/
-#    - Slack Archive: https://www.linen.dev/s/gradle-community
-#    - Stack Overflow: https://stackoverflow.com/questions/tagged/gradle
-#  - Commercial:
-#    - Develocity: https://gradle.com/develocity
-#    - Service Providers: https://gradle.org/services/
-#    - Training: https://gradle.org/courses
 
 plugins:
   - search
@@ -196,32 +174,14 @@ plugins:
           - name: github-actions
             import_url: 'https://github.com/gradle/actions?branch=main&edit_uri=/blob/main/'
             imports: [ "README.md", "*" ]
-
-  - with-pdf:
-      enabled_if_env: BUILD_PDF
-      output_path: pdf/cookbook.pdf
-      author: Gradle Contributors
-      # FIXME: Needs rendering style to include the trademark notice & Co into the header
-      copyright: >
-        Copyright &copy; 2024 - All contributors to the repository and included components.
-      cover: true
-      cover_title: The Gradle Cookbook
-      cover_subtitle: Open Source Recipes for Gradle Build Tool
-      cover_logo: https://gradle.com/wp-content/themes/fuel/assets/img/branding/gradle-elephant-icon-gradient.svg
-      back_cover: true
-      toc_title: Table of Contents
-      toc_level: 3
-      show_anchors: true
-      exclude_pages:
-          - ^$
-          - 'CONTRIBUTING'
-          - 'events/'
-          - 'contributing/'
-          - 'projects/'
+          - name: cookbook
+            import_url: 'https://github.com/gradle/cookbook?branch=main&edit_uri=/blob/main/'
+            imports: [ "docs/CONTRIBUTING.md" ]
 
   - redirects:
       redirect_maps:
         'events/hacktoberfest/README.md' : 'events/hacktoberfest/2024/README.md'
+        'cookbook/README.md' : https://cookbook.gradle.org/
 
 # Markdown
 markdown_extensions:

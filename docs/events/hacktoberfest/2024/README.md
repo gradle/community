@@ -74,15 +74,15 @@ To discuss your learning experiences, use the `#docs` channel on the Community S
 
 ### ✅ Adopt Gradle Best Practices in your GitHub Actions
 
-We invite everyone to adopt [Gradle & GitHub Actions best practices](https://community.gradle.org/cookbook/ci/github-actions/).
+We invite everyone to adopt [Gradle & GitHub Actions best practices](https://cookbook.gradle.org/ci/github-actions/).
 You can:
 
-* Make them safer by enabling the [Dependency Submission Action](https://github.com/gradle/actions/blob/main/dependency-submission/README.md) to [detect vulnerable dependencies with](https://community.gradle.org/cookbook/ci/github-actions/#detect-vulnerable-dependencies-with-a-dependency-submission-workflow) -
-  [How To](https://community.gradle.org/cookbook/ci/github-actions/#detect-vulnerable-dependencies-with-a-dependency-submission-workflow)
-* Adopt the [`setup-gradle` action](https://community.gradle.org/cookbook/ci/github-actions/) to enable [Build Caching in your builds](https://community.gradle.org/cookbook/ci/github-actions/#enable-caching-of-downloaded-artifacts)
-* Connect them to [Gradle Build Scan](https://docs.gradle.org/current/userguide/build_scans.html) to get better insights and troubleshooting experience - [How To](https://community.gradle.org/cookbook/ci/github-actions/#configure-github-actions)
+* Make them safer by enabling the [Dependency Submission Action](https://github.com/gradle/actions/blob/main/dependency-submission/README.md) to [detect vulnerable dependencies with](https://cookbook.gradle.org/ci/github-actions/#detect-vulnerable-dependencies-with-a-dependency-submission-workflow) -
+  [How To](https://cookbook.gradle.org/ci/github-actions/#detect-vulnerable-dependencies-with-a-dependency-submission-workflow)
+* Adopt the [`setup-gradle` action](https://cookbook.gradle.org/ci/github-actions/) to enable [Build Caching in your builds](https://cookbook.gradle.org/ci/github-actions/#enable-caching-of-downloaded-artifacts)
+* Connect them to [Gradle Build Scan](https://docs.gradle.org/current/userguide/build_scans.html) to get better insights and troubleshooting experience - [How To](https://cookbook.gradle.org/ci/github-actions/#configure-github-actions)
 * Update documentation for the Actions, based on your experiences
-  ([GitHub Repo](https://github.com/gradle/actions), [Cookbook Pages](https://community.gradle.org/cookbook/ci/github-actions/))
+  ([GitHub Repo](https://github.com/gradle/actions), [GRadle Cookbook Pages](https://cookbook.gradle.org/ci/github-actions/))
 
 To tag your patches for Hacktoberfest,
 please reference [this ticket](https://github.com/gradle/actions/issues/406)
@@ -126,8 +126,8 @@ For example, we know that some CI recipes are dated, and contributions are neede
 
 References:
 
-- [Contributing to the Gradle Cookbook](https://community.gradle.org/cookbook/CONTRIBUTING/)
-- [Open Issues](https://github.com/gradle/community/issues?q=is%3Aissue+is%3Aopen+label%3Acookbook)
+- [Contributing to the Gradle Cookbook](https://cookbook.gradle.org/CONTRIBUTING/)
+- [Open Issues](https://github.com/gradle/cookbook/issues?q=is%3Aissue+is%3Aopen)
 - Discuss: `#docs` channel on the Community Slack
 
 <a name="gradleup"></a>

@@ -20,7 +20,7 @@ All contributions are welcome!
     - This site includes main Gradle documentation sources, including but not limited to: User Manual, DSL Reference, documentation for core plugins and Javadoc
     - Implementation: Asciidoc + custom documentation engine
     - [Contributor Guide](../../gradle/CONTRIBUTING/#contributing-to-documentation)
-- [Gradle Cookbook](../../cookbook/README.md) - a collection of recipes, guides and examples for the Gradle Build Tool.
+- [Gradle Cookbook](https://cookbook.gradle.org/) - a collection of recipes, guides and examples for the Gradle Build Tool.
     - This is an additional solution-based documentation
     - Implementation: MkDocs + Material for MkDocs
     - [Contributor Guide](../../cookbook/CONTRIBUTING.md)
@@ -28,7 +28,7 @@ All contributions are welcome!
   For other plugins, see their repositories for the docs and contributing guidelines.
     - Implementation: most plugins use simple documentation pages in GitHub-flavored Markdown (`README.md`).
 - [Gradle Community Site](https://community.gradle.org/) -
-  Community resources, including [Gradle Cookbook](../../cookbook/README.md) and top-level [Gradle Contributor Guide](../README.md)
+  Community resources and and top-level [Gradle Contributor Guide](../README.md)
     - Implementation - Markdown + MkDocs
     - [Contributor Guide](../../CONTRIBUTING.md)
 
