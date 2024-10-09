@@ -53,11 +53,11 @@ For developers working with Gradle’s Kotlin DSL. Share tips, ask questions, an
 A place for discussing Maven’s integration with Gradle, dependency resolution, and migrating builds between the two tools.
 
 [#migrating-from-maven](https://www.linen.dev/s/gradle-community/c/migrating-from-maven)
-Help and discussions around migrating from Maven to Gradle, including configuration tips and resolving compatibility issues.
+Help and discussions about migrating from Maven to Gradle, including configuration tips and resolving compatibility issues.
 
 [#native](https://www.linen.dev/s/gradle-community/c/native)
 A channel for discussions about using Gradle for native development (C/C++, Rust, etc.) including build setups and performance tips.
-ocus on integrating Gradle with Play Framework projects, including build configurations, performance, and troubleshooting.
+Focus on integrating Gradle with Play Framework projects, including build configurations, performance, and troubleshooting.
 
 [#android](https://www.linen.dev/s/gradle-community/c/android)
 Dedicated to Android development using Gradle. Discuss build issues, configurations, and Gradle integration with Android projects.
@@ -78,7 +78,7 @@ Discuss the GradleX project, which provides additional Gradle tools and plugins 
 [#gsoc](https://www.linen.dev/s/gradle-community/c/gsoc)
 A space for Google Summer of Code participants and mentors to collaborate on Gradle-related projects.
 [#dpe-summit](https://www.linen.dev/s/gradle-community/c/dpe-summit)
-A dedicated channel for discussions around the Developer Productivity Engineering Summit, including event details and networking.
+A dedicated channel for discussions about the Developer Productivity Engineering Summit, including event details and networking.
 
 [#feed](https://www.linen.dev/s/gradle-community/c/feed)
 Automatic updates and notifications from various community sources, including GitHub, news, and blogs.
@@ -102,7 +102,7 @@ For other cases, other channels might be preferable:
 
 1. If you suspect a security issue in Gradle Build Tool, plugins, its infrastructure, or other components,
    please avoid discussing it in public.
-   Follow the [Gradle Vulnerability Disclosure Policy](dotgithub/SECURITY/README.md) so that we can triage the issue and protect other Gradle users.
+   Follow the [Gradle Vulnerability Disclosure Policy](../../dotgithub/SECURITY/README.md) so that we can triage the issue and protect other Gradle users.
 2. If you want to report a confirmed and reproducible issue with Gradle Build Tool or other component,
    use GitHub Issues of the respective GitHub repository associated with the component.
 3. For getting feedback on large-size proposals that will take many months to implement,
