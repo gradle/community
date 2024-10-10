@@ -18,7 +18,7 @@ You can learn about the key upcoming events in [our newsletter](https://newslett
 
 ## Gradle Events Calendar
 
-> Coming soon!
+<iframe src="https://calendar.google.com/calendar/embed?src=c_bef13e2ccec320d388e254a3e245c089002311db88ede9956e1d3d9e9a6ab797%40group.calendar.google.com&ctz=Europe%2FZurich" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 
 ## Mentorship Programs
 
