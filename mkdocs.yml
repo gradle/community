@@ -92,7 +92,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/gradle
       name: GitHub
-    - icon: fontawesome/brands/twitter
+    - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/gradle
       name: Twitter/X
     - icon: fontawesome/brands/linkedin
