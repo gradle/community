@@ -33,6 +33,8 @@ A general help channel where you can ask questions about Gradle, seek troublesho
 A catch-all channel for general discussions that don’t fit into other specific topics.
 * [#contributing](https://www.linen.dev/s/gradle-community/c/contributing)
 For those interested in contributing to Gradle’s development. Share tips, ask questions, and discuss contribution best practices.
+* [#docs](https://www.linen.dev/s/gradle-community/c/docs)
+For any documentation discussions and feedback.
 * [#roadmap](https://www.linen.dev/s/gradle-community/c/roadmap)
 Follow and discuss Gradle’s future roadmap, including planned features and upcoming enhancements.
 * [#releases-discussion](https://www.linen.dev/s/gradle-community/c/releases-discussion)
