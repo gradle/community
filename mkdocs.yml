@@ -138,6 +138,7 @@ nav:
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
     - Social Media: resources/social-media.md
     - Trademark and Branding: https://gradle.com/brand/
+    - Book: resources/books.md
 
 plugins:
   - search
