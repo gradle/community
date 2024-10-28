@@ -11,6 +11,7 @@
         },
         // Add the IDs of extensions you want installed when the container is created.
         "extensions": [
+          "streetsidesoftware.code-spell-checker",
           "yzhang.markdown-all-in-one",
           "redhat.vscode-yaml",
           "shardulm94.trailing-spaces",

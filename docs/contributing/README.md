@@ -10,16 +10,26 @@ description: >
 As in any open-source project, contributions to Gradle are welcome!
 Gradle Build Tool itself, its documentation, many plugins and tools within Gradle's ecosystem are open-source,
 and you can contribute anywhere.
+Regardless of how much time you can dedicate and your level of expertise,
+there are opportunities to contribute!
+
 See the links on the left for particular contributing guidelines.
+
+## Types of Contribution
+
+* Code Contributions - new features, bug fixes, test automation, etc.
+  * [Contributing to Gradle Build Tool](../gradle/CONTRIBUTING.md) - Contributing to Gradle Build Tool and the core plugins.
+  * [Contributing to Plugins](./plugins.md)
+* [Contributing to Documentation](./documentation/README.md)
+* [Spread the Word](./spread-the-word.md) about Gradle - advocacy, public speaking and sharing your experiences
+* Join community channels, help Gradle users and share your experiences.
 
 ## For Newcomers
 
 If you are a newcomer contributor,
-note that Gradle has a quite steep learning curve.
+note that Gradle Build Tool and core plugins (components under [gradle/gradle](https://github.com/gradle/gradle)) have a quite steep learning curve.
 As the foundational developer tool used by millions,
 there are high expectations about stability and maintainability of the submitted code and documentation.
-The main [gradle/gradle](https://github.com/gradle/gradle)
-has quite strict rules and requirements,
 and it may take a while till your changes are merged and released.
 
 If you are just starting your journey in open source and
@@ -27,14 +37,14 @@ do not aim fixing a specific issue impacting you,
 it is highly recommended to start from plugins and smaller repositories
 where the entry bar is much lower.
 
-## Key Channels
+## Key Communication Channels
 
 ### Community Slack
 
 We have a community Slack on the `gradle-community` workspace.
 This is a main channel for Q&A and quick discussions.
 
-- [Join the Community Slack](https://gradle.org/slack-invite)
+- [Join the Community Slack](./community-slack.md)
 - Use the `#contributing` channel if you need any help with contributing
   changes to gradle and getting them over the line.
 - We have a searchable Slack archive [here](https://www.linen.dev/s/gradle-community).
