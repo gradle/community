@@ -54,6 +54,11 @@ h4 {
     color: var(--gradle-dark);
 }
 
+embed {
+    width: 100%;
+    min-height:35vh;
+}
+
 .youtube-video {
     overflow: hidden;
     position: relative;
