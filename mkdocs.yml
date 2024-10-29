@@ -138,7 +138,7 @@ nav:
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
     - Social Media: resources/social-media.md
     - Trademark and Branding: https://gradle.com/brand/
-    - Book: resources/books.md
+    - Books: resources/books.md
 
 plugins:
   - search
@@ -205,3 +205,4 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
+  - mdx_truly_sane_lists

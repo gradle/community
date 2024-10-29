@@ -14,6 +14,14 @@ All contributions are welcome!
 - Use the `#docs` channel to discuss any documentation matters
 - If your pull request gets stuck, do not hesitate to ask in the `#docs` or `#contributing` channels
 
+## Overview
+
+In October 2024, we recorded a video overview about contributing to Gradle Documentation.
+You can [watch it on YouTube](https://www.youtube.com/watch?v=3v4O_PVcFxQ),
+and see the slides below.
+
+![Alt text](./Contributing%20to%20Gradle%20Docs.pdf){ type=application/pdf }
+
 ## Locations
 
 - [Gradle Build Tool - User Manual on docs.gradle.org/](https://docs.gradle.org/)
