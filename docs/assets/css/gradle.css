@@ -118,6 +118,50 @@ embed {
     }
 }
 
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1rem;
+    vertical-align: middle;
+
+    .book {
+        display: grid;
+        border: .2rem solid;
+        border-radius: 1rem;
+        padding: 1rem;
+        width: 90%;
+        min-width: 320px;
+        grid-template-columns: 1fr 2fr;
+
+        h3 {
+            font-size: x-large;
+            font-weight: bolder;
+        }
+
+        h5 {
+            font-size: small;
+            font-weight: bolder;
+        }
+
+        .cover {
+            display: flex;
+            align-items: center;
+            width: 70%;
+            height: auto;
+            margin: 2rem 2rem 1rem 2rem;
+        }
+        .cta{
+            font-size: smaller;
+            font-weight: bold;
+            display:flex;
+            justify-content: center;
+        }
+    }
+
+}
+
 .button {
     display: inline-block;
     min-width: 180px;
