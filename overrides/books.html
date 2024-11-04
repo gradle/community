@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ super() }}
+<div class="book-container">
+    {% for book in page.meta.books %}
+    <div class="book">
+        <div class="left-side">
+            <img class="cover" src="{{book.cover}}">
+            <div class="cta">
+                <a>{{ book.cta }}</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <h3 class="title">
+                {{ book.title }}
+            </h3>
+            <h5>
+               By {{book.author}}
+            </h5>
+            <p class="description">{{book.description}}
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
