@@ -165,7 +165,7 @@ plugins:
             imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md", "architecture/*", "architecture/standards/*" ]
           - name: roadmap
             import_url: 'https://github.com/gradle/build-tool-roadmap?branch=main&edit_uri=/blob/main/'
-            imports: [ "README.md" ]
+            imports: [ "README.md", "images/*" ]
           - name: gradle-profiler
             import_url: 'https://github.com/gradle/gradle-profiler?branch=master&edit_uri=/blob/master/'
             imports: [ "README.md" ]
