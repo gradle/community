@@ -21,7 +21,7 @@ resources:
 - section: Help
   icon: ../images/icons/discuss.svg
   links:
-    - <a href="/help/">Search Gradle &amp; Stack Overflow</a>
+    - <a href="https://gradle.org/help">Search Gradle &amp; Stack Overflow</a>
     - <a href="../contributing/community-slack">Slack Channel</a> (<a href="https://www.linen.dev/s/gradle-community">Archive</a>)
     - <a href="https://discuss.gradle.org">Gradle Forums</a>
     - <a href="https://stackoverflow.com/questions/tagged/gradle">Stack Overflow</a>
