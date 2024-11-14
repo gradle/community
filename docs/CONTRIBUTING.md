@@ -87,6 +87,7 @@ Run `BUILD_PDF=1 mkdocs build` to generate the PDF file in [_site/pdf/cookbook.p
 
 ## CI/CD
 
-This site is built and deployed by GitHub Actions.
+This site is built and deployed by GitHub Actions,
+as well as previews in the pull requests.
 We have continuous delivery, so your patches will be delivered just a few minutes
 after the change is merged.
