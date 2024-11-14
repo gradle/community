@@ -7,9 +7,9 @@ jobs:
   delete_preview:
     runs-on: ubuntu-20.04
     env:
-      PR_PATH: ${{ github.event.repository.name }}/pull/${{github.event.number}}
-      DOMAIN: gradle.github.io
+      PREVIEW_DOMAIN: gradle.github.io
       PREVIEW_REPO: community-site-preview
+      PREVIEW_PATH: ${{ github.event.repository.name }}/pull/${{github.event.number}}
 
     permissions:
       pull-requests: write
@@ -23,8 +23,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.PREVIEW_DEPLOYMENT_KEY }}
           external_repository: gradle/${{ env.PREVIEW_REPO }}
-          publish_dir: ./public
-          destination_dir: ${{ env.PR_PATH }}
+          destination_dir: ${{ env.PREVIEW_PATH }}
 
       - name: Comment on PR
         uses: hasura/comment-progress@v2.2.0
@@ -34,4 +33,4 @@ jobs:
           number: ${{ github.event.number }}
           id: deploy-preview
           message: > 
-            🪓 PR closed, deleted preview at https://github.com/${{ env.PREVIEW_REPO }}/tree/gh-pages/${{ env.PR_PATH }}/
+            🪓 PR closed, deleted preview at https://github.com/${{ env.PREVIEW_REPO }}/tree/gh-pages/${{ env.PPREVIEW_PATH }}/
