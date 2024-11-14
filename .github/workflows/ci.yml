@@ -19,9 +19,9 @@ jobs:
       pull-requests: write
 
     env:
-      PR_PATH: ${{ github.event.repository.name }}/pull/${{github.event.number}}
-      DOMAIN: gradle.github.io
+      PREVIEW_DOMAIN: gradle.github.io
       PREVIEW_REPO: community-site-preview
+      PREVIEW_PATH: ${{ github.event.repository.name }}/pull/${{github.event.number}}
 
     steps:
       - name: Checkout
@@ -47,7 +47,7 @@ jobs:
           deploy_key: ${{ secrets.PREVIEW_DEPLOYMENT_KEY }}
           external_repository: gradle/${{ env.PREVIEW_REPO }}
           publish_dir: ./_site
-          destination_dir: ${{ env.PR_PATH }}
+          destination_dir: ${{ env.PREVIEW_PATH }}
 
       - name: Update comment
         uses: hasura/comment-progress@v2.2.0
@@ -60,6 +60,6 @@ jobs:
           message: > 
             A preview of ${{ github.event.after }} is uploaded and can be seen here:
             
-            ✨ https://${{ env.DOMAIN }}/${{ env.PREVIEW_REPO }}/${{ env.PR_PATH}}/ ✨
+            ✨ https://${{ env.PREVIEW_DOMAIN }}/${{ env.PREVIEW_REPO }}/${{ env.PREVIEW_PATH}}/ ✨
             
             Changes may take a few minutes to propagate. 
