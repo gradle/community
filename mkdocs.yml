@@ -107,7 +107,6 @@ extra:
 nav:
   - Home: README.md
   - Cookbook: https://cookbook.gradle.org/
-  - Hacktoberfest 2024: events/hacktoberfest/2024/README.md
   - Participate:
     - Getting Started: contributing/README.md
     - Community Slack: contributing/community-slack.md
@@ -137,8 +136,8 @@ nav:
     - Public Roadmap: roadmap/README.md
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
     - Social Media: resources/social-media.md
+    - Gradle Books: resources/books.md
     - Trademark and Branding: https://gradle.com/brand/
-    - Books: resources/books.md
 
 plugins:
   - search
