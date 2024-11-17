@@ -32,7 +32,6 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           number: ${{ github.event.number }}
-          id: deploy-preview
           message: > 
             🪓 PR merged, preview deleted ✅ Enjoy the updated content at https://community.gradle.org/
 
@@ -43,6 +42,5 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           number: ${{ github.event.number }}
-          id: deploy-preview
           message: > 
             🪓 PR closed, preview deleted ✅
