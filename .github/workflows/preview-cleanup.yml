@@ -27,10 +27,22 @@ jobs:
 
       - name: Comment on PR
         uses: hasura/comment-progress@v2.2.0
+        if: github.event.pull_request.merged == true
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
           number: ${{ github.event.number }}
           id: deploy-preview
           message: > 
-            🪓 PR closed, deleted preview at https://${{ env.PREVIEW_DOMAIN}}/${{ env.PREVIEW_REPO }}/tree/gh-pages/${{ env.PPREVIEW_PATH }}/
+            🪓 PR merged, preview deleted ✅ Enjoy the updated content at https://community.gradle.org/
+
+      - name: Comment on PR
+        uses: hasura/comment-progress@v2.2.0
+        if: github.event.pull_request.merged == false
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ github.repository }}
+          number: ${{ github.event.number }}
+          id: deploy-preview
+          message: > 
+            🪓 PR closed, preview deleted ✅
