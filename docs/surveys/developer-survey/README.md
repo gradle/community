@@ -5,7 +5,7 @@ description: >
   To say thank you to developers who complete the survey, we'll be handing out gift cards and special swag!
 ---
 
-# Gradle Build Tool - Software Developer Survey
+# Gradle Build Tool - 2024 Software Developer Survey
 
 The Gradle team is committed to enhancing developer experience,
 as one of the top priorities on the [Gradle Roadmap](../../roadmap/README.md/).
@@ -13,12 +13,18 @@ Your feedback is crucial in helping us prioritize our efforts!
 The survey will be open for responses until the end of the year,
 and we intend to make it a recurrent event.
 
+!!! note "2024 Developer Survey is Over"
+  
+  On November 06, we concluded the 2024 Software Developer Survey.
+  Thanks to 500+ Gradle users who shared substantial feedback on Gradle developer experience, key pain points, and Gradle’s future evolution!
+  It will take us a few months to fully process the survey results, contact key respondents for interview opportunities, and distribute the swag.
+  We appreciate your patience, and we hope to publish a full survey report in early 2025.
+
 ## Take the Survey
 
-You can take the survey below.
-If it does not load, use this [direct link](https://www.surveymonkey.com/r/7FZPXQZ).
-
-<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src="https://widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgdxH_2FbMQLD_2FPnwcZWI2QSc2UlWA1J1SQNz9lEYSciQAAz.js",a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=www.surveymonkey.com> Create your own user feedback survey </a>
+For now, a short feedback form is available below for everyone to continue to share their thoughts.  
+You can take the survey [here](https://www.surveymonkey.com/r/3ZYZ9GB),
+and we will make sure to review your feedback and, when possible, include in the 2024 report.
 
 ## Swag
 
