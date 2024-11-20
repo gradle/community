@@ -9,16 +9,18 @@ description: >
 
 The Gradle team is committed to enhancing developer experience,
 as one of the top priorities on the [Gradle Roadmap](../../roadmap/README.md/).
-Your feedback is crucial in helping us prioritize our efforts!
-The survey will be open for responses until the end of the year,
-and we intend to make it a recurrent event.
+Your feedback is crucial in helping us prioritize our efforts,
+so we've created a survey to help us better understand developers' experiences using Gradle Build Tool.
 
-!!! note "2024 Developer Survey is Over"
+
+## Status
+
+!!! note "2024 Developer Survey is Over!"
   
-  On November 06, we concluded the 2024 Software Developer Survey.
-  Thanks to 500+ Gradle users who shared substantial feedback on Gradle developer experience, key pain points, and Gradle’s future evolution!
-  It will take us a few months to fully process the survey results, contact key respondents for interview opportunities, and distribute the swag.
-  We appreciate your patience, and we hope to publish a full survey report in early 2025.
+    On November 06, we concluded the 2024 Software Developer Survey.
+    Thanks to 500+ Gradle users who shared substantial feedback on Gradle developer experience, key pain points, and Gradle’s future evolution!
+    It will take us a few months to fully process the survey results, contact key respondents for interview opportunities, and distribute the swag.
+    We appreciate your patience, and we hope to publish a full survey report in early 2025.
 
 ## Take the Survey
 
