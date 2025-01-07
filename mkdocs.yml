@@ -81,8 +81,6 @@ theme:
 
 extra_css:
   - assets/css/gradle.css
-extra_javascript:
-  - assets/js/google-tag-support.js
 
 extra:
   social:
