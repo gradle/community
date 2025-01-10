@@ -32,6 +32,7 @@ resources:
     - <a href="https://docs.gradle.org/current/userguide/plugin_reference.html">Gradle Core Plugins</a>
     - <a href="https://plugins.gradle.org">Gradle Plugin Portal</a>
     - <a href="https://nebula-plugins.github.io/">Netflix Nebula Collection</a>
+    - <a href="https://gradlex.org/">GradleX</a>
 - section: Contributing
   icon: ../images/icons/contributing.svg
   links:
