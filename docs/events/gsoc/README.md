@@ -11,41 +11,31 @@ GSoC Contributors work with an open source organization on a 12+ week programmin
 under the guidance of mentors.
 Gradle has participated in GSoC since 2023.
 
-## GSoC 2024
+## GSoC 2025
 
-Gradle participated in GSoC 2024 under the umbrellas of
-the [Kotlin Foundation](https://kotlinfoundation.org/) and the [Eclipse Foundation](https://www.eclipse.org/).
-We started with 3 projects, but two of them didn't pass the midterm evaluation.
+In 2025, we plan to participate under the umbrella of the [Kotlin Foundation](https://kotlinfoundation.org/).
+There might be related projects in other mentoring organizations.
 
-Completed projects:
+### Project Ideas
 
-- [Gradle Build Server – support for Android projects](./2024/gradle-build-server-android.md) by Tanish Ranjan
+#### 📓 Kotlin DSL documentation samples test framework
 
-Aborted projects:
+Many projects, including Gradle, have a lot of Kotlin DSL samples and code snippets (see the Gradle Docs for examples). Testing them against multiple versions poses certain challenges because the snippets often represent incomplete code for the sake of brevity. We would like to build a test framework that simplifies the verification of those samples within a unit test framework (Kotest or JUnit 5) on GitHub Actions and Teamcity.
 
-- [Gradle Build Server - DevX and Language Support in Buildship](./2024/gradle-build-server-devx.md) by Sidhaarth Saraswathi Ramalingam
-- [Declarative Syntax and Enhancements for the Checkstyle Plugin](./2024/checkstyle-plugin.md) by Hongjie (Jay) Wei
+* Complexity: Easy or Medium, 90 hrs or 175 hrs
+* Deliverables: Implementing extensibility features in the Kotlin DSL for Gradle and improving support for common project integrations
+* Skills to improve: Kotlin, Gradle, Java, Static Analysis
+* Potential Mentors: Oleg Nenashev
+
+#### Suggest your own project idea!
+
+Original project ideas are welcome!
+If you are interested, make a suggestion on our Slack channel (see below).
 
 ### Communication channels
 
-Project channels:
-
-- `#gradle-build-server` on the [Gradle Community Slack](https://gradle.org/slack-invite)
-- `#checkstyle-plugin` on the [Gradle Community Slack](https://gradle.org/slack-invite)
-
-Coordination:
-
 - `#gsoc` on the [Gradle Community Slack](https://gradle.org/slack-invite)
 - `#gsoc` on the [Kotlin Foundation Slack](https://kotlinlang.org/community/)
-- The Eclipse Foundation uses Matrix for instant messaging. The service is available at [chat.eclipse.org](https://chat.eclipse.org/).
-
-### Mid-Term Project Demos
-
-<div class="youtube-video">
-  <div>
-    <iframe src="https://www.youtube.com/embed/UN0AFCLASZA?si=9aG5tDzj6nL1_IKT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-</div>
 
 ## Resources
 
@@ -96,6 +86,7 @@ References:
 
 ### Previous Years
 
+- [GSoC 2024](./2024/README.md) - 3 Projects
 - [GSoC 2023](./2023/README.md) - 1 projects
 
 
