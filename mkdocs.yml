@@ -126,9 +126,13 @@ nav:
       - Hacktoberfest: events/hacktoberfest/README.md
       - Google Summer of Code:
         - Overview: events/gsoc/README.md
-        - Gradle Build Server - Support for Android projects: events/gsoc/2024/gradle-build-server-android.md
-        - Gradle Build Server - DevX and Language Support in Buildship: events/gsoc/2024/gradle-build-server-devx.md
-        - Declarative Syntax and Enhancements for the Checkstyle Plugin: events/gsoc/2024/checkstyle-plugin.md
+        - Archive:
+          - GSoC 2024:
+            - Summary: events/gsoc/2024/README.md
+            - Gradle Build Server - Support for Android projects: events/gsoc/2024/gradle-build-server-android.md
+            - Gradle Build Server - DevX and Language Support in Buildship: events/gsoc/2024/gradle-build-server-devx.md
+            - Declarative Syntax and Enhancements for the Checkstyle Plugin: events/gsoc/2024/checkstyle-plugin.md
+          - GSoC 2023: events/gsoc/2023/README.md
   - Resources:
     - Key Resources: resources/README.md
     - Public Roadmap: roadmap/README.md
@@ -178,6 +182,7 @@ plugins:
 
   - redirects:
       redirect_maps:
+        'events/gsoc/2025/README.md' : 'events/gsoc/README.md'
         'events/hacktoberfest/README.md' : 'events/hacktoberfest/2024/README.md'
         'cookbook/README.md' : https://cookbook.gradle.org/
 

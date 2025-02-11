@@ -7,11 +7,28 @@ description: >
 
 # Gradle in Google Summer of Code 2024
 
-This is an active program.
+Gradle participated in GSoC 2024 under the umbrellas of
+the [Kotlin Foundation](https://kotlinfoundation.org/) and the [Eclipse Foundation](https://www.eclipse.org/).
+We started with 3 projects, but two of them didn't pass the midterm evaluation.
 
-## Current Status
+## Projects
 
-See [the main GSoC page](../README.md) for the status and more information.
+Completed projects:
+
+- [Gradle Build Server – support for Android projects](./2024/gradle-build-server-android.md) by Tanish Ranjan
+
+Aborted projects:
+
+- [Gradle Build Server - DevX and Language Support in Buildship](./2024/gradle-build-server-devx.md) by Sidhaarth Saraswathi Ramalingam
+- [Declarative Syntax and Enhancements for the Checkstyle Plugin](./2024/checkstyle-plugin.md) by Hongjie (Jay) Wei
+
+### Mid-Term Project Demos
+
+<div class="youtube-video">
+  <div>
+    <iframe src="https://www.youtube.com/embed/UN0AFCLASZA?si=9aG5tDzj6nL1_IKT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
 
 ## Archive
 
