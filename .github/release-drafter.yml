@@ -1,2 +1,9 @@
 # Use https://github.com/gradle/.github/blob/main/.github/release_drafter.yml
 _extends: .github
+
+categories:
+  - title: 🌐 Events
+    labels:
+      - events
+      - gsoc
+      - hacktoberfest
