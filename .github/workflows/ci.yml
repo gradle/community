@@ -42,7 +42,7 @@ jobs:
 
       - name: Deploy to PR preview
         uses: peaceiris/actions-gh-pages@v4
-        if: ${{ (github.ref != 'refs/heads/main') && (github.event.pull_request.head.repo.full_name == 'org/repo') }}
+        if: ${{ (github.ref != 'refs/heads/main') && (github.event.pull_request.head.repo.full_name == 'gradle/community') }}
         with:
           deploy_key: ${{ secrets.PREVIEW_DEPLOYMENT_KEY }}
           external_repository: gradle/${{ env.PREVIEW_REPO }}
@@ -51,7 +51,7 @@ jobs:
 
       - name: Update comment
         uses: hasura/comment-progress@v2.2.0
-        if: ${{ (github.ref != 'refs/heads/main') && (github.event.pull_request.head.repo.full_name == 'org/repo') }}
+        if: ${{ (github.ref != 'refs/heads/main') && (github.event.pull_request.head.repo.full_name == 'gradle/community') }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{ github.repository }}
