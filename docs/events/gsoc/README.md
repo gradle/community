@@ -1,8 +1,8 @@
 ---
 title: "Gradle in Google Summer of Code"
 description: >
-  Gradle participated in GSoC 2024 under the umbrellas of
-  the Kotlin Foundation and the Eclipse Foundation.
+  Gradle has participated in GSoC since 2023, under the umbrellas of the Kotlin Foundation and the Eclipse Foundation.
+  Join us!
 ---
 
 [Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/) is a global,
