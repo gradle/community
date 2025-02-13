@@ -18,14 +18,24 @@ There might be related projects in other mentoring organizations.
 
 ### Project Ideas
 
+#### 🐛🔍 Clean and actionable reporting for Gradle code quality plugins for Kotlin
+
+Gradle recently introduced a new [Problems API](https://docs.gradle.org/current/userguide/reporting_problems.html)  that allows Gradle and third-party plugins to propagate issues and warnings in a unified way. This API provides clean and actionable error reporting and more insights into the console output, dedicated HTML reports, and connected observability tools. IDEs such as IntelliJ IDEA or Android Studio also have access to the details via Gradle’s tool integration API, and can show warnings right in the code editor. Several core features and plugins have already adopted the Problems API: Java compilation, dependency resolution errors, deprecation warnings, etc. We want the code quality plugins for Kotlin to adopt this API, too; it would greatly improve the developer experience for 100,000+ Kotlin developers using Gradle. 
+
+In this project, we invite contributors to choose a number of Kotlin code quality plugins, such as Ktlint, Detekt, Diktat, ArchUnit, or Checkstyle for Kotlin, and integrate them with Problems API. You can also work on integrating a similar analysis for Gradle builds defined with KotlinDSL. 
+
+* Complexity: Easy or Medium, 90 hrs or 175 hrs  
+* Deliverables: Implement Problems API integration in the mentioned plugins  
+* Skills to improve: Kotlin, Gradle  
+* Potential Mentors: Oleg Nenashev, Balint Hegyi, Reinhold Degenfellner
+
 #### 📦 Maven Central publishing plugin for Gradle with new APIs
 
 [Maven Central](https://central.sonatype.com/) is one of the most popular Maven repositories for publishing JVM-focused libraries and projects. It is actively used by Apache Maven or Gradle-based open-source projects, and based on Sonatype Nexus v2, pending migration to a newer version. There is ongoing migration of open source projects to a new Maven Central Instance, which has a very different API implementation and needs special support in the build tool plugins. Developing a Gradle plugin that is compatible with the new Maven Central publication APIs would help the library authors building with Gradle to have a smooth experience with the new process.
 
 Currently there are multiple implementations of Maven Central publishing plugins in Gradle, e.g. the [Maven Publish Plugin](https://docs.gradle.org/current/userguide/publishing_maven.html) or the [New Maven Central Publishing](https://github.com/GradleUp/nmcp) which already tries to adopt the new APIs . A potential contributor, during the application or the community bonding phase, would need to review the implementations and suggest a plugin to be updated, or decide to build a new plugin / fork. The deliverables would include either a new version of an existing plugin for Maven Central publishing or a new plugin for Gradle. We anticipate the implementation to be in Kotlin or Java and to have proper test coverage and documentation. Additional deliverables may include Kotlin DSL extensions to simplify usage of the plugins and [Declarative Gradle](https://declarative.gradle.org/) extensions.
 
-Summary:
-
+* Complexity: Easy to Mediym, 90 hrs to 175 hrs  
 * Deliverables: updated Maven Central publishing plugin or a new plugin  
 * Skills to improve: Kotlin, Gradle, Maven Repositories  
 * Potential Mentors: Gradle team, respective plugin maintainers
@@ -39,13 +49,12 @@ One of the problems for Isolated projects is the lock contention in the Gradle c
 * Embed the [Configuration Cache Report](https://github.com/gradle/configuration-cache-report) tool into the Gradle Profiler (or "implement a GitHub Action for it"?)  
 * Profile Gradle and a few popular Gradle plugins in various projects, with automation of the test suite on GHA  
 * Determine potential areas and plugins where lock contention can be reduced, with or without Configuration Cache  
-* While around, contribute to other areas of [Configuration Cache compatibility](https://github.com/gradle/gradle/issues/13490)  
-*  in the target plugins  
+* While around, contribute to other areas of [Configuration Cache compatibility](https://github.com/gradle/gradle/issues/13490) in the target plugins  
 * Implement some of the discovered improvements
 
 Summary: 
 
-* Complexity: Easy to Large Medium, 90 hrs to 350 hrs  
+* Complexity: Easy to Large, 90 hrs to 350 hrs  
 * Deliverables: Implementing extensibility features in the Kotlin DSL for Gradle and improving support for common project integrations  
 * Skills to improve: Kotlin, Gradle, Java, Performance Analysis, Profiling  
 * Potential Mentors: Oleg Nenashev, Laura Kassovic
