@@ -17,11 +17,13 @@ All content contributions are welcome!
 When sharing on social media, consider using the `#gradle` hashtag or
 tagging Gradle directly. Our accounts are:
 
-- [LinkedIn](https://www.linkedin.com/company/gradle) company page
+- [LinkedIn](https://www.linkedin.com/company/gradle) - company page
+- [Bluesky](https://bsky.app/profile/gradle.com) - company page
 - [X/Twitter](https://twitter.com/gradle) (`@gradle`)
 - [YouTube](https://www.youtube.com/@GradleInc) (`@GradleInc`)
 - [Mastodon](https://mastodon.social/@Gradle) (`@gradle`)
 - [Facebook](https://www.facebook.com/gradleinc) (`@gradleinc`)
+
 
 We also monitor the `#gradle` hashtag across major social media and blog platforms,
 and we will do our best to promote quality content there.
