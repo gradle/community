@@ -23,8 +23,8 @@ Official listing on the website
 
 ## Contributing
 
-To contribute to this community repo, see [CONTRIBUTING.md](./docs/CONTRIBUTING.md).
-To contribute to the Gradle community as whole, we have the contributor guide [here](https://community.gradle.org/contributing/).
+See [CONTRIBUTING.md](./docs/CONTRIBUTING.md) to contribute to this community repo.
+To contribute to the Gradle community, we have the contributor guide [here](https://community.gradle.org/contributing/).
 All contributions are welcome!
 If you want to contribute anything to this repository,
 just submit a pull request.
