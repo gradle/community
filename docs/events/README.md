@@ -34,7 +34,7 @@ GSoC Contributors work with an open source organization on a 12+ week programmin
 under the guidance of mentors.
 Gradle has participated in GSoC since 2023.
 
-See [Google Summer of Code](./gsoc/README.md) for more information
+See the [Gradle in GSoC](./gsoc/README.md) for more information about the current year.
 
 ### Gradle Mentorship Program
 
