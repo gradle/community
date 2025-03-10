@@ -35,7 +35,7 @@ In this project, we invite contributors to choose a number of Kotlin code qualit
 
 Currently there are multiple implementations of Maven Central publishing plugins in Gradle, e.g. the [Maven Publish Plugin](https://docs.gradle.org/current/userguide/publishing_maven.html) or the [New Maven Central Publishing](https://github.com/GradleUp/nmcp) which already tries to adopt the new APIs . A potential contributor, during the application or the community bonding phase, would need to review the implementations and suggest a plugin to be updated, or decide to build a new plugin / fork. The deliverables would include either a new version of an existing plugin for Maven Central publishing or a new plugin for Gradle. We anticipate the implementation to be in Kotlin or Java and to have proper test coverage and documentation. Additional deliverables may include Kotlin DSL extensions to simplify usage of the plugins and [Declarative Gradle](https://declarative.gradle.org/) extensions.
 
-* Complexity: Easy to Mediym, 90 hrs to 175 hrs  
+* Complexity: Easy to Medium, 90 hrs to 175 hrs  
 * Deliverables: updated Maven Central publishing plugin or a new plugin  
 * Skills to improve: Kotlin, Gradle, Maven Repositories  
 * Potential Mentors: Gradle team, respective plugin maintainers
