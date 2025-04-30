@@ -4,13 +4,9 @@ site_description: >-
   This is an open-source site for all Gradle community matters,
   including governance, artwork, events, and public infrastructure.
 copyright: >
-  Copyright &copy; 2024 - All contributors to the repository and included components.
-  The original content licenses and copyrights from the included repositories are preserved,
-  you can find them in the linked repositories.
-
-  Gradle and the Gradlephant logo (the "Gradle Marks") are registered trademarks of Gradle, Inc. and/or its subsidiaries.
-  Use of the Gradle Marks the Gradle Cookbook pages is for identification purposes only and does not imply sponsorship or endorsement by Gradle, Inc.
-  In the Gradle Cookbook, "Gradle" typically means "Gradle Build Tool" and does not reference Gradle Inc. and/or its subsidiaries.
+  Copyright &copy; 2025 - All contributors to the repository and included components.
+  Gradle®, Develocity®, Build Scan®, and the Gradlephant logo are registered trademarks of Gradle, Inc.
+  On this resource, "Gradle" typically means "Gradle Build Tool" and does not reference Gradle, Inc. and/or its subsidiaries.
 docs_dir: docs
 repo_url: https://github.com/gradle/community
 repo_name: Gradle Community repo
