@@ -118,17 +118,23 @@ nav:
     - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
   - Events:
       - Events Overview: events/README.md
-      - 2024 Developer Survey: surveys/developer-survey/README.md
-      - Hacktoberfest: events/hacktoberfest/README.md
       - Google Summer of Code:
         - Overview: events/gsoc/README.md
+        - 2025 projects:
+          - Convention Plugin for developing Jenkins Plugins: events/gsoc/2025/jenkins-plugins-toolchain.md
+          - Improving Configuration Cache and lock contention in key plugins: events/gsoc/2025/configuration-cache-and-lock-contention.md
+          - Kotlin Code Quality Reporting with Problems API: events/gsoc/2025/kotlin-code-quality-with-problems-api.md
+          - Maven Central publishing for Gradle with new APIs: events/gsoc/2025/maven-central-publishing-with-new-api.md
         - Archive:
+          - GSoC 2025 Project Ideas: events/gsoc/2025/project-ideas.md
           - GSoC 2024:
             - Summary: events/gsoc/2024/README.md
             - Gradle Build Server - Support for Android projects: events/gsoc/2024/gradle-build-server-android.md
             - Gradle Build Server - DevX and Language Support in Buildship: events/gsoc/2024/gradle-build-server-devx.md
             - Declarative Syntax and Enhancements for the Checkstyle Plugin: events/gsoc/2024/checkstyle-plugin.md
           - GSoC 2023: events/gsoc/2023/README.md
+      - Hacktoberfest: events/hacktoberfest/README.md
+      - 2024 Developer Survey: surveys/developer-survey/README.md
   - Resources:
     - Key Resources: resources/README.md
     - Public Roadmap: roadmap/README.md
@@ -166,9 +172,6 @@ plugins:
           - name: gradle-profiler
             import_url: 'https://github.com/gradle/gradle-profiler?branch=master&edit_uri=/blob/master/'
             imports: [ "README.md" ]
-          - name: declarative-gradle
-            import_url: 'https://github.com/gradle/declarative-gradle?branch=main&edit_uri=/blob/main/'
-            imports: [ "README.md", "**/README.md" ]
           - name: github-actions
             import_url: 'https://github.com/gradle/actions?branch=main&edit_uri=/blob/main/'
             imports: [ "README.md", "*" ]

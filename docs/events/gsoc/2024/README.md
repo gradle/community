@@ -15,12 +15,12 @@ We started with 3 projects, but two of them didn't pass the midterm evaluation.
 
 Completed projects:
 
-- [Gradle Build Server – support for Android projects](./2024/gradle-build-server-android.md) by Tanish Ranjan
+- [Gradle Build Server – support for Android projects](./gradle-build-server-android.md) by Tanish Ranjan
 
 Aborted projects:
 
-- [Gradle Build Server - DevX and Language Support in Buildship](./2024/gradle-build-server-devx.md) by Sidhaarth Saraswathi Ramalingam
-- [Declarative Syntax and Enhancements for the Checkstyle Plugin](./2024/checkstyle-plugin.md) by Hongjie (Jay) Wei
+- [Gradle Build Server - DevX and Language Support in Buildship](./gradle-build-server-devx.md) by Sidhaarth Saraswathi Ramalingam
+- [Declarative Syntax and Enhancements for the Checkstyle Plugin](./checkstyle-plugin.md) by Hongjie (Jay) Wei
 
 ### Mid-Term Project Demos
 
