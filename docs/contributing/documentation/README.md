@@ -31,7 +31,7 @@ and see the slides below.
 - [Gradle Cookbook](https://cookbook.gradle.org/) - a collection of recipes, guides and examples for the Gradle Build Tool.
     - This is an additional solution-based documentation
     - Implementation: MkDocs + Material for MkDocs
-    - [Contributor Guide](../../cookbook/CONTRIBUTING.md)
+    - [Contributor Guide](https://cookbook.gradle.org/CONTRIBUTING/)
 - Plugin documentation - Documentation for the key plugins is provided by the Gradle Build Tool repo.
   For other plugins, see their repositories for the docs and contributing guidelines.
     - Implementation: most plugins use simple documentation pages in GitHub-flavored Markdown (`README.md`).
