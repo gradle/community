@@ -42,16 +42,16 @@ Developing a Gradle plugin compatible with the new Maven Central API will help l
 ## First Coding Phase
 
 ### Deliverables
-- Implemented a **hierarchical POM** configuration mechanism
-- Enabled **per-project overrides** through the project-level DSL
+- [x] Implemented a **hierarchical POM** configuration mechanism ([#8](https://github.com/YongGoose/kotlin-pom-gradle/pull/8))
+- [x] Enabled **per-project overrides** through the project-level DSL ([#8](https://github.com/YongGoose/kotlin-pom-gradle/pull/8))
+- [ ] Implement validation to detect missing or incorrect metadata early.
+- [ ] Develop a Generic Maven Central Compliance Verification Tool to catch common publishing errors (e.g., missing signatures, malformed POMs) before release ([#9](https://github.com/YongGoose/kotlin-pom-gradle/issues/9)).
 
 ### Summary / Idea
-The main focus of this phase was to implement a hierarchical approach to POM metadata configuration, improving usability for multi-module projects.
-Inspired by the utility of [pomFromGradleProperties()](https://vanniktech.github.io/gradle-maven-publish-plugin/central/#configuring-the-pom), the plugin now allows users to define shared defaults (e.g., organization name, license, developer info) at the root level, while still enabling fine-grained customization at the individual project level. This significantly reduces boilerplate and promotes consistency across modules in large repositories.
-
-### Next Steps
-- Implement validation to detect missing or incorrect metadata early.
-- Develop a Generic Maven Central Compliance Verification Tool to catch common publishing errors (e.g., missing signatures, malformed POMs) before release ([#9](https://github.com/YongGoose/kotlin-pom-gradle/issues/9)).
+In this phase, we focused on implementing a hierarchical approach to POM metadata configuration to improve usability in multi-module projects. 
+Drawing inspiration from [pomFromGradleProperties()](https://vanniktech.github.io/gradle-maven-publish-plugin/central/#configuring-the-pom), the plugin now lets users define shared defaults—such as the organization name, license, and developer information—at the root level. At the same time, it supports detailed customization at the individual project level. 
+This approach cuts down on boilerplate and helps maintain consistency across modules in large codebases.
 
 ## References
 - [Project Page on the GSoC website](https://summerofcode.withgoogle.com/programs/2025/projects/zCRWjfpd)
+- [Kotlin-pom-gradle Repository](https://github.com/YongGoose/kotlin-pom-gradle/pull/8)
