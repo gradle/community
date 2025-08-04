@@ -13,40 +13,76 @@ The long-term goal is to improve developer productivity and CI reliability by ma
   <img src="https://github.com/Nouran-11/gradle-gsoc.png/blob/main/Gradle-GSOC.png?raw=true" alt="Gradle and GSoC logos" width="600">
 </p>
 
+## Project Status
+
+* **Status:** In Progress
+* **Milestone:** Midterm Evaluation Successfully Passed
+* **Current Focus:** Adding Configuration Cache support to more community plugins, scaling the lessons learned from the initial phase of the project.
+
 ## Team
 
 ### Contributor
 
-- [Nouran Atef](https://github.com/Nouran-11)
+* [Nouran Atef](https://www.linkedin.com/in/nouran-atef11/)
 
 ### Mentors
 
-- Oleg Nenashev
-- Rafael Chaves
-- Rodrigo Oliveira 
+* Rodrigo Oliveira
+* Rafael Chaves
+* Oleg Nenashev
+
 
 ## Organization
 
-- Kotlin Foundation
+* Kotlin Foundation
+
+---
+
+## Key Goals
+
+This project addresses two primary causes of slow Gradle builds:
+
+* **Enhance Configuration Cache Support:** Many plugins are not fully compatible with Gradle's Configuration Cache. The goal is to refactor these plugins to ensure they can be fully cached, eliminating repetitive configuration work.
+* **Reduce Lock Contention:** In critical plugins, competition for shared resources (locks) creates bottlenecks that degrade performance. This project aims to identify and minimize these contention points to improve build parallelism.
+* **Provide Better Cache Insights:** A key part of the project is to improve the data and insights available to developers, making it easier for them to diagnose and fix caching issues in their own builds.
+
+## Project Deliverables
+
+This section outlines the completed work for the midterm and the goals for the final submission.
+
+### Midterm Deliverables (Completed)
+
+* **Code Contribution: Configuration Cache Compatibility**
+    * Refactored the `gradle-lint-plugin` to be partially compatible with the Gradle Configuration Cache, addressing deep-rooted reliance on the `Project` object at execution time.
+    [Pull Request #433 in `nebula-plugins/gradle-lint-plugin`](https://github.com/nebula-plugins/gradle-lint-plugin/pull/433)
+
+  * **Code Contribution: `play-framework-plugin`**
+    * Fixed a key Configuration Cache compatibility issue in the Play Framework plugin, enabling more reliable caching for developers using the framework.
+     [Pull Request #207 in `gradle/playframework`](https://github.com/gradle/playframework/pull/207)
+
+* **Technical Documentation: A Hands-On Guide**
+    * Authored a comprehensive blog post detailing the step-by-step process of making a complex plugin cache-compatible.
+    [Supporting Configuration Cache - my learnings from the Nebula Lint Plugin](https://dev.to/gradle-community/unlocking-configuration-cache-with-gsoc-contributor-374l)
+
+
+### Final Deliverables (Planned)
+
+The second half of the project will focus exclusively on expanding Configuration Cache adoption in the community.
+
+* **Expanded Plugin Refactoring:**
+    * I will identify, prioritize, and refactor several more high-impact community plugins to add Configuration Cache compatibility.
+      
+* **Final Project Summary**
+    * I will update all documentation and submit a final report summarizing the project's achievements, challenges, and overall outcomes.
 
 ## Technologies
 
-- Java
-- Kotlin
-- Gradle
-- Configuration Cache
-- Build Performance
-
-## Rationale
-
-Gradle builds often suffer from long execution times, especially in large or complex projects. The **Configuration Cache** is designed to solve this by avoiding repeated work during configuration, but many plugins are not fully optimized to support it. Similarly, **lock contention** in critical plugins creates bottlenecks that degrade performance during parallel execution.
-
-This project focuses on identifying and addressing these two performance pain points:
-
-- **Improving cache usage insights** 
-- **Reducing lock contention** 
-
-By enhancing these mechanisms, the project supports more scalable and efficient builds, benefiting the broader Gradle ecosystem.
+* Java
+* Groovy
+* Gradle
+* Configuration Cache
+* Build Performance
+* Gradle TestKit
 
 ## References
 
