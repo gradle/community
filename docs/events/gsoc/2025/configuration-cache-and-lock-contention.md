@@ -40,11 +40,10 @@ The long-term goal is to improve developer productivity and CI reliability by ma
 
 ## Key Goals
 
-This project addresses two primary causes of slow Gradle builds:
+This project addresses one of primary causes of slow Gradle builds:
 
 * **Enhance Configuration Cache Support:** Many plugins are not fully compatible with Gradle's Configuration Cache. The goal is to refactor these plugins to ensure they can be fully cached, eliminating repetitive configuration work.
-* **Reduce Lock Contention:** In critical plugins, competition for shared resources (locks) creates bottlenecks that degrade performance. This project aims to identify and minimize these contention points to improve build parallelism.
-* **Provide Better Cache Insights:** A key part of the project is to improve the data and insights available to developers, making it easier for them to diagnose and fix caching issues in their own builds.
+
 
 ## Project Deliverables
 
@@ -71,7 +70,10 @@ The second half of the project will focus exclusively on expanding Configuration
 
 * **Expanded Plugin Refactoring:**
     * I will identify, prioritize, and refactor several more high-impact community plugins to add Configuration Cache compatibility.
-      
+
+ * **Report on Incompatibility Patterns:**
+    * I will produce a report covering patterns in Configuration Cache incompatibilities found in the community plugins I surveyed.
+     
 * **Final Project Summary**
     * I will update all documentation and submit a final report summarizing the project's achievements, challenges, and overall outcomes.
 
