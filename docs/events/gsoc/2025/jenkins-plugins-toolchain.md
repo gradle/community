@@ -11,9 +11,9 @@ This project aims to modernize Jenkins plugin development with Gradle by updatin
   <img src="../images/Jenkins-Gradle.png" alt="Jenkins and Gradle logos" width="600">
 </div>
 
-# Status
+## ⚡Status
 
-Passed mid-term evaluation with successful integration of Jenkins BOM, Quality Tools & Static Analysis Integration
+Passed mid-term evaluation with successful integration of Jenkins BOM, Quality Tools & Static Analysis Integration :-)
 
 ## 🚩 Goal
 
