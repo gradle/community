@@ -6,6 +6,7 @@ This project aims to implement a unified and actionable code quality reporting s
 <img width="200" alt="gradle" src="https://github.com/user-attachments/assets/960fa6c4-f934-46c1-9569-341394b80ac1" />
 </p>
 
+
 ## Team
 Contributor
 - [Vanessa Johnson](https://github.com/vanessamj99)
@@ -25,6 +26,13 @@ Mentors
 
 ## Rationale
 Gradle recently introduced a new Problems API that allows Gradle and third-party plugins to propagate issues and warnings in a unified way. This API provides clean and actionable error reporting and more insights into the console output, dedicated HTML reports, and connected observability tools. We also want the code quality plugins for Kotlin to adopt this API. It would significantly improve the developer experience for 100,000+ Kotlin developers using Gradle.
+
+## Achievements
+### Detekt
+The problems api integration and testing is currently in a PR in Detekt where it has its own separate module where there is a file that feeds the problems api reporter with the detekt issues that may arise in a project. This PR can be found here [here](https://github.com/detekt/detekt/pull/8275)
+
+### Ktlint
+The problems api integration and testing is currently in a PR in Ktlint where a separate file was made to feed the problems api reporter with the ktlint errors that may arise in a project. This PR can be found here [here](https://github.com/JLLeitschuh/ktlint-gradle/pull/927)
 
 ## References
 
