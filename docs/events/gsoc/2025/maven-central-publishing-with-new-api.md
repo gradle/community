@@ -39,19 +39,46 @@ Maven Central is a key repository for publishing JVM libraries. It is currently 
 
 Developing a Gradle plugin compatible with the new Maven Central API will help library authors publish smoothly and adapt easily to the changes.
 
-## First Coding Phase
 
-### Deliverables
-- [x] Implemented a **hierarchical POM** configuration mechanism ([#8](https://github.com/YongGoose/kotlin-pom-gradle/pull/8))
-- [x] Enabled **per-project overrides** through the project-level DSL ([#8](https://github.com/YongGoose/kotlin-pom-gradle/pull/8))
-- [ ] Implement validation to detect missing or incorrect metadata early.
-- [ ] Develop a Generic Maven Central Compliance Verification Tool to catch common publishing errors (e.g., missing signatures, malformed POMs) before release ([#9](https://github.com/YongGoose/kotlin-pom-gradle/issues/9)).
+## Deliverables
+1. **Hierarchical POM Management** (Completed 🙂)
+    - Define POM metadata once at the root project level and automatically inherit it across all submodules.
+    - Allow submodules to override specific properties when needed, ensuring flexibility while maintaining consistency.
+    - Minimize repetitive configuration in multi-module projects.
 
-### Summary / Idea
-In this phase, we focused on implementing a hierarchical approach to POM metadata configuration to improve usability in multi-module projects. 
-Drawing inspiration from [pomFromGradleProperties()](https://vanniktech.github.io/gradle-maven-publish-plugin/central/#configuring-the-pom), the plugin now lets users define shared defaults—such as the organization name, license, and developer information—at the root level. At the same time, it supports detailed customization at the individual project level. 
-This approach cuts down on boilerplate and helps maintain consistency across modules in large codebases.
+2. **Comprehensive POM Validation** (Completed 🙂)
+    - Validate POM files for required fields, proper formatting, and compliance with Maven Central standards before publishing.
+    - Proactively prevent common publishing errors and ensure repository compatibility.
+
+3. **Automated Artifact Signature Presence Check** (Completed 🙂)
+    - Automatically check whether artifact signatures are present during the build process before publishing.
+    - Detect missing signatures early to prevent deployment failures.
+
+4. **Plugin Deployment to Gradle Plugin Portal** (Completed 🙂)
+    - Provide three plugin variants:
+        - Hierarchical POM management: [For build.gradle.kts](https://plugins.gradle.org/plugin/io.github.yonggoose.kotlin-pom-gradle-project), [For settings.gradle.kts](https://plugins.gradle.org/plugin/io.github.yonggoose.kotlin-pom-gradle-setting)
+        - POM Validation: [Validation Plugin](https://plugins.gradle.org/plugin/io.github.yonggoose.kotlin-pom-gradle-artifact-check-project)
+
+5. **User-Friendly Installation & Documentation** (Planned 🤔)
+    - Offer detailed installation and usage guides, including a comprehensive README and demo video.
+
+6. **Community-Driven Expansion Plans** (Planned 🤔)
+    - Plan for additional validation rules, enhanced integration with popular Gradle plugins, and expanded customization options.
+    - Continuously improve the plugin based on community feedback.
+
+7. **Open-Source Contribution** (Planned 🤔)
+    - Welcome contributions in various forms, including bug reports, feature requests, documentation improvements, and code contributions.
+    - Encourage participation through the GitHub repository.
+
+## What's Next
+
+Community interest and engagement are essential for the long-term success of this project. To achieve this, the plugin should be promoted in various places to actively attract users and contributors.
+
+- **Writing Blog Posts**: Create blog posts showcasing use cases that integrate with VannikTech's Maven Publish, helping to promote the plugin.
+- **Promoting on Social Media**: Share and promote the plugin on Gradle’s Slack channel as well as other developer communities.
+
 
 ## References
 - [Project Page on the GSoC website](https://summerofcode.withgoogle.com/programs/2025/projects/zCRWjfpd)
 - [Kotlin-pom-gradle Repository](https://github.com/YongGoose/kotlin-pom-gradle/pull/8)
+- [Gradle Plugin Portal](https://plugins.gradle.org/u/YongGoose)
