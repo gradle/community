@@ -32,10 +32,10 @@ Gradle recently introduced a new Problems API that allows Gradle and third-party
 
 ## Achievements
 ### Detekt
-The problems api integration and testing is currently in a PR in Detekt where it has its own separate module where there is a file that feeds the problems api reporter with the detekt issues that may arise in a project. This PR can be found here [here](https://github.com/detekt/detekt/pull/8275)
+The problems api integration and testing is currently in a PR in Detekt where it has its own separate module where there is a file that feeds the problems api reporter with the detekt issues that may arise in a project. This PR is a work in progress.
 
 ### Ktlint
-The problems api integration and testing is currently in a PR in Ktlint where a separate file was made to feed the problems api reporter with the ktlint errors that may arise in a project. This PR can be found here [here](https://github.com/JLLeitschuh/ktlint-gradle/pull/927)
+The problems api integration and testing is currently in a PR in Ktlint where a separate file was made to feed the problems api reporter with the ktlint errors that may arise in a project. This PR can be found [here](https://github.com/JLLeitschuh/ktlint-gradle/pull/927)
 
 ## References
 
