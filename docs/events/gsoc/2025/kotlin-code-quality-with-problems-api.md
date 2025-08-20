@@ -2,7 +2,7 @@
 
 This project aims to implement a unified and actionable code quality reporting system through the integration of the recently introduced Gradle new [Problems API](https://docs.gradle.org/current/userguide/reporting_problems.html). This API provides structured and rich information about the problems happening during a build. The information provided can be used by different interfaces such as Gradle’s console output, build scans, or IDEs to communicate any issues. With this API integration and structured format of the generated report, developers can experience faster issue identification, streamline debugging, and have improved code maintainability. This project will provide value to the Kotlin development community by upgrading the quality of their error reporting. The integration of the Problems API will done in the plugins: Detekt and Ktlint.
 
-<img width="1920" height="1080" alt="Kotlin Code" src="https://github.com/user-attachments/assets/84218a9c-2279-448a-a47a-245978487684" />
+![Kotlin Code](https://github.com/user-attachments/assets/84218a9c-2279-448a-a47a-245978487684)
 
 
 <p align="center">
