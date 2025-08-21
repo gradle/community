@@ -82,4 +82,4 @@ Community interest and engagement are essential for the long-term success of thi
 - [Project Page on the GSoC website](https://summerofcode.withgoogle.com/programs/2025/projects/zCRWjfpd)
 - [Kotlin-pom-gradle Repository](https://github.com/YongGoose/kotlin-pom-gradle/pull/8)
 - [Gradle Plugin Portal](https://plugins.gradle.org/u/YongGoose)
-- [Discussion Channel](https://gradle-community.slack.com/archives/C08S108K9NY)
+- Discussion Channel: `#maven-central` on the [Gradle Community Slack](https://slack.gradle.org/)
