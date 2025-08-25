@@ -56,10 +56,10 @@ Developing a Gradle plugin compatible with the new Maven Central API will help l
 
 4. **Plugin Deployment to Gradle Plugin Portal** (Completed 🙂)
     - Provide three plugin variants:
-        - Hierarchical POM management: [For build.gradle.kts](https://plugins.gradle.org/plugin/io.github.yonggoose.kotlin-pom-gradle-project), [For settings.gradle.kts](https://plugins.gradle.org/plugin/io.github.yonggoose.kotlin-pom-gradle-setting)
-        - POM Validation: [Validation Plugin](https://plugins.gradle.org/plugin/io.github.yonggoose.kotlin-pom-gradle-artifact-check-project)
+        - Hierarchical POM management: [For build.gradle.kts](https://plugins.gradle.org/plugin/io.github.yonggoose.maven.central.utility.plugin.project), [For settings.gradle.kts](https://plugins.gradle.org/plugin/io.github.yonggoose.maven.central.utility.plugin.setting)
+        - POM Validation: [Validation Plugin](https://plugins.gradle.org/plugin/io.github.yonggoose.maven.central.utility.plugin.check)
 
-5. **User-Friendly Installation & Documentation** (Planned 🤔)
+5. **User-Friendly Installation & Documentation** (Completed 🙂)
     - Offer detailed installation and usage guides, including a comprehensive README and demo video.
 
 6. **Community-Driven Expansion Plans** (Planned 🤔)
@@ -74,12 +74,12 @@ Developing a Gradle plugin compatible with the new Maven Central API will help l
 
 Community interest and engagement are essential for the long-term success of this project. To achieve this, the plugin should be promoted in various places to actively attract users and contributors.
 
-- **Writing Blog Posts**: Create blog posts showcasing use cases that integrate with VannikTech's Maven Publish, helping to promote the plugin.
+- **Writing Blog Posts**: Create blog posts demonstrating how to perform validation before deployment using plugins, helping to highlight their value.
 - **Promoting on Social Media**: Share and promote the plugin on Gradle’s Slack channel as well as other developer communities.
 
 
-## References
-- [Project Page on the GSoC website](https://summerofcode.withgoogle.com/programs/2025/projects/zCRWjfpd)
-- [Kotlin-pom-gradle Repository](https://github.com/YongGoose/kotlin-pom-gradle/pull/8)
-- [Gradle Plugin Portal](https://plugins.gradle.org/u/YongGoose)
-- [Discussion Channel](https://gradle-community.slack.com/archives/C08S108K9NY)
+## Links
+- Project: [GSoC maven-central-publishing-plugin-for-gradle-with-new-apis](https://kotlinlang.org/docs/gsoc-2025.html#maven-central-publishing-plugin-for-gradle-with-new-apis-medium-175-hrs)
+- Repository : https://github.com/YongGoose/Maven-Central-utility-plugins-for-Gradle
+- Discussion Channel: maven-central on the [Gradle Community Slack](https://slack.gradle.org/)
+- Demo video : [GSoC 2025 - Yongjun - Maven Central Publishing](https://drive.google.com/file/d/1McNXyBdIQpEPqTn2ZRjnYJ4E8JNwHMZE/view)
