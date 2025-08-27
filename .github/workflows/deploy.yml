@@ -41,7 +41,7 @@ jobs:
             FULL_BUILD=true
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           name: github-pages
           path: "_site/"
