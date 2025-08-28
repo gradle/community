@@ -1,5 +1,7 @@
 # Gradle Community Site
 
+[![a](https://img.shields.io/badge/slack-%23docs-brightgreen?style=flat&logo=slack)](http://slack.gradle.org/)
+
 This is an open-source site and repository for all Gradle community
 matters, including governance, artwork, events, and public infrastructure.
 We also use this repository to track issues and initiatives related to the community's growth and ecosystem.
