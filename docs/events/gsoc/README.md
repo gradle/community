@@ -13,6 +13,8 @@ Gradle has participated in GSoC since 2023.
 
 ## GSoC 2025
 
+[![GSoC Channel on the Gradle Community Slack](https://img.shields.io/badge/slack-%23gsoc-brightgreen?style=flat&logo=slack)](http://slack.gradle.org/)
+
 In 2025, we participate under the umbrella of the [Kotlin Foundation](https://kotlinfoundation.org/).
 There might be also related projects in other mentoring organizations.
 
