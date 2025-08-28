@@ -101,8 +101,50 @@ This strategy was applied consistently across all classes. The future work plan 
 
 ---
 
+### 5. OpenRewrite Gradle Plugin (`rewrite-gradle-plugin`)
 
+* **Problem**: The plugin was fundamentally incompatible with the Configuration Cache. Its core classes—`RewriteExtension`, `AbstractRewriteTask`, and the parsers—were deeply coupled with the live `Project` model, directly accessing project state and holding non-serializable `Project` references.
+* **Approach to Fix**: The refactoring is a significant, work-in-progress architectural change focused on completely decoupling the plugin from the `Project` model. The strategy involved several key steps:
+    1.  The `RewriteExtension` was made **serializable** by extracting and storing only the necessary primitive data (like the project directory and properties) during its construction.
+    2.  A comprehensive, serializable **Data Transfer Object (DTO)**, `ProjectInfo`, was created to act as a safe snapshot of all necessary project data.
+    3.  The `AbstractRewriteTask` base class was refactored to consume this `ProjectInfo` DTO as its primary input.
+    4.  The `DelegatingProjectParser` was updated to be instantiated with the `ProjectInfo` DTO, using **reflection** to transfer the DTO's data across an isolated classloader boundary.
+* **Validation**: A dedicated functional test (`ConfigurationCacheTest`) was added to prove the fix. This test runs a build twice with the configuration cache enabled, verifying that no compatibility problems are found and that the cache is successfully reused on the second run.
+* **Pull Request**: Draft PR [#1](https://github.com/Nouran-11/rewrite-gradle-plugin/pull/1) 
+* **Status**: 🚧 **Work in Progress**. This is a large and complex refactoring effort. The foundational work of introducing a DTO and decoupling the core components is underway, but more work is needed for full compatibility.
 
+---
+
+## Surveyed Plugins 
+
+This section details additional plugins that were investigated for Configuration Cache compatibility, but for which a contribution was not submitted.
+
+### 6. Flyway Gradle Plugin (`flyway-gradle-plugin`)
+
+* **Problem:** The plugin's abstract base task, `AbstractFlywayTask`, is fundamentally incompatible with the Configuration Cache. Its `@TaskAction` logic directly queries the live `Project` model at execution time to access the buildscript classloader, project extensions, and source set outputs. This problematic logic can be seen in the `runTask` and `addClassesAndResourcesDirs` methods in the [source code](https://github.com/flyway/flyway/blob/9df387cfa998ad5e1024151374f226a6185fa78f/flyway-plugins/flyway-gradle-plugin/src/main/java/org/flywaydb/gradle/task/AbstractFlywayTask.java#L591).
+* **Proposed Approach to Fix:** The general approach would involve refactoring the Flyway tasks to be stateless. This would require capturing all necessary configuration (like source set outputs and dependent classpaths) at configuration time into serializable data objects (DTOs) and passing them to the tasks as lazy **Providers**.
+* **Reason for Not Proceeding:** A contribution was not pursued because the maintainers decided to close the original feature request due to a lack of community interest. As stated in the official response in [GitHub Issue #3550](https://github.com/flyway/flyway/issues/3550), This stance remains the official position despite newer requests like [GitHub Issue #4107](https://github.com/flyway/flyway/issues/4107).
+* **Status:** 🛑 **Blocked**
+
+---
+
+### 7. jsonschema2dataclass Gradle Plugin (`js2d-gradle`)
+
+* **Problem:** The plugin's generation task, `Js2pGenerationTask`, was incompatible with the Configuration Cache. When storing the task's state, Gradle produced an error indicating a type mismatch where a resolved `FileCollection` was being assigned to a property expecting a lazy `NamedDomainObjectProvider`.
+* **Outcome:** Following the filed issue, the maintainer corrected the incompatibility in the plugin's codebase. The fix is now present on the main branch but has not yet been part of an official release. A follow-up comment was added to the issue requesting that a new version be published.
+* **GitHub Issue:** [#884](https://github.com/jsonschema2dataclass/js2d-gradle/issues/884)
+* **Status:** ✅ **Fixed (Awaiting Release)**
+
+  ---
+
+### 8. forbidden-apis Gradle Plugin
+
+* **Problem:** When the Configuration Cache is enabled, properties configured via the top-level `forbiddenApis` extension are not correctly applied to the tasks. This causes the task properties to be cached with empty values, leading to an error at execution time because required inputs are missing.
+* **Proposed Approach to Fix:** The fix would require refactoring the plugin to use Gradle's modern lazy `Property` APIs. The properties in the `forbiddenApis` extension should be correctly wired to the corresponding properties on the `CheckForbiddenApis` task so that their values are resolved before the task state is cached.
+* **Reason for Not Proceeding:** A contribution was not pursued because the plugin maintainer has clearly stated that the plugin is **no longer actively maintained** and that adding Configuration Cache support is not a priority.
+* **GitHub Issue:** [#269](https://github.com/policeman-tools/forbidden-apis/issues/269)
+* **Status:** 🛑 **Blocked**
+  
 ## Technologies
 
 * Java
