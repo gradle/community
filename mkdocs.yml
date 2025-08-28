@@ -183,7 +183,6 @@ plugins:
       redirect_maps:
         'events/gsoc/2025/README.md' : 'events/gsoc/README.md'
         'events/hacktoberfest/README.md' : 'events/hacktoberfest/2024/README.md'
-        'cookbook/README.md' : https://cookbook.gradle.org/
 
 # Markdown
 markdown_extensions:
