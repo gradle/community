@@ -86,6 +86,7 @@ This strategy was applied consistently across all classes. The future work plan 
     * The `ArgumentBuilder` class was refactored to be stateless, receiving the `LiquibaseInfo` DTO as a method parameter instead of holding a reference to the `Project`.
 
 * **Pull Request**: [#176](https://github.com/liquibase/liquibase-gradle-plugin/pull/176)
+*  **Gradle Cookbook Entry**: Based on this work, a guide was created for the Gradle Cookbook: [Example - Configuration Cache compatibility for the Liquibase plugin](https://cookbook.gradle.org/plugin-development/configuration-cache/example-config-cache-liquibase-plugin/).
 * **Status**: ⏳ **Open** (In communication with the maintainer and answering their questions)
 
 ---
@@ -103,7 +104,17 @@ This strategy was applied consistently across all classes. The future work plan 
 
 ---
 
-### 5. OpenRewrite Gradle Plugin (`rewrite-gradle-plugin`)
+### 5. jsonschema2dataclass Gradle Plugin (`js2d-gradle`)
+
+* **Problem**: The Android portion of the plugin was incompatible with the Configuration Cache. The `ProcessorVersionGeneratorTask` accessed `project.versionCatalogs` at execution time, causing serialization failures.
+* **Approach to Fix**: The solution involved fully decoupling the task's execution. A new `@Input` `Property` was added to the task to hold the resolved dependency identifier. A lazy `Provider.map()` chain was then used to resolve the identifier at configuration time and wire it to the new task property.
+* **Pull Request**: [#1072](https://github.com/jsonschema2dataclass/js2d-gradle/pull/1072)
+* **Status**: ✅ **Merged**
+
+  ---
+
+
+### 6. OpenRewrite Gradle Plugin (`rewrite-gradle-plugin`)
 
 * **Problem**: The plugin was fundamentally incompatible with the Configuration Cache. Its core classes—`RewriteExtension`, `AbstractRewriteTask`, and the parsers—were deeply coupled with the live `Project` model, directly accessing project state and holding non-serializable `Project` references.
 * **Approach to Fix**: The refactoring is a significant, work-in-progress architectural change focused on completely decoupling the plugin from the `Project` model. The strategy involved several key steps:
@@ -114,18 +125,8 @@ This strategy was applied consistently across all classes. The future work plan 
 * **Validation**: A dedicated functional test (`ConfigurationCacheTest`) was added to prove the fix. This test runs a build twice with the configuration cache enabled, verifying that no compatibility problems are found and that the cache is successfully reused on the second run.
 * **Pull Request**: Draft PR [#1](https://github.com/Nouran-11/rewrite-gradle-plugin/pull/1) 
 * **Status**: 🚧 **Work in Progress**. This is a large and complex refactoring effort. The foundational work of introducing a DTO and decoupling the core components is underway, but more work is needed for full compatibility.
-
----
-
-### 6. jsonschema2dataclass Gradle Plugin (`js2d-gradle`)
-
-* **Problem**: The Android portion of the plugin was incompatible with the Configuration Cache. The `ProcessorVersionGeneratorTask` accessed `project.versionCatalogs` at execution time, causing serialization failures.
-* **Approach to Fix**: The solution involved fully decoupling the task's execution. A new `@Input` `Property` was added to the task to hold the resolved dependency identifier. A lazy `Provider.map()` chain was then used to resolve the identifier at configuration time and wire it to the new task property.
-* **Pull Request**: [#1072](https://github.com/jsonschema2dataclass/js2d-gradle/pull/1072)
-* **Status**: ✅ **Merged**
-
-  ---
   
+ --- 
 
 ## Surveyed Plugins 
 
@@ -174,7 +175,8 @@ My involvement with the Gradle community will not end with the GSoC program, as 
 
 * **My GitHub Profile:** [github.com/Nouran-11](https://github.com/Nouran-11)
 * **Project Blog Post:** A detailed guide on making a Gradle plugin Configuration Cache compatible, based on the work done in this project: [Supporting Configuration Cache - my learnings from the Nebula Lint Plugin](https://dev.to/gradle-community/unlocking-configuration-cache-with-gsoc-contributor-374l)
-* **Gradle's Official Documentation:** The official guide on the [Configuration Cache](https://docs.gradle.org/current/userguide/configuration_cache.html), which served as the primary technical reference for this project.
+*  **Gradle Cookbook Guide:** A guide based on the work done on the Liquibase plugin: [Example - Configuration Cache compatibility for the Liquibase plugin](https://cookbook.gradle.org/plugin-development/configuration-cache/example-config-cache-liquibase-plugin/).
+* **Gradle's Official Documentation:** A guide on the [Configuration Cache](https://docs.gradle.org/current/userguide/configuration_cache.html), which served as the primary technical reference for this project.
 * **Community Plugin Tracking Issue:** The official Gradle issue for tracking [Configuration Cache compatibility in popular community plugins](https://github.com/gradle/gradle/issues/13490).
 * **GSoC Project Page:** [Improving Configuration Cache in key Gradle plugins](https://summerofcode.withgoogle.com/programs/2025/projects/chp2Sbei)
 
