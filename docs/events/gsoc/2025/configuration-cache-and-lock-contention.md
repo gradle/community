@@ -50,10 +50,12 @@ This section lists all the deliverables that were successfully completed for the
  ### 1. Nebula Gradle Lint Plugin (`gradle-lint-plugin`)
 
 * **Problem:** The plugin's primary violation of Configuration Cache principles was its direct reference to the Project object and its use of project.configurations to resolve dependencies at configuration time. The direct Project reference has been successfully removed. However, refactoring the usage of project.configurations is still outstanding, as this part of the work requires a more significant redesign of the plugin's logic.
+  
 * **Approach to Fix:** The core approach was to decouple tasks and services from Gradle's live, non-serializable Project object during the task's execution phase. This was achieved through a consistent, two-pattern strategy:
-Operate on Data Snapshots: The primary fix was to create simple, serializable data containers (ProjectInfo and ProjectTree). These classes act as a "snapshot" of the necessary data, which is safely extracted from the Project object during the configuration phase using Gradle's lazy Provider API. Services like LintService were refactored to be stateless, receiving these data snapshots as input instead of the Project object itself.
+Operate on Data Snapshots: The primary fix was to create simple, serializable data containers (ProjectInfo and ProjectTree). These classes act as a "snapshot" of the necessary data, which is safely extracted from the Project object at the end of configuration phase using Gradle's lazy Provider API. Services like LintService were refactored to be stateless, receiving these data snapshots as input instead of the Project object itself.
 Defer Access with a Supplier: For rare cases where a rule absolutely required the live Project model at execution time, the fix was to inject a Supplier<Project>. This lightweight, serializable object provides a "recipe" to get the Project object on-demand, isolating the non-cache-friendly logic and allowing the rest of the process to be cached.
 This strategy was applied consistently across all classes. The future work plan is to continue this pattern by creating new data projections for Project.configurations and refactoring the remaining rules incrementally.
+
 * **Technical Write-up:** A detailed blog post explaining the refactoring process for this plugin was published here: [Supporting Configuration Cache - my learnings from the Nebula Lint Plugin](https://dev.to/gradle-community/unlocking-configuration-cache-with-gsoc-contributor-374l).
 
 * **Pull Request:** [#433](https://github.com/nebula-plugins/gradle-lint-plugin/pull/433)
@@ -80,9 +82,9 @@ This strategy was applied consistently across all classes. The future work plan 
 
 * **Problem**: The plugin was incompatible with the Configuration Cache because its main task, `LiquibaseTask`, and a helper class, `ArgumentBuilder`, directly accessed the non-serializable `Project` object during the execution phase. This was done to read extension properties, resolve classpaths, and get project directories and loggers.
 
-* **Approach to Fix**: The solution was to make the task's execution logic stateless by extracting all necessary data during the configuration phase into **serializable Data Transfer Objects (DTOs)**.
+* **Approach to Fix**: The solution was to make the task's execution logic stateless by extracting all necessary data the end of the configuration phase into **serializable Data Transfer Objects (DTOs)**.
     * Two new data container classes, `LiquibaseInfo` and `ProjectInfo`, were created to hold all the required data from the project and its `liquibase` extension.
-    * These DTOs are populated safely at configuration time and passed into the `LiquibaseTask` as lazy `@Input` properties.
+    * These DTOs are populated safely at configuration time and passed into the `LiquibaseTask` as lazy `@Internal` properties.
     * The `ArgumentBuilder` class was refactored to be stateless, receiving the `LiquibaseInfo` DTO as a method parameter instead of holding a reference to the `Project`.
 
 * **Pull Request**: [#176](https://github.com/liquibase/liquibase-gradle-plugin/pull/176)
@@ -96,7 +98,7 @@ This strategy was applied consistently across all classes. The future work plan 
 * **Problem**: The plugin's main task contained multiple Configuration Cache violations by accessing the `Project` object during the execution phase. Specifically, it used `project.projectDir` to resolve file paths and `project.logger` for logging messages.
 
 * **Approach to Fix**: A two-part fix was implemented to decouple the task from the `Project` model:
-    1.  The `project.projectDir` access was resolved by adding a new lazy **`@Input`** property to the task. This property is populated safely during the configuration phase and then read by the task at execution time.
+    1.  The `project.projectDir` access was resolved by adding a new lazy **`@Internal`** property to the task. This property is populated safely during the configuration phase and then read by the task at execution time.
     2.  The `project.logger` calls were replaced by using the task's own **built-in logger** (`getLogger()`), which is the cache-compatible way to handle logging within a task.
 
 * **Pull Requests**: [#12](https://github.com/hyperether/compose-multiplatform-localize/pull/12), [#13](https://github.com/hyperether/compose-multiplatform-localize/pull/13)
@@ -107,7 +109,7 @@ This strategy was applied consistently across all classes. The future work plan 
 ### 5. jsonschema2dataclass Gradle Plugin (`js2d-gradle`)
 
 * **Problem**: The Android portion of the plugin was incompatible with the Configuration Cache. The `ProcessorVersionGeneratorTask` accessed `project.versionCatalogs` at execution time, causing serialization failures.
-* **Approach to Fix**: The solution involved fully decoupling the task's execution. A new `@Input` `Property` was added to the task to hold the resolved dependency identifier. A lazy `Provider.map()` chain was then used to resolve the identifier at configuration time and wire it to the new task property.
+* **Approach to Fix**: The solution involved fully decoupling the task's execution. A new `@Internal` `Property` was added to the task to hold the resolved dependency identifier. A lazy `Provider.map()` chain was then used to resolve the identifier at configuration time and wire it to the new task property.
 * **Pull Request**: [#1072](https://github.com/jsonschema2dataclass/js2d-gradle/pull/1072)
 * **Status**: ✅ **Merged**
 
@@ -136,7 +138,8 @@ This section details additional plugins that were investigated for Configuration
 
 * **Problem:** The plugin's abstract base task, `AbstractFlywayTask`, is fundamentally incompatible with the Configuration Cache. Its `@TaskAction` logic directly queries the live `Project` model at execution time to access the buildscript classloader, project extensions, and source set outputs. This problematic logic can be seen in the `runTask` and `addClassesAndResourcesDirs` methods in the [source code](https://github.com/flyway/flyway/blob/9df387cfa998ad5e1024151374f226a6185fa78f/flyway-plugins/flyway-gradle-plugin/src/main/java/org/flywaydb/gradle/task/AbstractFlywayTask.java#L591).
 * **Proposed Approach to Fix:** The general approach would involve refactoring the Flyway tasks to be stateless. This would require capturing all necessary configuration (like source set outputs and dependent classpaths) at configuration time into serializable data objects (DTOs) and passing them to the tasks as lazy **Providers**.
-* **Reason for Not Proceeding:** A contribution was not pursued because the maintainers decided to close the original feature request due to a lack of community interest. As stated in the official response in [GitHub Issue #3550](https://github.com/flyway/flyway/issues/3550), This stance remains the official position despite newer requests like [GitHub Issue #4107](https://github.com/flyway/flyway/issues/4107).
+* **Reason for Not Proceeding:** A contribution was not pursued , Although the original request in [GitHub Issue #3550](https://github.com/flyway/flyway/issues/3550) has since gained significant community interest and upvotes, the maintainers have not yet acted on it or changed their stance on accepting external contributions. The ongoing discussion is also captured in [GitHub Issue #4107](https://github.com/flyway/flyway/issues/4107).
+
 * **Status:** 🛑 **Blocked**
 
 ---
