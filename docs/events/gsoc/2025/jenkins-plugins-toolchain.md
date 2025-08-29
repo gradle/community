@@ -96,4 +96,4 @@ These issues make it significantly harder for developers, especially those famil
 - [Project Page on the GSoC site](https://summerofcode.withgoogle.com/programs/2025/projects/3ujOIGDx)
 - [Contributor Proposal](https://docs.google.com/document/d/1W-_rDWrnHSgV3fGdQWSryOmym15e9TEoHlBvQJysJgw/edit?usp=sharing)
 - [GitHub Repository](https://github.com/aaravmahajanofficial/jenkins-gradle-convention-plugin)
-- [Slack Channel](https://gradle-community.slack.com/archives/C08S0GKMB5G)
+- Discussion channel: `#jenkins-plugin-toolchain` on the [Gradle Community Slack](https://slack.gradle.org/)

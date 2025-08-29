@@ -26,16 +26,12 @@ In the Kotlin Foundation, we have the following Gradle focused projects this yea
 - [Improving Configuration Cache and lock contention in key Gradle plugins](./2025/configuration-cache-and-lock-contention.md) by Nouran Atef
 - [Enhanced Kotlin Code Quality Reporting with Gradle Problems API: Integration with Detekt and Ktlint](./2025/kotlin-code-quality-with-problems-api.md) by Vanessa Johnson
 - [Maven Central publishing plugin for Gradle with new APIs](./2025/maven-central-publishing-with-new-api.md) by Yongjun Hong
-- [IntelliJ Platform Gradle Plugin – Gradle Reporting and Parallel Verifications](https://summerofcode.withgoogle.com/programs/2025/projects/lJoAo8B7) by Victoria Chuks Alajemba
+- [IntelliJ Platform Gradle Plugin – Gradle Reporting and Parallel Verifications](./2025/intellij-platform-gradle-plugin.md) by Victoria Chuks Alajemba
 
 ## Communication channels
 
 - `#gsoc` on the [Gradle Community Slack](https://gradle.org/slack-invite)
 - `#gsoc` on the [Kotlin Foundation Slack](https://kotlinlang.org/community/)
-
-## Resources
-
-- [Coordination Meeting Notes and Recordings](https://drive.google.com/drive/folders/19PAIb36Bm_9Y300oJ_2JBMFU6kjOwNvX?usp=drive_link)
 
 ### For Contributors/Mentees
 

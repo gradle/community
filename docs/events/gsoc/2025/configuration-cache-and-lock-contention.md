@@ -178,3 +178,6 @@ My involvement with the Gradle community will not end with the GSoC program, as 
 * **Community Plugin Tracking Issue:** The official Gradle issue for tracking [Configuration Cache compatibility in popular community plugins](https://github.com/gradle/gradle/issues/13490).
 * **GSoC Project Page:** [Improving Configuration Cache in key Gradle plugins](https://summerofcode.withgoogle.com/programs/2025/projects/chp2Sbei)
 
+## Discussion Channels
+
+*` #gsoc-2025-improving-cc` on the [Gradle Community Slack](https://slack.gradle.org/)
