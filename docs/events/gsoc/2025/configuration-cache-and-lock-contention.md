@@ -54,8 +54,10 @@ This section lists all the deliverables that were successfully completed for the
 Operate on Data Snapshots: The primary fix was to create simple, serializable data containers (ProjectInfo and ProjectTree). These classes act as a "snapshot" of the necessary data, which is safely extracted from the Project object during the configuration phase using Gradle's lazy Provider API. Services like LintService were refactored to be stateless, receiving these data snapshots as input instead of the Project object itself.
 Defer Access with a Supplier: For rare cases where a rule absolutely required the live Project model at execution time, the fix was to inject a Supplier<Project>. This lightweight, serializable object provides a "recipe" to get the Project object on-demand, isolating the non-cache-friendly logic and allowing the rest of the process to be cached.
 This strategy was applied consistently across all classes. The future work plan is to continue this pattern by creating new data projections for Project.configurations and refactoring the remaining rules incrementally.
+* **Technical Write-up:** A detailed blog post explaining the refactoring process for this plugin was published here: [Supporting Configuration Cache - my learnings from the Nebula Lint Plugin](https://dev.to/gradle-community/unlocking-configuration-cache-with-gsoc-contributor-374l).
+
 * **Pull Request:** [#433](https://github.com/nebula-plugins/gradle-lint-plugin/pull/433)
-* **Status:**  **Not Merged**
+* **Status:**  **⏳ Open**
 
 
   ---
@@ -69,7 +71,7 @@ This strategy was applied consistently across all classes. The future work plan 
     2.  **For `JavaScriptMinify` Task:** The solution was to use dependency injection. The required `FileSystemOperations` service was injected directly into the task's constructor, eliminating the need to call `getProject()` at execution time.
 
 * **Pull Request:** [#207](https://github.com/gradle/playframework/pull/207)
-* **Status:**  **Not Merged**
+* **Status:**  **⏳ Open**
 * **Note:** This pull request is not merged as Gradle team has decided to decommission this plugin in favor of a newer, official plugin within the Play Framework that is already Configuration Cache-compatible.
   
 ---
@@ -144,16 +146,25 @@ This section details additional plugins that were investigated for Configuration
 * **Reason for Not Proceeding:** A contribution was not pursued because the plugin maintainer has clearly stated that the plugin is **no longer actively maintained** and that adding Configuration Cache support is not a priority.
 * **GitHub Issue:** [#269](https://github.com/policeman-tools/forbidden-apis/issues/269)
 * **Status:** 🛑 **Blocked**
-  
-## Technologies
 
-* Java
-* Groovy
-* Gradle
-* Configuration Cache
-* Build Performance
-* Gradle TestKit
+## Collaboration and Learning
+
+This project was a comprehensive endeavor in improving the Gradle ecosystem. The work involved a mix of **surveying** popular community plugins to identify Configuration Cache incompatibilities, **developing technical fixes** to address them, and **collaborating with plugin maintainers** to have those contributions reviewed and merged. This process highlighted the importance of clear communication, persistence, and technical expertise in open-source development.
+
+The effort to make the Gradle ecosystem fully compatible with the Configuration Cache is ongoing, and there are many opportunities for others to help. The Gradle team maintains a curated list of popular plugins that still need compatibility work. For anyone interested in continuing this effort and making a valuable contribution to the Gradle community, the following GitHub issue is the best place to start:
+
+➡️ **[List of Community Plugins with Configuration Cache Issues](https://github.com/gradle/gradle/issues/13490)**
+
+## Post-GSoC Plans
+
+My involvement with the Gradle community will not end with the GSoC program, as I am committed to supporting the contributions I've made and continuing to help improve the ecosystem. This includes maintaining my merged pull requests, as well as continuing the dialogue with the maintainers of the **Liquibase** plugin to help get that contribution merged. Looking ahead, I will continue to explore the community-curated list of plugins for new opportunities to contribute. The GSoC program has been an incredible learning experience, and I look forward to being an active member of the Gradle open-source community for a long time to come.
+
 
 ## References
 
-- [Project Page on the GSoC site](https://summerofcode.withgoogle.com/programs/2025/projects/chp2Sbei)
+* **My GitHub Profile:** [github.com/Nouran-11](https://github.com/Nouran-11)
+* **Project Blog Post:** A detailed guide on making a Gradle plugin Configuration Cache compatible, based on the work done in this project: [Supporting Configuration Cache - my learnings from the Nebula Lint Plugin](https://dev.to/gradle-community/unlocking-configuration-cache-with-gsoc-contributor-374l)
+* **Gradle's Official Documentation:** The official guide on the [Configuration Cache](https://docs.gradle.org/current/userguide/configuration_cache.html), which served as the primary technical reference for this project.
+* **Community Plugin Tracking Issue:** The official Gradle issue for tracking [Configuration Cache compatibility in popular community plugins](https://github.com/gradle/gradle/issues/13490).
+* **GSoC Project Page:** [Improving Configuration Cache in key Gradle plugins](https://summerofcode.withgoogle.com/programs/2025/projects/chp2Sbei)
+
