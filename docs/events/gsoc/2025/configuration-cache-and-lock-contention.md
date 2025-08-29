@@ -149,6 +149,14 @@ This section details additional plugins that were investigated for Configuration
 * **GitHub Issue:** [#269](https://github.com/policeman-tools/forbidden-apis/issues/269)
 * **Status:** 🛑 **Blocked**
 
+## Demos
+
+### Midterm Demo
+
+This video demonstrates the progress made during the first half of the project, showcasing the initial fixes and the overall approach to making community plugins compatible with Gradle's Configuration Cache.
+
+[![Midterm Demo Video](https://img.youtube.com/vi/nhuRXXAnick/hqdefault.jpg)](https://www.youtube.com/watch?v=nhuRXXAnick)
+
 ## Collaboration and Learning
 
 This project was a comprehensive endeavor in improving the Gradle ecosystem. The work involved a mix of **surveying** popular community plugins to identify Configuration Cache incompatibilities, **developing technical fixes** to address them, and **collaborating with plugin maintainers** to have those contributions reviewed and merged. This process highlighted the importance of clear communication, persistence, and technical expertise in open-source development.
