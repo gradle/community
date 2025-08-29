@@ -5,7 +5,7 @@ Description: "A project by Nouran Atef for GSoC 2025 focused on optimizing Gradl
 
 # GSoC 2025 - Improving Configuration Cache in Key Gradle Plugins
 
-This project aims to improve Gradle’s build performance by enhancing **Configuration Cache** support in widely-used plugins.The project will help analyze cache behavior and identify areas where multiple processes compete for shared resources, which can slow down builds.
+This project aims to improve Gradle’s build performance by enhancing **Configuration Cache** support in widely-used plugins.
 
 The long-term goal is to improve developer productivity and CI reliability by making Gradle builds faster, more predictable, and easier to optimize—especially in large-scale projects.
 
@@ -117,11 +117,21 @@ This strategy was applied consistently across all classes. The future work plan 
 
 ---
 
+### 6. jsonschema2dataclass Gradle Plugin (`js2d-gradle`)
+
+* **Problem**: The Android portion of the plugin was incompatible with the Configuration Cache. The `ProcessorVersionGeneratorTask` accessed `project.versionCatalogs` at execution time, causing serialization failures.
+* **Approach to Fix**: The solution involved fully decoupling the task's execution. A new `@Input` `Property` was added to the task to hold the resolved dependency identifier. A lazy `Provider.map()` chain was then used to resolve the identifier at configuration time and wire it to the new task property.
+* **Pull Request**: [#1072](https://github.com/jsonschema2dataclass/js2d-gradle/pull/1072)
+* **Status**: ✅ **Merged**
+
+  ---
+  
+
 ## Surveyed Plugins 
 
 This section details additional plugins that were investigated for Configuration Cache compatibility, but for which a contribution was not submitted.
 
-### 6. Flyway Gradle Plugin (`flyway-gradle-plugin`)
+### 7. Flyway Gradle Plugin (`flyway-gradle-plugin`)
 
 * **Problem:** The plugin's abstract base task, `AbstractFlywayTask`, is fundamentally incompatible with the Configuration Cache. Its `@TaskAction` logic directly queries the live `Project` model at execution time to access the buildscript classloader, project extensions, and source set outputs. This problematic logic can be seen in the `runTask` and `addClassesAndResourcesDirs` methods in the [source code](https://github.com/flyway/flyway/blob/9df387cfa998ad5e1024151374f226a6185fa78f/flyway-plugins/flyway-gradle-plugin/src/main/java/org/flywaydb/gradle/task/AbstractFlywayTask.java#L591).
 * **Proposed Approach to Fix:** The general approach would involve refactoring the Flyway tasks to be stateless. This would require capturing all necessary configuration (like source set outputs and dependent classpaths) at configuration time into serializable data objects (DTOs) and passing them to the tasks as lazy **Providers**.
@@ -130,14 +140,6 @@ This section details additional plugins that were investigated for Configuration
 
 ---
 
-### 7. jsonschema2dataclass Gradle Plugin (`js2d-gradle`)
-
-* **Problem:** The plugin's generation task, `Js2pGenerationTask`, was incompatible with the Configuration Cache. When storing the task's state, Gradle produced an error indicating a type mismatch where a resolved `FileCollection` was being assigned to a property expecting a lazy `NamedDomainObjectProvider`.
-* **Outcome:** Following the filed issue, the maintainer corrected the incompatibility in the plugin's codebase. The fix is now present on the main branch but has not yet been part of an official release. A follow-up comment was added to the issue requesting that a new version be published.
-* **GitHub Issue:** [#884](https://github.com/jsonschema2dataclass/js2d-gradle/issues/884)
-* **Status:** ✅ **Fixed (Awaiting Release)**
-
-  ---
 
 ### 8. forbidden-apis Gradle Plugin
 
