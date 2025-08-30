@@ -76,11 +76,12 @@ References:
 
 ## Archive
 
+### Previous Years
+
+- [GSoC 2025](./2025/README.md) - 5 Projects
+- [GSoC 2024](./2024/README.md) - 3 Projects
+- [GSoC 2023](./2023/README.md) - 1 Project
+
 ### Project Ideas
 
 - [GSoC 2025 project ideas](./2025/project-ideas.md)
-
-### Previous Years
-
-- [GSoC 2024](./2024/README.md) - 3 Projects
-- [GSoC 2023](./2023/README.md) - 1 projects
