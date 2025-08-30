@@ -10,8 +10,9 @@ In 2025, [Victoria Chuks Alajemba](https://github.com/alajemba-vik) worked on im
 
 !!! note
 
-    This is **NOT** the official page of the project.
-    We keep it for referencing purposes.
+    This is **NOT** the official project page,
+    see the [project page on the GSoC site](https://summerofcode.withgoogle.com/programs/2025/projects/lJoAo8B7).
+    We keep this page for referencing purposes.
 
 ## Project abstract
 

@@ -122,11 +122,14 @@ nav:
         - Overview: events/gsoc/README.md
         - 2025 projects:
           - Convention Plugin for developing Jenkins Plugins: events/gsoc/2025/jenkins-plugins-toolchain.md
-          - Improving Configuration Cache and lock contention in key plugins: events/gsoc/2025/configuration-cache-and-lock-contention.md
+          - Improving Configuration Cache in Key Gradle Plugins: events/gsoc/2025/configuration-cache-and-lock-contention.md
           - Kotlin Code Quality Reporting with Problems API: events/gsoc/2025/kotlin-code-quality-with-problems-api.md
           - Maven Central publishing for Gradle with new APIs: events/gsoc/2025/maven-central-publishing-with-new-api.md
+          - IntelliJ Platform Gradle Plugin – Reporting and Parallel Verifications: events/gsoc/2025/intellij-platform-gradle-plugin-reporting-and-parallel-verifications.md
         - Archive:
-          - GSoC 2025 Project Ideas: events/gsoc/2025/project-ideas.md
+          - GSoC 2025:
+            - Summary: events/gsoc/2025/README.md
+            - Project Ideas: events/gsoc/2025/project-ideas.md
           - GSoC 2024:
             - Summary: events/gsoc/2024/README.md
             - Gradle Build Server - Support for Android projects: events/gsoc/2024/gradle-build-server-android.md
@@ -181,7 +184,6 @@ plugins:
 
   - redirects:
       redirect_maps:
-        'events/gsoc/2025/README.md' : 'events/gsoc/README.md'
         'events/hacktoberfest/README.md' : 'events/hacktoberfest/2024/README.md'
 
 # Markdown
