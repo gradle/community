@@ -22,6 +22,8 @@ Aborted projects:
 - [Gradle Build Server - DevX and Language Support in Buildship](./gradle-build-server-devx.md) by Sidhaarth Saraswathi Ramalingam
 - [Declarative Syntax and Enhancements for the Checkstyle Plugin](./checkstyle-plugin.md) by Hongjie (Jay) Wei
 
+![Gradle in GSoC 2024 - Team Photo](./images/gsoc-2024-team-photo.png)
+
 ### Mid-Term Project Demos
 
 <div class="youtube-video">

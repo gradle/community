@@ -74,6 +74,8 @@ References:
 - [Mentorship Programs. Growing new community leaders](https://speakerdeck.com/onenashev/mentorship-programs-growing-new-team-and-community-leaders) -
   a presentation by Oleg Nenashev on mentorship programs
 
+![Gradle in Google Summer of Code](./gradle-in-gsoc.png)
+
 ## Archive
 
 ### Previous Years
@@ -85,3 +87,4 @@ References:
 ### Project Ideas
 
 - [GSoC 2025 project ideas](./2025/project-ideas.md)
+
