@@ -40,3 +40,4 @@ The problems api integration and testing is currently in a PR in Ktlint where a 
 ## References
 
 - [Project page on the GSoC site](https://summerofcode.withgoogle.com/programs/2025/projects/4UqgKDMe)
+- Discussion channel: `#problems-api` on the [Gradle Community Slack](https://slack.gradle.org/)

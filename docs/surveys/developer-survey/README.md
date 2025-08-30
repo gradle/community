@@ -20,7 +20,6 @@ so we've created a survey to help us better understand developers' experiences u
     On November 06, we concluded the 2024 Software Developer Survey.
     Thanks to 500+ Gradle users who shared substantial feedback on Gradle developer experience, key pain points, and Gradle’s future evolution!
     It will take us a few months to fully process the survey results, contact key respondents for interview opportunities, and distribute the swag.
-    We appreciate your patience, and we hope to publish a full survey report in early 2025.
 
 ## Take the Survey
 

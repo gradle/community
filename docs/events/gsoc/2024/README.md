@@ -32,6 +32,10 @@ Aborted projects:
 
 ## Archive
 
+### Resources
+
+- [GSoC 2024 - Coordination Meeting Notes and Recordings](https://drive.google.com/drive/folders/19PAIb36Bm_9Y300oJ_2JBMFU6kjOwNvX?usp=drive_link)
+
 ### 2024 Project Ideas
 
 Not all project applications were accepted in 2024,
