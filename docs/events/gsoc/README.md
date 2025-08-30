@@ -23,7 +23,7 @@ There might be also related projects in other mentoring organizations.
 In the Kotlin Foundation, we have the following Gradle focused projects this year:
 
 - [Gradle Convention Plugin for Developing Jenkins Plugins](./2025/jenkins-plugins-toolchain.md) by Aarav Mahajan
-- [Improving Configuration Cache and lock contention in key Gradle plugins](./2025/configuration-cache-and-lock-contention.md) by Nouran Atef
+- [Improving Configuration Cache in Key Gradle Plugins](./2025/configuration-cache-and-lock-contention.md) by Nouran Atef
 - [Enhanced Kotlin Code Quality Reporting with Gradle Problems API: Integration with Detekt and Ktlint](./2025/kotlin-code-quality-with-problems-api.md) by Vanessa Johnson
 - [Maven Central publishing plugin for Gradle with new APIs](./2025/maven-central-publishing-with-new-api.md) by Yongjun Hong
 - [IntelliJ Platform Gradle Plugin – Gradle Reporting and Parallel Verifications](./2025/intellij-platform-gradle-plugin.md) by Victoria Chuks Alajemba
