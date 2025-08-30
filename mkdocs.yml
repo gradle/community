@@ -125,7 +125,7 @@ nav:
           - Improving Configuration Cache in Key Gradle Plugins: events/gsoc/2025/configuration-cache-and-lock-contention.md
           - Kotlin Code Quality Reporting with Problems API: events/gsoc/2025/kotlin-code-quality-with-problems-api.md
           - Maven Central publishing for Gradle with new APIs: events/gsoc/2025/maven-central-publishing-with-new-api.md
-          - IntelliJ Platform Gradle Plugin – Reporting and Parallel Verifications: events/gsoc/2025/intellij-platform-gradle-plugin-reporting-and-parallel-verifications.md
+          - IntelliJ Platform Gradle Plugin – Reporting and Parallel Verifications: events/gsoc/2025/intellij-platform-gradle-plugin.md
         - Archive:
           - GSoC 2025:
             - Summary: events/gsoc/2025/README.md
