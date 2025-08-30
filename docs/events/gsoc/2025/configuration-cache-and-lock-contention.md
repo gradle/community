@@ -27,10 +27,9 @@ The long-term goal is to improve developer productivity and CI reliability by ma
 
 ### Mentors
 
-* Rodrigo @ Gradle
 * Rafael Chaves
-* Oleg Nenashev
-
+* Rodrigo Oliveira
+* Oleg Nenashev - community advisor
 
 ## Organization
 
