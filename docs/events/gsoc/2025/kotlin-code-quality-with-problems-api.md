@@ -25,17 +25,17 @@ Mentors
 ## Technologies
 - Gradle
 - Kotlin
-- Problems API
+- Gradle's Problems API
 
 ## Rationale
 Gradle recently introduced a new Problems API that allows Gradle and third-party plugins to propagate issues and warnings in a unified way. This API provides clean and actionable error reporting and more insights into the console output, dedicated HTML reports, and connected observability tools. We also want the code quality plugins for Kotlin to adopt this API. It would significantly improve the developer experience for 100,000+ Kotlin developers using Gradle. This integration will happen in detekt and ktlint which are 2 popular developer tools.
 
 ## Achievements
 ### Detekt
-The problems api integration and testing is currently in a PR in Detekt where it has its own separate module where there is a file that feeds the problems api reporter with the detekt issues that may arise in a project. This PR is a work in progress.
+The problems api integration and testing is currently in a PR in Detekt where it has its own separate module where there is a file that feeds the problems api reporter with the detekt issues that may arise in a project. The console report file was created and made available through in a file in the META-INF/services folder by listing the problems api reporter file there. This PR can be found [here](https://github.com/detekt/detekt/pull/8562)
 
 ### Ktlint
-The problems api integration and testing is currently in a PR in Ktlint where a separate file was made to feed the problems api reporter with the ktlint errors that may arise in a project. This PR can be found [here](https://github.com/JLLeitschuh/ktlint-gradle/pull/927)
+The problems api integration is currently in a PR in Ktlint where a separate file was made to feed the problems api reporter with the ktlint errors that may arise in a project. The problems api reporter is used in the ConsoleReportWorkAction.kt file to report the lint errors found in the project. This PR can be found [here](https://github.com/JLLeitschuh/ktlint-gradle/pull/927)
 
 ## References
 
