@@ -17,6 +17,8 @@ description: "A project by Aarav Mahajan for GSoC 2025 with the goal to revive a
 
 This project aims to make Gradle a first-class tool for Jenkins plugin development by introducing a modern, Kotlin-first convention plugin built on top of the [Gradle JPI plugin](https://github.com/jenkinsci/gradle-jpi-plugin). This convention plugin will strictly adhere to the principle of [Convention over Configuration (CoC)](https://en.wikipedia.org/wiki/Convention_over_configuration). Its objectives are to ensure full compliance with Jenkins hosting requirements, achieve feature parity with Maven-based workflows, and deliver a streamlined developer experience. By automating best practices for build, test, and release, this project empowers the Jenkins community with a robust, future-proof, and efficient Gradle-based ecosystem—improving both developer productivity and plugin reliability.
 
+For more details, refer to the [Project Idea Page](https://kotlinlang.org/docs/gsoc-2025.html#gradle-convention-plugin-for-developing-jenkins-plugins-easy-to-hard-90-hrs-to-350-hrs).
+
 <figure>
   <img src="https://github.com/jenkinsci/gradle-convention-plugin/blob/main/docs/img/logo.png?raw=true"  alt="Project Banner"  width="600">
   <figcaption style="font-size:14px; color:#f0f0f0; text-align:center; margin-top:8px; line-height:1.4; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">
@@ -26,7 +28,7 @@ This project aims to make Gradle a first-class tool for Jenkins plugin developme
 
 ## Status
 
-- **Current Phase:** Completed | Actively Maintained & Evolving :cyclone:
+- **Current Phase:** Completed :green_circle: | Actively Maintained & Evolving :cyclone:
 - **Highlights:**
   - Passed mid-term evaluation | [Watch Mid-term Demo Video](https://drive.google.com/file/d/1VaGFiRP466RS1FyaT6rT7xskZKXJ50x_/view)
   - Hosted on the [official Jenkins GitHub organization](https://github.com/jenkinsci/gradle-convention-plugin)
@@ -82,7 +84,7 @@ This project aims to make Gradle a first-class tool for Jenkins plugin developme
 
 ### Integration of Jenkins & Ecosystem BOM Management
 
-**Status:** Complete
+**Status:** Complete :green_circle:
 
 **Objectives:**
 
@@ -100,7 +102,7 @@ This project aims to make Gradle a first-class tool for Jenkins plugin developme
 
 ### Quality Tools & Static Analysis Integration
 
-**Status:** Complete
+**Status:** Complete :green_circle:
 
 **Objectives:**
 
@@ -116,19 +118,19 @@ This project aims to make Gradle a first-class tool for Jenkins plugin developme
 
 ### Publish Convention Plugin
 
-**Status:** Complete
+**Status:** Complete :green_circle:
 
 - [x] Successfully published the Jenkins Gradle Convention Plugin on the [Gradle Plugin Portal](https://plugins.gradle.org/plugin/io.github.aaravmahajanofficial.jenkins-gradle-convention-plugin) with proper versioning & metadata for discoverability and usability by plugin developers.
 
 ### Add Unit/Integration Tests
 
-**Status:** Complete | Actively Expanding
+**Status:** Complete :green_circle: | Actively Expanding :orange_circle:
 
 **Related to:** [#112](https://github.com/aaravmahajanofficial/jenkins-gradle-convention-plugin/issues/112)
 
 ### Fix Metadata Generation
 
-**Status:** Complete
+**Status:** Complete :green_circle:
 
 **Objectives:**
 
@@ -142,7 +144,7 @@ This project aims to make Gradle a first-class tool for Jenkins plugin developme
 
 ### Native-Gradle Support for Plugin Compatibility Tester (PCT)
 
-**Status:** Under Review
+**Status:** Under Review :yellow_circle:
 
 **Objectives:**
 
@@ -157,7 +159,7 @@ This project aims to make Gradle a first-class tool for Jenkins plugin developme
 
 ### Jenkins Plugin Hosting Request
 
-**Status:** In Progress
+**Status:** In Progress :orange_circle:
 
 **Objectives:** To get plugin source code hosted in a repository in the `jenkinsci` GitHub organization.
 
@@ -165,7 +167,7 @@ This project aims to make Gradle a first-class tool for Jenkins plugin developme
 
 ### Solicit Feedback
 
-**Status:** In progress, actively collecting feedback
+**Status:** In progress, actively collecting feedback :yellow_circle:
 
 **Objectives:** Gather input from the Jenkins & Gradle communities to guide improvements and ensure the plugin meets developer needs.
 
