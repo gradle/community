@@ -157,7 +157,7 @@ This project aims to make Gradle a first-class tool for Jenkins plugin developme
 
 ### Jenkins Plugin Hosting Request
 
-**Status:** Complete
+**Status:** In Progress
 
 **Objectives:** To get plugin source code hosted in a repository in the `jenkinsci` GitHub organization.
 
