@@ -19,12 +19,14 @@ This project aims to make Gradle a first-class tool for Jenkins plugin developme
 
 For more details, refer to the [Project Idea Page](https://kotlinlang.org/docs/gsoc-2025.html#gradle-convention-plugin-for-developing-jenkins-plugins-easy-to-hard-90-hrs-to-350-hrs).
 
-<figure>
-  <img src="https://github.com/jenkinsci/gradle-convention-plugin/blob/main/docs/img/logo.png?raw=true"  alt="Project Banner"  width="600">
-  <figcaption style="font-size:14px; color:#f0f0f0; text-align:center; margin-top:8px; line-height:1.4; text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">
-    Smarter Jenkins plugin builds with Gradle — simple, fast, and modern.
-  </figcaption>
-</figure>
+<p align="center">
+  <img src="https://github.com/jenkinsci/gradle-convention-plugin/blob/main/docs/img/logo.png?raw=true" 
+       alt="Project Banner" 
+       width="600" 
+       style="max-width:100%; border-radius:6px;">
+  <br>
+  <em>Smarter Jenkins plugin builds with Gradle — simple, fast, and modern.</em>
+</p>
 
 ## Status
 
@@ -126,7 +128,7 @@ For more details, refer to the [Project Idea Page](https://kotlinlang.org/docs/g
 
 **Status:** Complete :green_circle: | Actively Expanding :orange_circle:
 
-**Related to:** [#112](https://github.com/aaravmahajanofficial/jenkins-gradle-convention-plugin/issues/112)
+**Related to:** [#112](https://github.com/jenkinsci/gradle-convention-plugin/issues/112)
 
 ### Fix Metadata Generation
 
@@ -136,7 +138,7 @@ For more details, refer to the [Project Idea Page](https://kotlinlang.org/docs/g
 
 - Improve the metadata/manifest/pom generation by automatically populating essential & previously missing manifest entries.
 
-**Resolved in**: [#134](https://github.com/aaravmahajanofficial/jenkins-gradle-convention-plugin/issues/134)
+**Resolved in**: [#134](https://github.com/jenkinsci/gradle-convention-plugin/issues/134)
 
 **Implementation Features:**
 
@@ -159,7 +161,7 @@ For more details, refer to the [Project Idea Page](https://kotlinlang.org/docs/g
 
 ### Jenkins Plugin Hosting Request
 
-**Status:** In Progress :orange_circle:
+**Status:** Complete :green_circle:
 
 **Objectives:** To get plugin source code hosted in a repository in the `jenkinsci` GitHub organization.
 
@@ -175,12 +177,13 @@ For more details, refer to the [Project Idea Page](https://kotlinlang.org/docs/g
 
 - [Blog on Gradle Community (Dev.to) – Gradle Convention Plugin for Developing Jenkins Plugins](https://dev.to/gradle-community/gradle-convention-plugin-for-developing-jenkins-plugins-4n1d)
 - [Announcement at Jenkins Developer Mailing List](https://groups.google.com/g/jenkinsci-dev/c/00r_hESYtKY)
-- [Jenkins.io Blog – Gradle Convention Plugin for Jenkins Plugin Development](https://github.com/jenkins-infra/jenkins.io/pull/8391) - Under Review
+- [Jenkins.io Blog – Gradle Convention Plugin for Jenkins Plugin Development](https://www.jenkins.io/blog/2025/08/31/aarav-mahajan-gsoc-gradle-convention-plugin-for-jenkins-plugin-development/)
 
 ## Roadmap
 
 Next steps for plugin delivery and integration:
 
+- Update the Gradle Plugin Portal Coordinates - see [tracking issue #211](https://github.com/jenkinsci/gradle-convention-plugin/issues/211)
 - Support continuous delivery for Jenkins plugins
 - Integrate seamlessly with Jenkins pipelines (e.g., [buildPluginWithGradle](https://github.com/jenkins-infra/pipeline-library/blob/master/vars/buildPluginWithGradle.groovy) for CI)
 - Migrate to Gradle-JPI2-Plugin when new APIs are available
