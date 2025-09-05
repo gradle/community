@@ -79,7 +79,7 @@ Community interest and engagement are essential for the long-term success of thi
 
 ## Links
 - Project: [GSoC maven-central-publishing-plugin-for-gradle-with-new-apis](https://kotlinlang.org/docs/gsoc-2025.html#maven-central-publishing-plugin-for-gradle-with-new-apis-medium-175-hrs)
-- Repository : https://github.com/YongGoose/Maven-Central-utility-plugins-for-Gradle
+- Repository : [YongGoose/Maven-Central-utility-plugins-for-Gradle](https://github.com/YongGoose/Maven-Central-utility-plugins-for-Gradle)
 - Discussion Channel: `#maven-central` on the [Gradle Community Slack](https://slack.gradle.org/)
 - Demo video : [GSoC 2025 - Yongjun - Maven Central Publishing](https://drive.google.com/file/d/1McNXyBdIQpEPqTn2ZRjnYJ4E8JNwHMZE/view)
 
