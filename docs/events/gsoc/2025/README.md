@@ -103,7 +103,7 @@ The project was aborted due to the administrative/compliance issues (unrelated t
   * Integrate Gradle Reporting API  
   * Integrate Problems API
 
-## Maven Central publishing plugin for Gradle with new APIs
+#### Maven Central publishing plugin for Gradle with new APIs
 
 * Project page: [https://community.gradle.org/events/gsoc/2025/maven-central-publishing-with-new-api/](https://community.gradle.org/events/gsoc/2025/maven-central-publishing-with-new-api/)   
 * [Mid-term Demo](https://drive.google.com/file/d/1McNXyBdIQpEPqTn2ZRjnYJ4E8JNwHMZE/view?usp=drive_link)   
