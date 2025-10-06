@@ -56,9 +56,9 @@ jobs:
           repository: ${{ github.repository }}
           number: ${{ github.event.number }}
           id: deploy-preview
-          message: > 
+          message: >
             A preview of ${{ github.event.after }} is uploaded and can be seen here:
-            
+
             ✨ https://${{ env.PREVIEW_DOMAIN }}/${{ env.PREVIEW_REPO }}/${{ env.PREVIEW_PATH}}/ ✨
-            
-            Changes may take a few minutes to propagate. 
+
+            Changes may take a few minutes to propagate.
