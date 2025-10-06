@@ -5,7 +5,7 @@ on:
 
 jobs:
   delete_preview:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     if:  ${{ (github.event.pull_request.head.repo.full_name == 'gradle/community') }}
     env:
       PREVIEW_DOMAIN: gradle.github.io
