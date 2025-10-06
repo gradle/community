@@ -18,6 +18,10 @@
                     "beginsPattern": ".*Building documentation.*",
                     "endsPattern": ".*Serving on.*"
                 }
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
             }
         },
         {
