@@ -1,79 +1,45 @@
-site_name: Gradle Community Site
+site_name: Gradle Community
 site_author: Gradle Contributors
-site_description: >-
-  This is an open-source site for all Gradle community matters,
-  including governance, artwork, events, and public infrastructure.
-copyright: >
-  Copyright &copy; 2025 - All contributors to the repository and included components.
-  Gradle®, Develocity®, Build Scan®, and the Gradlephant logo are registered trademarks of Gradle, Inc.
-  On this resource, "Gradle" typically means "Gradle Build Tool" and does not reference Gradle, Inc. and/or its subsidiaries.
+site_description: Open-source site for all Gradle community matters
+copyright: Copyright &copy; 2025. Gradle® and the Gradlephant logo are registered trademarks of Gradle, Inc.
 docs_dir: docs
 repo_url: https://github.com/gradle/community
-repo_name: Gradle Community repo
+repo_name: gradle/community
 edit_uri: edit/main/docs/
 site_url: https://community.gradle.org
-
-# Build
 site_dir: _site
 
 # Theme
 theme:
   name: material
   custom_dir: overrides/
-  highlightjs: true
   features:
-    - announce.dismiss
     - content.action.edit
-    - content.action.view
-    - content.code.annotate
     - content.code.copy
-    - content.code.select
-    - content.tabs.link
-    - content.tooltips
-    # - header.autohide
-    # - navigation.expand
-    - navigation.footer
-    # NOT compatible qith toc.integrate
-    # - navigation.indexes
-    - navigation.path
-    # - navigation.instant
-    # - navigation.instant.prefetch
-    # - navigation.instant.progress
-    # - navigation.prune
     - navigation.sections
     - navigation.expand
-    - navigation.tabs
-    # - navigation.tabs.sticky
     - navigation.top
-    - navigation.tracking
     - search.highlight
-    - search.share
     - search.suggest
     - toc.follow
     - toc.integrate
   palette:
     - scheme: default
-      media: "(prefers-color-scheme: light)"
       primary: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-
     - scheme: slate
-      media: "(prefers-color-scheme: dark)"
       primary: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    # TODO: use the site's scheme
-    # text: Lato Lite
     code: Roboto Mono
   favicon: images/logos/gradle.svg
   logo: images/logos/gradle.svg
   icon:
     repo: fontawesome/brands/github
-
 
 extra_css:
   - assets/css/gradle.css
@@ -82,111 +48,23 @@ extra:
   social:
     - icon: fontawesome/brands/slack
       link: https://gradle.org/slack-invite
-      name: Slack
     - icon: fontawesome/brands/github
       link: https://github.com/gradle
-      name: GitHub
     - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/gradle
-      name: Twitter/X
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/gradle
-      name: LinkedIn
     - icon: fontawesome/brands/mastodon
       link: https://mastodon.social/@Gradle
-      name: Mastodon
   analytics:
     provider: custom
 
 nav:
   - Home: README.md
-  - Cookbook: https://cookbook.gradle.org/
-  - Participate:
-    - Getting Started: contributing/README.md
-    - Community Slack: contributing/community-slack.md
-    - Spread the Word: contributing/spread-the-word.md
-    - Contributing to Gradle Build Tool:
-      - Overview: gradle/CONTRIBUTING.md
-      - Gradle Build Tool Architecture: gradle/architecture/README.md
-    - Contributing to Documentation:
-      - Overview: contributing/documentation/README.md
-      - Gradle Build Tool Docs: gradle/platforms/documentation/docs/README.md
-      - Community Site Docs: CONTRIBUTING.md
-      - Gradle Cookbook: cookbook/docs/CONTRIBUTING.md
-    - Reporting Vulnerabilities: dotgithub/SECURITY.md
-    - Public Roadmap: roadmap/README.md
-    - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
-  - Events:
-      - Events Overview: events/README.md
-      - Google Summer of Code:
-        - Overview: events/gsoc/README.md
-        - 2025 projects:
-          - Convention Plugin for developing Jenkins Plugins: events/gsoc/2025/jenkins-plugins-toolchain.md
-          - Improving Configuration Cache in Key Gradle Plugins: events/gsoc/2025/configuration-cache-and-lock-contention.md
-          - Kotlin Code Quality Reporting with Problems API: events/gsoc/2025/kotlin-code-quality-with-problems-api.md
-          - Maven Central publishing for Gradle with new APIs: events/gsoc/2025/maven-central-publishing-with-new-api.md
-          - IntelliJ Platform Gradle Plugin – Reporting and Parallel Verifications: events/gsoc/2025/intellij-platform-gradle-plugin.md
-        - Archive:
-          - GSoC 2025:
-            - Summary: events/gsoc/2025/README.md
-            - Project Ideas: events/gsoc/2025/project-ideas.md
-          - GSoC 2024:
-            - Summary: events/gsoc/2024/README.md
-            - Gradle Build Server - Support for Android projects: events/gsoc/2024/gradle-build-server-android.md
-            - Gradle Build Server - DevX and Language Support in Buildship: events/gsoc/2024/gradle-build-server-devx.md
-            - Declarative Syntax and Enhancements for the Checkstyle Plugin: events/gsoc/2024/checkstyle-plugin.md
-          - GSoC 2023: events/gsoc/2023/README.md
-      - Hacktoberfest: events/hacktoberfest/README.md
-      - 2024 Developer Survey: surveys/developer-survey/README.md
-  - Resources:
-    - Key Resources: resources/README.md
-    - Public Roadmap: roadmap/README.md
-    - Code of Conduct: dotgithub/CODE_OF_CONDUCT.md
-    - Social Media: resources/social-media.md
-    - Gradle Books: resources/books.md
-    - Trademark and Branding: https://gradle.com/brand/
 
 plugins:
   - search
-  - autorefs
-# FIXME: Collision on GitHub Actions, to be fixed later
-#  - macros
-  - mkdocs-pdf
-  # OpenGraphs
-  - social:
-      cards_layout_options:
-        background_color: "#010002"
-        font_family: Lato
-  - group:
-      enabled: !ENV [FULL_BUILD, true]
-      plugins:
-      - multirepo:
-          cleanup: false
-          keep_docs_dir: true
-          nav_repos:
-          - name: dotgithub
-            import_url: 'https://github.com/gradle/.github?branch=master&edit_uri=/blob/master/'
-          - name: gradle
-            import_url: 'https://github.com/gradle/gradle?branch=master&edit_uri=/blob/master/'
-            imports: [ "/*.md", "/*.png", "platforms/documentation/docs/README.md", "architecture/*", "architecture/standards/*" ]
-          - name: roadmap
-            import_url: 'https://github.com/gradle/build-tool-roadmap?branch=main&edit_uri=/blob/main/'
-            imports: [ "README.md", "images/*" ]
-          - name: gradle-profiler
-            import_url: 'https://github.com/gradle/gradle-profiler?branch=master&edit_uri=/blob/master/'
-            imports: [ "README.md" ]
-          - name: github-actions
-            import_url: 'https://github.com/gradle/actions?branch=main&edit_uri=/blob/main/'
-            imports: [ "README.md", "*" ]
-          - name: cookbook
-            import_url: 'https://github.com/gradle/cookbook?branch=main&edit_uri=/blob/main/'
-            imports: [ "docs/CONTRIBUTING.md" ]
 
-  - redirects:
-      redirect_maps:
-        'events/hacktoberfest/README.md' : 'events/hacktoberfest/2024/README.md'
-
-# Markdown
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -194,10 +72,8 @@ markdown_extensions:
       pygments_lang_class: true
   - pymdownx.details
   - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.snippets
   - toc:
       permalink: '#'
   - admonition
@@ -205,6 +81,4 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - mdx_truly_sane_lists
+  - tables
