@@ -27,7 +27,7 @@ This is a helpful front-page for the [Gradle](https://gradle.org) community.
 
 ### Security & Ecosystem
 
-- [GitHub Actions for Gradle](https://github.com/gradle/gradle-build-action) - The official integration to run Gradle builds in GitHub Actions.
+- [GitHub Actions for Gradle](https://github.com/gradle/actions/tree/main/setup-gradle) - The official integration to run Gradle builds in GitHub Actions.
 - [GitHub Dependency Graph Plugin](https://github.com/gradle/github-dependency-graph-gradle-plugin) - Exports dependencies to GitHub to enable Dependabot alerts and security insights.
 - [Gradle Completion](https://github.com/gradle/gradle-completion) - Command-line completion scripts for Bash and Zsh.
 
