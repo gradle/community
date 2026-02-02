@@ -61,9 +61,20 @@ extra:
 
 nav:
   - Home: README.md
+  - Public Roadmap: roadmap/README.md
 
 plugins:
   - search
+  - group:
+      enabled: true
+      plugins:
+      - multirepo:
+          cleanup: false
+          keep_docs_dir: true
+          nav_repos:
+          - name: roadmap
+            import_url: 'https://github.com/gradle/build-tool-roadmap?branch=main&edit_uri=/blob/main/'
+            imports: [ "README.md" ]
 
 markdown_extensions:
   - pymdownx.highlight:
