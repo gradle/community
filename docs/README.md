@@ -143,10 +143,10 @@ Ways to Contribute:
 [Purchase from LeanPub](https://leanpub.com/idiomaticgradle)
 
 **Gradle Effective Implementations Guide (2nd Ed.)** by [Hubert Klein Ikkink](https://mrhaki.com/about/) - Comprehensive guide to build automation.  
-[Purchase from Packt](https://www.packtpub.com/web-development/gradle-effective-implementations-guide-second-edition)
+[Purchase from Packt](https://www.packtpub.com/en-us/product/gradle-effective-implementations-guide-9781784396114)
 
 **Gradle Essentials** by [Kunar Dabir](https://kdabir.com/about/) & Abhinandan Maheshwari - Master fundamentals with real-world projects.  
-[Purchase from Packt](https://www.packtpub.com/web-development/gradle-essentials)
+[Purchase from Packt]([https://www.packtpub.com/web-development/gradle-essentials](https://www.packtpub.com/en-us/product/gradle-essentials-9781783982370))
 
 ## Governance
 
