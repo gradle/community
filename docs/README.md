@@ -49,7 +49,7 @@ Follow us and use the `#gradle` hashtag:
 - [LinkedIn](https://www.linkedin.com/company/gradle) - `@Gradle`
 - [Bluesky](https://bsky.app/profile/gradle.com) - Company page
 - [X/Twitter](https://twitter.com/gradle) - `@gradle`
-- [YouTube](https://www.youtube.com/@GradleInc) - `@GradleInc`
+- [YouTube](https://www.youtube.com/@GradleTechnologies) - `@GradleTechnologies`
 - [Mastodon](https://mastodon.social/@Gradle) - `@gradle`
 - [Facebook](https://www.facebook.com/gradleinc) - `@gradleinc`
 
@@ -113,7 +113,7 @@ Ways to Contribute:
 - **[Public Roadmap](https://github.com/orgs/gradle/projects/31)** - Future plans and features
 - **[Newsletter](https://newsletter.gradle.org/)** - Monthly updates
 - **[Blog](https://blog.gradle.org/)** - Technical articles and announcements
-- **[YouTube Channel](https://www.youtube.com/@GradleInc)** - Videos and tutorials
+- **[YouTube Channel](https://www.youtube.com/@GradleTechnologies)** - Videos and tutorials
 
 ### IDE Support
 
