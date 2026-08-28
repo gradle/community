@@ -74,7 +74,7 @@ plugins:
           nav_repos:
           - name: roadmap
             import_url: 'https://github.com/gradle/build-tool-roadmap?branch=main&edit_uri=/blob/main/'
-            imports: [ "README.md" ]
+            imports: [ "README.md", "images/*" ]
 
 markdown_extensions:
   - pymdownx.highlight:
