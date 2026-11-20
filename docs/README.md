@@ -134,7 +134,7 @@ Ways to Contribute:
 ### Recommended Reading
 
 **Gradle Recipes for Android** by [Ken Kousen](https://github.com/kousen) - Master the New Build System for Android.  
-[Free Download](https://gradle.com/recipes-for-android/)
+[Purchase from Amazon](https://www.amazon.com/Gradle-Recipes-Android-Master-System/dp/1491947020)
 
 **Gradle in Action** by [Benjamin Muschko](https://github.com/bmuschko) - Comprehensive guide to end-to-end project automation with Gradle.  
 [Purchase from Manning](http://manning.com/muschko)
